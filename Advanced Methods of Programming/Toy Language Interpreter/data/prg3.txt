@@ -1,0 +1,45 @@
+PrgStack:
+	a=2+3*5
+	b=a+1;
+print(b)
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+	b=a+1;
+print(b)
+SymTable:
+	a-->17
+Out:
+FileTable:
+
+
+PrgStack:
+	b=a+1
+	print(b)
+SymTable:
+	a-->17
+Out:
+FileTable:
+
+
+PrgStack:
+	print(b)
+SymTable:
+	a-->17
+	b-->18
+Out:
+FileTable:
+
+
+PrgStack:
+SymTable:
+	a-->17
+	b-->18
+Out:
+18
+FileTable:
+
+

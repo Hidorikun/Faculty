@@ -1,0 +1,452 @@
+PrgStack:
+	print(v)
+	v=2
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+	print(v)
+SymTable:
+	v-->2
+Out:
+FileTable:
+
+
+PrgStack:
+SymTable:
+	v-->2
+Out:
+2
+FileTable:
+
+
+PrgStack:
+	print(v)
+	v=2
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+	print(v)
+SymTable:
+	v-->2
+Out:
+FileTable:
+
+
+PrgStack:
+SymTable:
+	v-->2
+Out:
+2
+FileTable:
+
+
+PrgStack:
+	readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+	openRFile(var_f, "data/test.in")
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+	readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+	print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+	readFile("var_f+2", "var_c)
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+	readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+	openRFile(var_f, "data/test.in")
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+	readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+	print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+	readFile("var_f+2", "var_c)
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+	readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+	openRFile(var_f, "data/test.in")
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+	readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+	print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+	readFile("var_f+2", "var_c)
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+openRFile(var_f, "data/test.in")
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+readFile("var_f+2", "var_c)
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+openRFile(var_f, "data/test.in")
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+readFile("var_f+2", "var_c)
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+openRFile(var_f, "data/test.in")
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+readFile("var_f+2", "var_c)
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+openRFile(var_f, "data/test.in")
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+readFile("var_f+2", "var_c)
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+openRFile(var_f, "data/test.in")
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+readFile("var_f+2", "var_c)
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+openRFile(var_f, "data/test.in")
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+readFile("var_f+2", "var_c)
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@135fbaa4
+
+
+PrgStack:
+v=2
+print(v)
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+print(v)
+SymTable:
+	v-->2
+Out:
+FileTable:
+
+
+PrgStack:
+SymTable:
+	v-->2
+Out:
+2
+FileTable:
+
+
+PrgStack:
+openRFile(var_f, "data/test.in")
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+Out:
+FileTable:
+
+
+PrgStack:
+readFile("var_f+2", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@45ee12a7
+
+
+PrgStack:
+readFile("var_f+2", "var_c)
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+SymTable:
+	var_f-->0
+Out:
+FileTable:
+	0-->data/test.in java.io.BufferedReader@45ee12a7
+
+
