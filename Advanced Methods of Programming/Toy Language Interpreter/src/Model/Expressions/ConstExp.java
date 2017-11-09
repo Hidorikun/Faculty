@@ -11,7 +11,7 @@ public class ConstExp implements IExp {
     }
 
     @Override
-    public int exec(PrgState state) {
+    public int eval(PrgState state) {
         return value;
     }
 

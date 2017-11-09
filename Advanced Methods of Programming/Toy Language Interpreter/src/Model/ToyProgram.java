@@ -2,6 +2,7 @@ package Model;
 
 import Model.Exceptions.ProgramCompletedException;
 import Model.Statements.IStmt;
+import javafx.embed.swing.SwingNode;
 
 public class ToyProgram {
     private PrgState state;
@@ -15,7 +16,7 @@ public class ToyProgram {
 
     public PrgState getState(){
         return state;
-    };
+    }
 
     public String toString(){
         return statement.toString();

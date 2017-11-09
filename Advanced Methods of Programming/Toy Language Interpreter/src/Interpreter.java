@@ -4,6 +4,7 @@ import Model.Commands.RunExample;
 import Model.Expressions.ArithExp;
 import Model.Expressions.ConstExp;
 import Model.Expressions.VarExp;
+import Model.Expressions.rHExp;
 import Model.Statements.*;
 import Model.ToyProgram;
 import Repository.ToyProgramsRepository;
@@ -185,8 +186,48 @@ public class Interpreter {
                     )
             );
 
-            ToyProgramsRepository repo5 = new ToyProgramsRepository(prg5, "data/prg1.txt");
+            ToyProgramsRepository repo5 = new ToyProgramsRepository(prg5, "data/prg5.txt");
             ToyProgramController ctrl5 = new ToyProgramController(repo5);
+
+            ToyProgram prg6 = new ToyProgram(
+                new CompStmt(
+                        new AssignStmt(
+                                "v",
+                                new ConstExp(10)
+                        ),
+                        new CompStmt(
+                                new NewStmt(
+                                        "v",
+                                        new ConstExp(20)
+                                ),
+                                new CompStmt(
+                                        new NewStmt(
+                                                "a",
+                                                new ConstExp(22)
+                                        ),
+                                        new CompStmt(
+                                                new wHstmt(
+                                                        "a",
+                                                        new ConstExp(22)
+                                                ),
+                                                new CompStmt(
+                                                        new PrintStmt(
+                                                                new VarExp("a")
+                                                        ),
+                                                        new PrintStmt(
+                                                                new rHExp("a")
+                                                        )
+                                                )
+
+                                        )
+                                )
+                        )
+
+                )
+            );
+
+            ToyProgramsRepository repo6 = new ToyProgramsRepository(prg6, "data/prg6.txt");
+            ToyProgramController ctrl6 = new ToyProgramController(repo6);
 
             TextMenu textMenu = new TextMenu();
             textMenu.addCommand(new ExitCommand("exit", "exit the interpreter" )) ;
@@ -195,6 +236,7 @@ public class Interpreter {
             textMenu.addCommand(new RunExample("3", "run program 3", ctrl3));
             textMenu.addCommand(new RunExample("4", "run program 4", ctrl4));
             textMenu.addCommand(new RunExample("5", "run program 5", ctrl5));
+            textMenu.addCommand(new RunExample("6", "run program 6", ctrl6));
 
             textMenu.show();
         }

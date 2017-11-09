@@ -1,14 +1,13 @@
 package Model.Containers;
 
-import java.lang.reflect.Array;
-import java.util.ArrayList;
 import java.util.Stack;
 
 public class MyStack<T> implements MyIStack<T> {
 
-    private Stack<T> stack = new Stack<T>();
+    private Stack<T> stack;
 
     public MyStack(){
+        stack = new Stack<>();
     }
 
     @Override
@@ -42,8 +41,9 @@ public class MyStack<T> implements MyIStack<T> {
         Stack<T> aux = (Stack<T>) stack.clone();
 
         while(!aux.empty()){
-            result.append(aux.pop().toString())
-                    .append("\n");
+            result.append("---+---\n")
+                    .append(aux.pop().toString())
+                    .append("\n-------\n");
         }
 
         return result.toString();

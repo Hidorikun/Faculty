@@ -8,11 +8,23 @@ import java.io.BufferedReader;
 import java.io.Reader;
 
 public class PrgState {
-    private MyIStack<IStmt> exeStack = new MyStack<>();
-    private MyIDictionary<String, Integer> symLink = new MyDictionary<>();
-    private MyIFileTable<Pair<String, BufferedReader>> fileTable = new MyFileTable<>();
+    private MyIStack<IStmt> exeStack;
+    private MyIDictionary<String, Integer> symLink;
+    private MyIFileTable<Pair<String, BufferedReader>> fileTable;
+    private MyIHeap<Integer> heap;
+    private String output;
 
-    private String output = "";
+    public PrgState(){
+        exeStack  = new MyStack<>();
+        symLink   = new MyDictionary<>();
+        fileTable = new MyFileTable<>();
+        heap      = new MyHeap<>();
+        output    = "";
+    }
+
+    public MyIHeap<Integer> getHeap() {
+        return heap;
+    }
 
     public MyIStack<IStmt> getExeStack() {
         return exeStack;
@@ -26,16 +38,16 @@ public class PrgState {
         return fileTable;
     }
 
-    public String getOutput() {
+    String getOutput() {
         return output;
     }
 
-    public void setOutput(String output) {
-        this.output = output;
-    }
-
     public String toString(){
-        return "exe stack: " + exeStack.toString() + "\nsymLink:" + symLink.toString() + "\noutput:" + output;
+        return "ExeStack:\n" + exeStack.toString() +
+                "SymLink:\n" + symLink.toString() +
+                "FileTable:\n" + fileTable.toString() +
+                "Heap:\n" + heap.toString() +
+                "Output:\n" + output;
     }
 
     public void appendOutput(String s){
