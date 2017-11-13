@@ -8,8 +8,8 @@
 
 %remove_occurences(+L:list, +V:atom, -R:list)
 %remove_occurences(l1..ln, v) = [], n = 0
-%							    l1 + remove_occurences(l2..ln, v), l1 != v
-%							   	remove_occurences(l2..ln, v), l1 == v
+%			      = l1 + remove_occurences(l2..ln, v), l1 != v
+%			      = remove_occurences(l2..ln, v), l1 == v
 
 remove_occurences([], _, []).
 remove_occurences([H|T], V, [H|R]):-H=\=V,
@@ -21,8 +21,8 @@ remove_occurences([H|T], V, R):-H=:=V,
 
 %count_occurences(+L:list, +V:atom, -COUNT:number)
 %count_occurences(l1..ln, v) = 0, n = 0
-%							   1 + count_occurences(l2..ln, v), l1 == v
-%							   count_occurences(l2..ln, v), l1 != v
+%			     = 1 + count_occurences(l2..ln, v), l1 == v
+%			     = count_occurences(l2..ln, v), l1 != v
 
 count_occurences([], _, 0).
 count_occurences([H|T], V, COUNT):-H=:=V,
@@ -32,8 +32,8 @@ count_occurences([H|T], V, COUNT):-H=\=V,
 	count_occurences(T, V, COUNT).
 
 %main(+L:list, -R:list)
-%main(l1..ln) =  [], n == 0
-%				 [ l1, count_occurences(l1..ln, l1) ] U main(remove_occurences(l1..ln, l1))
+%main(l1..ln) = [], n == 0
+%	      = [ l1, count_occurences(l1..ln, l1) ] U main(remove_occurences(l1..ln, l1))
 
 main([], []).
 main([H|T], [ [H, OCC] | R]):-
