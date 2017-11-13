@@ -29,8 +29,8 @@ difference([H|T], SET,[H|R]):-
 
 %add(+L:list, -R:list)
 %add(l1..ln) = [], n == 0
-%		     = l1 + add(l2..ln), if l1 mod 2 != 0
-%		     = l1 + 1 + add(l2..ln), if l1 mod 2 == 0
+%	     = l1 + add(l2..ln), if l1 mod 2 != 0
+%            = l1 + 1 + add(l2..ln), if l1 mod 2 == 0
 
 add([], []).
 add([H|T], [H|R]):-
