@@ -3,11 +3,12 @@
 %b. Write a predicate to add a value v after 1-st, 2-nd, 4-th, 8-th, … element in a list.
 
 %a
+
 %gcd(+a:number, +b:number, -r:number)
 %gcd(a, b) = a, b = 0
-%			 b, a = 0
-%			 gcd(a mod b, b), a >= b
-%			 gcd(a, b mod a), b < a
+%		  = b, a = 0
+%		  = gcd(a mod b, b), a >= b
+%		  = gcd(a, b mod a), b < a
 
 gcd(A, 0, A).
 gcd(0, B, B).
@@ -26,10 +27,12 @@ lcm(A, B, R):-
     R is A * B / GCD.
 
 %b
+
 %insert_helper(+l:list, +v:number, +pos:number, +index:number, -r:list)
 %insert_helper(l1..ln, v, pos, index) = [], n = 0
-%								 l1 + v + insert_helper(l2..ln, v, pos*2, index+1), index = pos
-%								 l1 + insert_helper(l2..ln, v, pos, index+1), pos != index
+%				      = l1 + v + insert_helper(l2..ln, v, pos*2, index+1), index = pos
+%				      = l1 + insert_helper(l2..ln, v, pos, index+1), pos != index
+
 insert_helper([], _, _, _, []).
 insert_helper([H|T], V, POS, INDEX, [H,V|R]):- INDEX =:= POS,
     NEW_POS is POS * 2,
