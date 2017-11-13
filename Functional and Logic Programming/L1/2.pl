@@ -5,6 +5,7 @@
 %Eg.: numberatom([1, 2, 1, 2, 1, 3, 1], X) => X = [[1, 4], [2, 2], [3, 1]].
 
 %a.
+
 %remove_occurences(+L:list, +V:atom, -R:list)
 %remove_occurences(l1..ln, v) = [], n = 0
 %							    l1 + remove_occurences(l2..ln, v), l1 != v
@@ -17,6 +18,7 @@ remove_occurences([H|T], V, R):-H=:=V,
     remove_occurences(T, V, R).
 
 %b
+
 %count_occurences(+L:list, +V:atom, -COUNT:number)
 %count_occurences(l1..ln, v) = 0, n = 0
 %							   1 + count_occurences(l2..ln, v), l1 == v
