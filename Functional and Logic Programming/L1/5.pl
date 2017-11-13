@@ -7,8 +7,8 @@
 
 %remove_occurences(+L:list, +V:atom, -R:list)
 %remove_occurences(l1..ln, v) = [], n = 0
-%							    l1 + remove_occurences(l2..ln, v), l1 != v
-%							   	remove_occurences(l2..ln, v), l1 == v
+%			      = l1 + remove_occurences(l2..ln, v), l1 != v
+%			      = remove_occurences(l2..ln, v), l1 == v
 
 remove_occurences([], _, []).
 remove_occurences([H|T], V, [H|R]):-H=\=V,
@@ -18,9 +18,9 @@ remove_occurences([H|T], V, R):-H=:=V,
 
 %union(+SET1:list, +SET2:list, -R:list)
 %union(l1..ln, k1..km ) = [], if n = 0 && m = 0
-%					    = l1 + union(remove_occurences(l2..ln, l1), remove_occurences(k1..km, l1)),
+%			= l1 + union(remove_occurences(l2..ln, l1), remove_occurences(k1..km, l1)),
 %					    		if n > 0
-%					    = k1 + union(remove_occurences(l1..ln, l1), remove_occurences(k1..km, l1)),
+%			= k1 + union(remove_occurences(l1..ln, l1), remove_occurences(k1..km, l1)),
 %					    		if m > 0
 
 union([], [], []).
@@ -35,8 +35,8 @@ union([], SET2, R):-
 
 %sets(+L:list, -R:list)
 %sets(l1..ln, k) = [], k == 0
-%			     = l1 + sets(l2..ln, k-1), if k > 0
-%			     = sets(l2..ln, k-1), if k > 0
+%		 = l1 + sets(l2..ln, k-1), if k > 0
+%		 = sets(l2..ln, k-1), if k > 0
 
 gen_sets(_, 0, []):-!.
 gen_sets([H|T], K, [H|R]):-
@@ -47,7 +47,7 @@ gen_sets([_|T], K, R):-
 
 %gen_sets_list(+L:list, -R:list)
 %gen_sets_list(l1..ln) = [], n == 0
-%					   = findall(sets(l1..ln, 2))
+%	     	       = findall(sets(l1..ln, 2))
 
 sets([], []).
 sets(LIST, R):-
