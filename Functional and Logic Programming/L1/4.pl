@@ -7,16 +7,16 @@
 
 %contains(+L:list, +V:atom)
 %contains(l1..ln, v) = false, n == 0
-%					   true, l1 == v
-%					   contains(l2..ln, v), otherwise
+%		     = true, l1 == v
+%		     = contains(l2..ln, v), otherwise
 
 contains([V|_], V):-!.
 contains([_|T], V):-contains(T, V).
 
 %difference(+SET1:list, +SET2:list, -DIF:list)
 %difference(l1..ln, k1..km) = [], n == 0
-%							  difference(l2..ln, k1..kn)), if contains(k1..kn, l1)
-%							  l1 + difference(l2..ln, k1..kn),otherwise
+%			    = difference(l2..ln, k1..kn)), if contains(k1..kn, l1)
+%			    = l1 + difference(l2..ln, k1..kn),otherwise
 
 difference([], _, []).
 difference([H|T], SET, R):-
