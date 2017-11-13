@@ -40,7 +40,6 @@ public class MyFileTable<V> implements MyIFileTable<V> {
                     .append(dict.get(k).toString())
                     .append("\n");
         }
-        str.append("\n");
         return str.toString();
     }
 }

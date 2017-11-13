@@ -3,6 +3,6 @@ package Model.Expressions;
 import Model.PrgState;
 
 public interface IExp {
-    int exec(PrgState state);
+    int eval(PrgState state);
     String toString();
 }

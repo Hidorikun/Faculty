@@ -14,12 +14,12 @@ public class ArithExp implements IExp {
     }
 
     @Override
-    public int exec(PrgState state) {
+    public int eval(PrgState state) {
         switch (operation) {
-            case "+" : return first.exec(state) + second.exec(state);
-            case "-" : return first.exec(state) - second.exec(state);
-            case "*" : return first.exec(state) * second.exec(state);
-            case "/" : return first.exec(state) / second.exec(state);
+            case "+" : return first.eval(state) + second.eval(state);
+            case "-" : return first.eval(state) - second.eval(state);
+            case "*" : return first.eval(state) * second.eval(state);
+            case "/" : return first.eval(state) / second.eval(state);
             default: return -2;
         }
     }

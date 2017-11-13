@@ -11,7 +11,7 @@ public class VarExp implements IExp {
     }
 
     @Override
-    public int exec(PrgState state) {
+    public int eval(PrgState state) {
         return state.getSymLink().get(id);
     }
 

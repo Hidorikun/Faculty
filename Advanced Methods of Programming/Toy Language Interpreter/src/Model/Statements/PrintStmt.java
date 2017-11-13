@@ -16,7 +16,7 @@ public class PrintStmt implements IStmt {
     }
 
     public PrgState exec(PrgState state){
-        state.appendOutput(exp.exec(state) + "\n");
+        state.appendOutput(exp.eval(state) + "\n");
         return state;
     }
 }

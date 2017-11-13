@@ -15,7 +15,7 @@ public class CloseFileStmt implements IStmt {
 
     @Override
     public PrgState exec(PrgState state) {
-        int fileId = expFile.exec(state);
+        int fileId = expFile.eval(state);
         BufferedReader r = state.getFileTable().get(fileId).getSecond();
         try{
             r.close();

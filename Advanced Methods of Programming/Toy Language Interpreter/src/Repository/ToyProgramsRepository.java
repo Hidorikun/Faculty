@@ -16,27 +16,13 @@ public class ToyProgramsRepository {
         toyProgramList.add(prg);
     }
 
-    public void add(ToyProgram tp){
-        toyProgramList.add(tp);
-    }
-
     public ToyProgram getPrg(){
         return toyProgramList.get(0);
     }
 
     public void logPrgState(ToyProgram prg) throws IOException {
-        StringBuilder logMessage = new StringBuilder("")
-            .append("PrgStack:\n")
-            .append(prg.getState().getExeStack().toString())
-            .append("SymTable:\n")
-            .append(prg.getState().getSymLink().toString())
-            .append("Out:\n")
-            .append(prg.getState().getOutput())
-            .append("FileTable:\n")
-            .append(prg.getState().getFileTable().toString());
-
         try(PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)))){
-            logFile.println(logMessage.toString());
+            logFile.println(prg.getState().toString()+"\n");
             logFile.close();
         }
     }

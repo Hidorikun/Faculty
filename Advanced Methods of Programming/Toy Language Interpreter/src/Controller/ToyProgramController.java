@@ -6,6 +6,10 @@ import Model.ToyProgram;
 import Repository.ToyProgramsRepository;
 
 import java.io.IOException;
+import java.util.Collection;
+import java.util.Map;
+import java.util.stream.Collector;
+import java.util.stream.Collectors;
 
 public class ToyProgramController {
     private ToyProgramsRepository repo;
@@ -19,7 +23,6 @@ public class ToyProgramController {
             throw new ProgramCompletedException("All steps executed");
         }
         IStmt currentStatement = prg.getState().getExeStack().pop();
-        System.out.println(currentStatement);
         currentStatement.exec(prg.getState());
     }
 
@@ -28,15 +31,26 @@ public class ToyProgramController {
         try{
             while(true){
                 oneStep(prg);
+                prg.getState().getHeap().setContent(conservativeGarbageCollector(
+                        prg.getState().getSymLink().getContent().values(),
+                        prg.getState().getHeap().getContent()));
+
                 repo.logPrgState(prg);
             }
         }
         catch(ProgramCompletedException e){
 
-        } catch (IOException e) {
+        }
+        catch (IOException e) {
             throw new RuntimeException("IOException: " + e.toString());
         }
 
+    }
+
+     private Map<Integer,Integer> conservativeGarbageCollector(Collection<Integer> symTableValues, Map<Integer, Integer> heap){
+        return heap.entrySet().stream()
+                .filter(e->symTableValues.contains(e.getKey()))
+                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
     }
 
     public ToyProgram getProgram()

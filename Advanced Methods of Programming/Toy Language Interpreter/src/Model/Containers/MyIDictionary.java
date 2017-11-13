@@ -1,10 +1,14 @@
 package Model.Containers;
 
+import java.util.Map;
+
 public interface MyIDictionary<K, V> {
-    boolean containsKey(Object key);
-    boolean containsValue(Object value);
-    V get(Object key);
+    boolean containsKey(K key);
+    boolean containsValue(V value);
+    V get(K key);
     V put(K key, V value);
+
+    Map<K, V> getContent();
 
     String toString();
 }

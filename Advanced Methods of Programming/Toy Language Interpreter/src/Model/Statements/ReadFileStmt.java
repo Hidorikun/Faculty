@@ -4,9 +4,7 @@ import Model.Expressions.IExp;
 import Model.PrgState;
 
 import java.io.BufferedReader;
-import java.io.BufferedWriter;
 import java.io.IOException;
-import java.io.Reader;
 
 public class ReadFileStmt implements IStmt {
     private IExp expFile;
@@ -19,10 +17,10 @@ public class ReadFileStmt implements IStmt {
 
     @Override
     public PrgState exec(PrgState state) {
-        int fileID = expFile.exec(state);
+        int fileID = expFile.eval(state);
         BufferedReader w = state.getFileTable().get(fileID).getSecond();
 
-        String line = null;
+        String line;
         try{
             line = w.readLine();
         } catch (IOException e) {

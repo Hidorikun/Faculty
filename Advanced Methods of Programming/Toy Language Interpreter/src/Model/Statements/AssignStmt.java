@@ -1,12 +1,11 @@
 package Model.Statements;
 
 import Model.Expressions.IExp;
-import Model.Expressions.VarExp;
 import Model.PrgState;
 
 public class AssignStmt implements IStmt {
-    String var;
-    IExp exp;
+    private String var;
+    private IExp exp;
 
     public AssignStmt(String var, IExp exp){
         this.var = var;
@@ -20,7 +19,7 @@ public class AssignStmt implements IStmt {
 
     @Override
     public PrgState exec(PrgState state) {
-        int value = exp.exec(state);
+        int value = exp.eval(state);
         state.getSymLink().put(var, value);
         return state;
     }

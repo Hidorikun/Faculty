@@ -21,7 +21,7 @@ public class IfStmt implements IStmt{
 
     @Override
     public PrgState exec(PrgState state){
-        if (exp.exec(state) > 0){
+        if (exp.eval(state) > 0){
             return thenS.exec(state);
         }
         if (elseS == null){

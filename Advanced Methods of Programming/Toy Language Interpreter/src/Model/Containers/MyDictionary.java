@@ -5,26 +5,34 @@ import java.util.Map;
 
 public class MyDictionary<K, V> implements MyIDictionary<K, V> {
 
-    Map<K, V> dict = new HashMap<K, V>();
+    private Map<K, V> dict;
 
+    public MyDictionary(){
+        dict = new HashMap<>();
+    }
     @Override
-    public boolean containsKey(Object key) {
+    public boolean containsKey(K key) {
         return this.dict.containsKey(key);
     }
 
     @Override
-    public boolean containsValue(Object value) {
+    public boolean containsValue(V value) {
         return this.dict.containsValue(value);
     }
 
     @Override
-    public V get(Object key) {
+    public V get(K key) {
         return this.dict.get(key);
     }
 
     @Override
     public V put(K key, V value) {
         return this.dict.put(key, value);
+    }
+
+    @Override
+    public Map<K, V> getContent() {
+        return dict;
     }
 
     public String toString(){
