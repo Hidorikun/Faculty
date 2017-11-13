@@ -7,8 +7,8 @@
 
 %count_occurences(+L:list, +V:atom, -COUNT:number)
 %count_occurences(l1..ln, v) = 0, n = 0
-%							   1 + count_occurences(l2..ln, v), l1 == v
-%							   count_occurences(l2..ln, v), l1 != v
+%			    			 1 + count_occurences(l2..ln, v), l1 == v
+%			     			 count_occurences(l2..ln, v), l1 != v
 
 count_occurences([], _, 0).
 count_occurences([H|T], V, COUNT):-H=:=V,
