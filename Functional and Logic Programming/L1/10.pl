@@ -8,7 +8,7 @@
 
 %valley_parse(+L:list, +flag:number, +n:number)
 %valley_parse(l1..ln, flag, n) = true, n = 1 && flag == 1
-%					           = valley_parse(l2..ln, 1), l1 < l2
+%							   = valley_parse(l2..ln, 1), l1 < l2
 %					           = valley_parse(l2..ln, 0), l1 > l2 && flag == 0
 %					           = false, otherwise
 
