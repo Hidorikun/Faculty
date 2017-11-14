@@ -7,8 +7,8 @@
 
 %even(+L:list)
 %even(l1, l2...ln) = false, n == 1
-%				   = true, n == 0
-%				   = even(l3..ln), otherwise
+%		   = true, n == 0
+%		   = even(l3..ln), otherwise
 
 even([]).
 even([_,_|T]):-
@@ -18,8 +18,8 @@ even([_,_|T]):-
 
 %min(+L:list, -R:number)
 %min(l1..ln) = l1, n == 1
-%			 = l1, l1 < min(l2..ln)
-%			 = min(l2..ln), otherwise
+%	     = l1, l1 < min(l2..ln)
+%	     = min(l2..ln), otherwise
 
 min([MIN], MIN).
 min([H|T], H):-
@@ -30,8 +30,8 @@ min([_|T], MIN):-
 
 %delete_first(+L:list, K:atom, -R:lis)
 %delete_first(l1..ln, k) = [], n == 0
-%						 = [l2..ln], l1 == v
-%						 = l1 + delete_first(l2..ln), otherwise
+%			 = [l2..ln], l1 == v
+%			 = l1 + delete_first(l2..ln), otherwise
 
 delete_first([], _, []).
 delete_first([H|T], K, T):-
