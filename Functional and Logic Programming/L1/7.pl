@@ -7,8 +7,8 @@
 
 %member(+L:list, +v:value)
 %member(l1..ln, v) = false, n == 0
-%				   = true, v == l1
-%				   = member(l2..ln, v), otherwise
+%	           = true, v == l1
+%		   = member(l2..ln, v), otherwise
 
 member([V|_], V):-!.
 member([_|T], V):-
@@ -16,8 +16,8 @@ member([_|T], V):-
 
 %intersection(+SET1:list, +SET2:list, -R:List)
 %intersection(l1..ln, k1..km) = [], n == 0
-%							  = l1 + intersection(l2..ln, k1..km), member(k1..km, k1)
-%							  = intersection(l2..ln, k1..km), otherwise
+%			      = l1 + intersection(l2..ln, k1..km), member(k1..km, k1)
+%			      = intersection(l2..ln, k1..km), otherwise
 
 intersection([], _, []).
 intersection([H|T], SET, [H|R]):-
@@ -30,7 +30,7 @@ intersection([_|T], SET, R):-
 
 %range(+m:number, +n:number, -R:list)
 %range(m, n) = [], m > n
-%			 = m + range(m+1, n), otherwise
+%	     = m + range(m+1, n), otherwise
 
 range(M, N, []):-
 	M > N, !.
