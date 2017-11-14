@@ -32,7 +32,7 @@ gcd(A, B, R):- A < B,
 
 %gcdlist(+L:list, -R:number)
 %gcdlist(l1..ln) = l1, n == 1
-%				 = gcdlist(GCD(l1, l2), l3..ln), otherwise
+%		 = gcdlist(GCD(l1, l2), l3..ln), otherwise
 
 gcd([H], H):-!.
 gcd([H1, H2|T], R):-
