@@ -8,9 +8,9 @@
 
 %valley_parse(+L:list, +flag:number, +n:number)
 %valley_parse(l1..ln, flag, n) = true, n = 1 && flag == 1
-%							   = valley_parse(l2..ln, 1), l1 < l2
-%					           = valley_parse(l2..ln, 0), l1 > l2 && flag == 0
-%					           = false, otherwise
+%			       = valley_parse(l2..ln, 1), l1 < l2
+%			       = valley_parse(l2..ln, 0), l1 > l2 && flag == 0
+%			       = false, otherwise
 
 valley_parse([_], 1, N):-
 	N > 0.
@@ -31,8 +31,8 @@ valley(L):-
 
 %alternate_sum(+L:list, -R:number)
 %alternate_sum(l1..ln) = 0, n == 0
-%					   = l1, n == 1
-%					   = l1 - l2 + alternate_sum(l3..ln), otherwise
+%		       = l1, n == 1
+%		       = l1 - l2 + alternate_sum(l3..ln), otherwise
 
 alternate_sum([], 0):-!.
 alternate_sum([H], H):-!.
