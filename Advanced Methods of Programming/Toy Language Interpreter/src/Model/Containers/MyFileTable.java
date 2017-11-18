@@ -5,6 +5,7 @@ import Util.Pair;
 import java.io.Reader;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.stream.Stream;
 
 public class MyFileTable<V> implements MyIFileTable<V> {
     private int cnt;
@@ -31,7 +32,13 @@ public class MyFileTable<V> implements MyIFileTable<V> {
         dict.remove(key);
     }
 
+    @Override
+    public Stream stream(){
+        return dict.keySet().stream();
+    }
+
     public String toString(){
+
         StringBuilder str = new StringBuilder();
         for( Integer k : dict.keySet() ){
             str.append("\t")
@@ -42,4 +49,5 @@ public class MyFileTable<V> implements MyIFileTable<V> {
         }
         return str.toString();
     }
+
 }

@@ -1,16 +1,19 @@
 import Controller.ToyProgramController;
 import Model.Commands.ExitCommand;
 import Model.Commands.RunExample;
-import Model.Expressions.ArithExp;
-import Model.Expressions.ConstExp;
-import Model.Expressions.VarExp;
-import Model.Expressions.rHExp;
+import Model.Expressions.Arithmetic.Addition;
+import Model.Expressions.Arithmetic.Subtraction;
+import Model.Expressions.Boolean.Greater;
+import Model.Expressions.Constant;
+import Model.Expressions.Variable;
+import Model.Expressions.ReadHeap;
 import Model.Statements.*;
+import Model.Statements.FileManipulation.CloseFile;
+import Model.Statements.FileManipulation.OpenFile;
+import Model.Statements.FileManipulation.ReadFile;
 import Model.ToyProgram;
 import Repository.ToyProgramsRepository;
 import View.TextMenu;
-
-import javax.xml.soap.Text;
 
 public class Interpreter {
 
@@ -18,13 +21,13 @@ public class Interpreter {
         try {
 
             ToyProgram prg1 = new ToyProgram(
-                    new CompStmt(
-                            new AssignStmt(
+                    new Composite(
+                            new Assignment(
                                     "v",
-                                    new ConstExp(2)
+                                    new Constant(2)
                             ),
-                            new PrintStmt(
-                                    new VarExp("v")
+                            new Print(
+                                    new Variable("v")
                             )
                     )
             );
@@ -34,28 +37,27 @@ public class Interpreter {
 
 
             ToyProgram prg2 = new ToyProgram(
-                    new CompStmt(
-                        new AssignStmt(
+                    new Composite(
+                        new Assignment(
                                 "a",
-                                new ArithExp(
-                                        "-",
-                                        new ConstExp(2),
-                                        new ConstExp(2)
+                                new Subtraction(
+                                        new Constant(2),
+                                        new Constant(2)
                                 )
                         ),
-                        new CompStmt(
-                                new IfStmt(
-                                        new VarExp("a"),
-                                        new AssignStmt(
+                        new Composite(
+                                new If(
+                                        new Variable("a"),
+                                        new Assignment(
                                                 "v",
-                                                new ConstExp(2)),
-                                        new AssignStmt(
+                                                new Constant(2)),
+                                        new Assignment(
                                                 "v",
-                                                new ConstExp(3)
+                                                new Constant(3)
                                         )
                                 ),
-                                new PrintStmt(
-                                        new VarExp("v")
+                                new Print(
+                                        new Variable("v")
                                 )
                         )
                     )
@@ -66,30 +68,27 @@ public class Interpreter {
 
 
             ToyProgram prg3 = new ToyProgram(
-                    new CompStmt(
-                        new AssignStmt(
+                    new Composite(
+                        new Assignment(
                                 "a",
-                                new ArithExp(
-                                        "+",
-                                        new ConstExp(2),
-                                        new ArithExp(
-                                                "*",
-                                                new ConstExp(3),
-                                                new ConstExp(5)
+                                new Addition(
+                                        new Constant(2),
+                                        new Addition(
+                                                new Constant(3),
+                                                new Constant(5)
                                         )
                                 )
                         ),
-                        new CompStmt(
-                                new AssignStmt(
+                        new Composite(
+                                new Assignment(
                                         "b",
-                                        new ArithExp(
-                                                "+",
-                                                new VarExp("a"),
-                                                new ConstExp(1)
+                                        new Addition(
+                                                new Variable("a"),
+                                                new Constant(1)
                                         )
                                 ),
-                                new PrintStmt(
-                                        new VarExp("b")
+                                new Print(
+                                        new Variable("b")
                                 )
                         )
                     )
@@ -99,38 +98,38 @@ public class Interpreter {
             ToyProgramController ctrl3 = new ToyProgramController(repo3);
 
             ToyProgram prg4 = new ToyProgram(
-                    new CompStmt(
-                        new OpenFileStmt(
+                    new Composite(
+                        new OpenFile(
                                 "var_f",
                                 "data/test.in"
                         ),
-                        new CompStmt(
-                                new ReadFileStmt(
-                                        new VarExp("var_f"),
+                        new Composite(
+                                new ReadFile(
+                                        new Variable("var_f"),
                                         "var_c"
                                 ),
-                                new CompStmt(
-                                        new PrintStmt(
-                                                new VarExp("var_c")
+                                new Composite(
+                                        new Print(
+                                                new Variable("var_c")
                                         ),
-                                        new CompStmt(
-                                                new IfStmt(
-                                                        new VarExp("var_c"),
-                                                        new CompStmt(
-                                                                new ReadFileStmt(
-                                                                        new VarExp("var_f"),
+                                        new Composite(
+                                                new If(
+                                                        new Variable("var_c"),
+                                                        new Composite(
+                                                                new ReadFile(
+                                                                        new Variable("var_f"),
                                                                         "var_c"
                                                                 ),
-                                                                new PrintStmt(
-                                                                        new VarExp("var_c")
+                                                                new Print(
+                                                                        new Variable("var_c")
                                                                 )
                                                         ),
-                                                        new PrintStmt(
-                                                                new ConstExp(0)
+                                                        new Print(
+                                                                new Constant(0)
                                                         )
                                                 ),
-                                                new CloseFileStmt(
-                                                        new VarExp("var_f")
+                                                new CloseFile(
+                                                        new Variable("var_f")
                                                 )
                                         )
                                 )
@@ -143,42 +142,41 @@ public class Interpreter {
 
 
             ToyProgram prg5 = new ToyProgram(
-                    new CompStmt(
-                            new OpenFileStmt(
+                    new Composite(
+                            new OpenFile(
                                     "var_f",
                                     "data/test.in"
                             ),
-                            new CompStmt(
-                                    new ReadFileStmt(
-                                            new ArithExp(
-                                                    "+",
-                                                    new VarExp("var_f"),
-                                                    new ConstExp(2)
+                            new Composite(
+                                    new ReadFile(
+                                            new Addition(
+                                                    new Variable("var_f"),
+                                                    new Constant(2)
                                             ),
                                             "var_c"
                                     ),
-                                    new CompStmt(
-                                            new PrintStmt(
-                                                    new VarExp("var_c")
+                                    new Composite(
+                                            new Print(
+                                                    new Variable("var_c")
                                             ),
-                                            new CompStmt(
-                                                    new IfStmt(
-                                                            new VarExp("var_c"),
-                                                            new CompStmt(
-                                                                    new ReadFileStmt(
-                                                                            new VarExp("var_f"),
+                                            new Composite(
+                                                    new If(
+                                                            new Variable("var_c"),
+                                                            new Composite(
+                                                                    new ReadFile(
+                                                                            new Variable("var_f"),
                                                                             "var_c"
                                                                     ),
-                                                                    new PrintStmt(
-                                                                            new VarExp("var_c")
+                                                                    new Print(
+                                                                            new Variable("var_c")
                                                                     )
                                                             ),
-                                                            new PrintStmt(
-                                                                    new ConstExp(0)
+                                                            new Print(
+                                                                    new Constant(0)
                                                             )
                                                     ),
-                                                    new CloseFileStmt(
-                                                            new VarExp("var_f")
+                                                    new CloseFile(
+                                                            new Variable("var_f")
                                                     )
                                             )
                                     )
@@ -190,32 +188,32 @@ public class Interpreter {
             ToyProgramController ctrl5 = new ToyProgramController(repo5);
 
             ToyProgram prg6 = new ToyProgram(
-                new CompStmt(
-                        new AssignStmt(
+                new Composite(
+                        new Assignment(
                                 "v",
-                                new ConstExp(10)
+                                new Constant(10)
                         ),
-                        new CompStmt(
-                                new NewStmt(
+                        new Composite(
+                                new New(
                                         "v",
-                                        new ConstExp(20)
+                                        new Constant(20)
                                 ),
-                                new CompStmt(
-                                        new NewStmt(
+                                new Composite(
+                                        new New(
                                                 "a",
-                                                new ConstExp(22)
+                                                new Constant(22)
                                         ),
-                                        new CompStmt(
-                                                new wHstmt(
+                                        new Composite(
+                                                new WriteHeap(
                                                         "a",
-                                                        new ConstExp(22)
+                                                        new Constant(22)
                                                 ),
-                                                new CompStmt(
-                                                        new PrintStmt(
-                                                                new VarExp("a")
+                                                new Composite(
+                                                        new Print(
+                                                                new Variable("a")
                                                         ),
-                                                        new PrintStmt(
-                                                                new rHExp("a")
+                                                        new Print(
+                                                                new ReadHeap("a")
                                                         )
                                                 )
 
@@ -229,6 +227,36 @@ public class Interpreter {
             ToyProgramsRepository repo6 = new ToyProgramsRepository(prg6, "data/prg6.txt");
             ToyProgramController ctrl6 = new ToyProgramController(repo6);
 
+            ToyProgram prg7 = new ToyProgram(
+                    new Composite(
+                            new Assignment(
+                                 "v",
+                                    new Constant(10)
+                            ),
+                            new While(
+                                new Greater(
+                                        new Variable("v"),
+                                        new Constant(0)
+                                ),
+                                new Composite(
+                                        new Print(
+                                                new Variable("v")
+                                        ),
+                                        new Assignment(
+                                                "v",
+                                                new Subtraction(
+                                                        new Variable("v"),
+                                                        new Constant(1)
+                                                )
+                                        )
+                                )
+                            )
+                    )
+            );
+
+            ToyProgramsRepository repo7 = new ToyProgramsRepository(prg7, "data/prg7.txt");
+            ToyProgramController ctrl7 = new ToyProgramController(repo7);
+
             TextMenu textMenu = new TextMenu();
             textMenu.addCommand(new ExitCommand("exit", "exit the interpreter" )) ;
             textMenu.addCommand(new RunExample("1", "run program 1", ctrl1));
@@ -237,6 +265,7 @@ public class Interpreter {
             textMenu.addCommand(new RunExample("4", "run program 4", ctrl4));
             textMenu.addCommand(new RunExample("5", "run program 5", ctrl5));
             textMenu.addCommand(new RunExample("6", "run program 6", ctrl6));
+            textMenu.addCommand(new RunExample("7", "run program 7", ctrl7));
 
             textMenu.show();
         }

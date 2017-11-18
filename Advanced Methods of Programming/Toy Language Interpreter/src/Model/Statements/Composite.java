@@ -1,20 +1,20 @@
 package Model.Statements;
 
 import Model.Containers.MyIStack;
-import Model.PrgState;
+import Model.ProgramState;
 
-public class CompStmt implements IStmt {
-    private IStmt first;
-    private IStmt second;
+public class Composite implements IStatement {
+    private IStatement first;
+    private IStatement second;
 
-    public CompStmt(IStmt first, IStmt second){
+    public Composite(IStatement first, IStatement second){
         this.first = first;
         this.second = second;
     }
 
     @Override
-    public PrgState exec(PrgState state) {
-        MyIStack<IStmt> stk = state.getExeStack();
+    public ProgramState exec(ProgramState state) {
+        MyIStack<IStatement> stk = state.getExeStack();
         stk.push(second);
         stk.push(first);
         return state;

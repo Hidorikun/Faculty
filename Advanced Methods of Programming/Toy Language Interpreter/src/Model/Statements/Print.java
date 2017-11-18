@@ -1,12 +1,12 @@
 package Model.Statements;
 
-import Model.Expressions.IExp;
-import Model.PrgState;
+import Model.Expressions.IExpression;
+import Model.ProgramState;
 
-public class PrintStmt implements IStmt {
-    private IExp exp;
+public class Print implements IStatement {
+    private IExpression exp;
 
-    public PrintStmt(IExp exp){
+    public Print(IExpression exp){
         this.exp = exp;
     }
 
@@ -15,7 +15,7 @@ public class PrintStmt implements IStmt {
         return "print(" + exp.toString() + ")";
     }
 
-    public PrgState exec(PrgState state){
+    public ProgramState exec(ProgramState state){
         state.appendOutput(exp.eval(state) + "\n");
         return state;
     }

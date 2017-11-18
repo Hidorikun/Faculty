@@ -1,26 +1,26 @@
 package Model.Statements;
 
-import Model.Expressions.IExp;
-import Model.PrgState;
+import Model.Expressions.IExpression;
+import Model.ProgramState;
 
-public class IfStmt implements IStmt{
-    private IExp exp;
-    private IStmt thenS;
-    private IStmt elseS;
+public class If implements IStatement {
+    private IExpression exp;
+    private IStatement thenS;
+    private IStatement elseS;
 
-    public IfStmt(IExp e, IStmt t){
+    public If(IExpression e, IStatement t){
         exp = e;
         thenS = t;
         elseS = null;
     }
-    public IfStmt(IExp e, IStmt t, IStmt el){
+    public If(IExpression e, IStatement t, IStatement el){
         exp = e;
         thenS = t;
         elseS = el;
     }
 
     @Override
-    public PrgState exec(PrgState state){
+    public ProgramState exec(ProgramState state){
         if (exp.eval(state) > 0){
             return thenS.exec(state);
         }

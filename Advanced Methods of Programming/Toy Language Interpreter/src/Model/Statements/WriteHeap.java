@@ -1,20 +1,20 @@
 package Model.Statements;
 
-import Model.Expressions.IExp;
-import Model.PrgState;
+import Model.Expressions.IExpression;
+import Model.ProgramState;
 
-public class wHstmt implements IStmt {
+public class WriteHeap implements IStatement {
     private String varName;
-    private IExp expression;
+    private IExpression expression;
 
-    public wHstmt(String varName, IExp expression){
+    public WriteHeap(String varName, IExpression expression){
         this.varName = varName;
         this.expression = expression;
     }
 
     @Override
-    public PrgState exec(PrgState state) {
-        int memLocation = state.getSymLink().get(varName);
+    public ProgramState exec(ProgramState state) {
+        int memLocation = state.getSymTable().get(varName);
         state.getHeap().put(memLocation, expression.eval(state));
         return state;
     }

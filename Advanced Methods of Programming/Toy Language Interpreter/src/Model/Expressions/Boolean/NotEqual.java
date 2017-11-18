@@ -1,19 +1,19 @@
-package Model.Expressions.BooleanExpressions;
+package Model.Expressions.Boolean;
 
-import Model.Expressions.IExp;
-import Model.PrgState;
+import Model.Expressions.IExpression;
+import Model.ProgramState;
 
-public class NotEqual implements IExp{
-    private IExp exp1;
-    private IExp exp2;
+public class NotEqual implements IExpression {
+    private IExpression exp1;
+    private IExpression exp2;
 
-    public NotEqual(IExp exp1, IExp exp2){
+    public NotEqual(IExpression exp1, IExpression exp2){
         this.exp1 = exp1;
         this.exp2 = exp2;
     }
 
     @Override
-    public int eval(PrgState state) {
+    public int eval(ProgramState state) {
         boolean result = exp1.eval(state) != exp2.eval(state);
         if (result){
             return 1;

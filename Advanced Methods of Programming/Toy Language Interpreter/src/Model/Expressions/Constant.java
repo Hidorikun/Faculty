@@ -1,17 +1,17 @@
 package Model.Expressions;
 
-import Model.PrgState;
+import Model.ProgramState;
 
-public class ConstExp implements IExp {
+public class Constant implements IExpression {
 
     private Integer value;
 
-    public ConstExp(int value){
+    public Constant(int value){
         this.value = value;
     }
 
     @Override
-    public int eval(PrgState state) {
+    public int eval(ProgramState state) {
         return value;
     }
 

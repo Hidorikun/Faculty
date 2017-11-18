@@ -1,14 +1,13 @@
 package Controller;
 
 import Model.Exceptions.ProgramCompletedException;
-import Model.Statements.IStmt;
+import Model.Statements.IStatement;
 import Model.ToyProgram;
 import Repository.ToyProgramsRepository;
 
 import java.io.IOException;
 import java.util.Collection;
 import java.util.Map;
-import java.util.stream.Collector;
 import java.util.stream.Collectors;
 
 public class ToyProgramController {
@@ -22,7 +21,7 @@ public class ToyProgramController {
         if(prg.getState().getExeStack().empty()){
             throw new ProgramCompletedException("All steps executed");
         }
-        IStmt currentStatement = prg.getState().getExeStack().pop();
+        IStatement currentStatement = prg.getState().getExeStack().pop();
         currentStatement.exec(prg.getState());
     }
 
@@ -32,17 +31,24 @@ public class ToyProgramController {
             while(true){
                 oneStep(prg);
                 prg.getState().getHeap().setContent(conservativeGarbageCollector(
-                        prg.getState().getSymLink().getContent().values(),
+                        prg.getState().getSymTable().getContent().values(),
                         prg.getState().getHeap().getContent()));
 
                 repo.logPrgState(prg);
             }
         }
-        catch(ProgramCompletedException e){
-
-        }
+        catch(ProgramCompletedException e){}
         catch (IOException e) {
             throw new RuntimeException("IOException: " + e.toString());
+        }
+        finally{
+            prg.getState().getFileTable().stream()
+                    .forEach(k -> {
+                        try {
+                            prg.getState().getFileTable().get((Integer)k).getSecond().close();
+                        } catch (IOException e) {
+                        }
+                    });
         }
 
     }

@@ -1,20 +1,18 @@
 package Model;
 
-import Model.Exceptions.ProgramCompletedException;
-import Model.Statements.IStmt;
-import javafx.embed.swing.SwingNode;
+import Model.Statements.IStatement;
 
 public class ToyProgram {
-    private PrgState state;
-    private IStmt statement;
+    private ProgramState state;
+    private IStatement statement;
 
-    public ToyProgram(IStmt statement){
+    public ToyProgram(IStatement statement){
         this.statement = statement;
-        this.state = new PrgState();
+        this.state = new ProgramState();
         state.getExeStack().push(statement);
     }
 
-    public PrgState getState(){
+    public ProgramState getState(){
         return state;
     }
 

@@ -1,20 +1,21 @@
-package Model.Statements;
+package Model.Statements.FileManipulation;
 
-import Model.Expressions.IExp;
-import Model.PrgState;
+import Model.Expressions.IExpression;
+import Model.ProgramState;
+import Model.Statements.IStatement;
 
 import java.io.BufferedReader;
 import java.io.IOException;
 
-public class CloseFileStmt implements IStmt {
-    private IExp expFile;
+public class CloseFile implements IStatement {
+    private IExpression expFile;
 
-    public CloseFileStmt(IExp expFile){
+    public CloseFile(IExpression expFile){
         this.expFile = expFile;
     }
 
     @Override
-    public PrgState exec(PrgState state) {
+    public ProgramState exec(ProgramState state) {
         int fileId = expFile.eval(state);
         BufferedReader r = state.getFileTable().get(fileId).getSecond();
         try{

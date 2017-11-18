@@ -1,22 +1,21 @@
 package Model;
 
 import Model.Containers.*;
-import Model.Statements.IStmt;
+import Model.Statements.IStatement;
 import Util.Pair;
 
 import java.io.BufferedReader;
-import java.io.Reader;
 
-public class PrgState {
-    private MyIStack<IStmt> exeStack;
-    private MyIDictionary<String, Integer> symLink;
+public class ProgramState {
+    private MyIStack<IStatement> exeStack;
+    private MyIDictionary<String, Integer> symTable;
     private MyIFileTable<Pair<String, BufferedReader>> fileTable;
     private MyIHeap<Integer> heap;
     private String output;
 
-    public PrgState(){
+    public ProgramState(){
         exeStack  = new MyStack<>();
-        symLink   = new MyDictionary<>();
+        symTable = new MyDictionary<>();
         fileTable = new MyFileTable<>();
         heap      = new MyHeap<>();
         output    = "";
@@ -26,12 +25,12 @@ public class PrgState {
         return heap;
     }
 
-    public MyIStack<IStmt> getExeStack() {
+    public MyIStack<IStatement> getExeStack() {
         return exeStack;
     }
 
-    public MyIDictionary<String, Integer> getSymLink() {
-        return symLink;
+    public MyIDictionary<String, Integer> getSymTable() {
+        return symTable;
     }
 
     public MyIFileTable<Pair<String, BufferedReader>> getFileTable() {
@@ -44,7 +43,7 @@ public class PrgState {
 
     public String toString(){
         return "ExeStack:\n" + exeStack.toString() +
-                "SymLink:\n" + symLink.toString() +
+                "SymLink:\n" + symTable.toString() +
                 "FileTable:\n" + fileTable.toString() +
                 "Heap:\n" + heap.toString() +
                 "Output:\n" + output;

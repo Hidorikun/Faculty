@@ -1,19 +1,19 @@
-package Model.Expressions.BooleanExpressions;
+package Model.Expressions.Boolean;
 
-import Model.Expressions.IExp;
-import Model.PrgState;
+import Model.Expressions.IExpression;
+import Model.ProgramState;
 
-public class Greater implements IExp{
-    private IExp exp1;
-    private IExp exp2;
+public class Greater implements IExpression {
+    private IExpression exp1;
+    private IExpression exp2;
 
-    public Greater(IExp exp1, IExp exp2){
+    public Greater(IExpression exp1, IExpression exp2){
         this.exp1 = exp1;
         this.exp2 = exp2;
     }
 
     @Override
-    public int eval(PrgState state) {
+    public int eval(ProgramState state) {
         boolean result = exp1.eval(state) > exp2.eval(state);
         if (result){
             return 1;

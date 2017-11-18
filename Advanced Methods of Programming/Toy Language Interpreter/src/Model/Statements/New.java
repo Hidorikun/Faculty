@@ -1,21 +1,21 @@
 package Model.Statements;
 
-import Model.Expressions.IExp;
-import Model.PrgState;
+import Model.Expressions.IExpression;
+import Model.ProgramState;
 
-public class NewStmt implements IStmt{
+public class New implements IStatement {
     private String varName;
-    private IExp expression;
+    private IExpression expression;
 
-    public NewStmt(String varName, IExp expression){
+    public New(String varName, IExpression expression){
         this.varName = varName;
         this.expression = expression;
     }
 
     @Override
-    public PrgState exec(PrgState state) {
+    public ProgramState exec(ProgramState state) {
         int memLocation = state.getHeap().put(expression.eval(state));
-        state.getSymLink().put(varName, memLocation);
+        state.getSymTable().put(varName, memLocation);
         return state;
     }
 
