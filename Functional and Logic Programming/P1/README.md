@@ -53,7 +53,7 @@ a. Write a predicate to substitute an element from a list with another element i
 b. Write a predicate to create the sublist (lm, …, ln) from the list (l1,…, lk).
 
 12.
-a. Write a predicate to substitute in a list a value with all the elements of another list.	      	
+a. Write a predicate to substitute in a list a value with all the elements of another list.	                	
 b. Remove the n-th element of a list.   
 
 13.
