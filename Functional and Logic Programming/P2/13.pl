@@ -1,10 +1,10 @@
-%13.
-%a. Given a linear numerical list write a predicate to remove all sequences of consecutive values.
-%Eg.: remove([1, 2, 4, 6, 7, 8, 10], L) will produce L=[4, 10].
-%b. For a heterogeneous list, formed from integer numbers and list of numbers; write a predicate to delete from
-%every sublist all sequences of consecutive values.
-%Eg.: [1, [2, 3, 5], 9, [1, 2, 4, 3, 4, 5, 7, 9], 11, [5, 8, 2], 7] =>
-%[1, [5], 9, [4, 7, 9], 11, [5, 8, 2], 7]
+% 13.
+% a. Given a linear numerical list write a predicate to remove all sequences of consecutive values.
+% Eg.: remove([1, 2, 4, 6, 7, 8, 10], L) will produce L=[4, 10].
+% b. For a heterogeneous list, formed from integer numbers and list of numbers; write a predicate to delete from
+% every sublist all sequences of consecutive values.
+% Eg.: [1, [2, 3, 5], 9, [1, 2, 4, 3, 4, 5, 7, 9], 11, [5, 8, 2], 7] =>
+% [1, [5], 9, [4, 7, 9], 11, [5, 8, 2], 7]
 
 %a
 %consecutive(+A:number, +B:number)
