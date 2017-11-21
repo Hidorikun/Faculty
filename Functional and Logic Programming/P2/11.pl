@@ -16,7 +16,7 @@ replace([H|T], V, E, [H|R]):-
 %b
 %max(A:number, B:number)
 %max(a, b) = a, a > b
-%		   = b, b >= a
+%          = b, b >= a
 
 max(A, B, A):-
 	A > B.
