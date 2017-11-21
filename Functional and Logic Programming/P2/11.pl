@@ -25,7 +25,7 @@ max(A, B, B):-
 
 %list_max(+L:list, -R:number)
 %list_max(l1..ln) = l1, n = 1
-%				  = max(list_max(l2..ln)), otherwise
+%	          = max(list_max(l2..ln)), otherwise
 
 list_max([H], H).
 list_max([H|T], R):-
@@ -34,8 +34,8 @@ list_max([H|T], R):-
 
 %del_sublists(+L:list, -R:number)
 %del_sublists(l1..ln) = [], n = 0
-%					  = l1 + del_sublists(l2..ln), not(is_list(l1))
-%					  = del_sublists(l2..ln), is_list(l1)
+%		      = l1 + del_sublists(l2..ln), not(is_list(l1))
+%		      = del_sublists(l2..ln), is_list(l1)
 
 del_sublists([], []).
 del_sublists([H|T], [H|R]):-
@@ -54,8 +54,8 @@ pure_max(L, R):-
 
 %main(+L:list, +M:number, -R:list)
 %main(l1..ln, m) = [], n = 0
-%			     = l1 + main(l2..ln), not(is_list(l1))
-%			     = replace(l1, m, list_max(l1)) + main(l2..ln), is_list(l1)
+%		 = l1 + main(l2..ln), not(is_list(l1))
+%	         = replace(l1, m, list_max(l1)) + main(l2..ln), is_list(l1)
 
 main([], _, []).
 main([H|T], M, [H|R]):-
@@ -70,7 +70,7 @@ main([H|T], M, [REP|R]):-
 
 %main(+L:list, -R:list)
 %main(l1..ln) = [], n = 0
-%			  = main(l1..ln, pure_max(l1..ln))
+%		      = main(l1..ln, pure_max(l1..ln))
 
 main([], []).
 main(L, R):-
