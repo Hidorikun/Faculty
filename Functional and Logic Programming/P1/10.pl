@@ -11,6 +11,10 @@
 %			       = valley_parse(l2..ln, 1), l1 < l2
 %			       = valley_parse(l2..ln, 0), l1 > l2 && flag == 0
 %			       = false, otherwise
+% n represents the number of elements that are in decreaseing order at the beginning of the list
+% so for [4, 3, 2, 4, 5], N would be size of [4, 3, 2]
+% because a valley must have at least 2 numbers in decreasing order, and without this, 
+% lists like [1, 2, 3] would be considered a valley.
 
 valley_parse([_], 1, N):-
 	N > 0.
