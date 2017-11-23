@@ -14,18 +14,18 @@ merge_sort(L, R):-
 	split(L, LEFT, RIGHT),
 	merge_sort(LEFT, RL),
 	merge_sort(RIGHT, RR),
-	unite(RL, RR, R).
+	merge(RL, RR, R).
 
-%unite(+A:list, +B:list, -R:list)
+%merge(+A:list, +B:list, -R:list)
 
-unite([], B, B).
-unite(A, [], A).
-unite([HA|TA], [HB|TB], [HA|R]):-
+merge([], B, B).
+merge(A, [], A).
+merge([HA|TA], [HB|TB], [HA|R]):-
 	HA =< HB,
-	unite(TA, [HB|TB], R).
-unite([HA|TA], [HB|TB], [HB|R]):-
+	merge(TA, [HB|TB], R).
+merge([HA|TA], [HB|TB], [HB|R]):-
 	HB < HA,
-	unite([HA|TA], TB, R).
+	merge([HA|TA], TB, R).
 
 
 %split(+L:list, +AUX:list, -LEFT:list, -RIGHT:list)
