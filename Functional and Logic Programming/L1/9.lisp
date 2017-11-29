@@ -42,6 +42,48 @@
 (print (_replace '(1 (2 1 2) 2 2 ( 2 ( 1 ) )) 1 '(3 3) ))
 ; => (3 3 (2 3 3 2) 2 2 (2 (3 3)))
 
+; c)
+(defun normalize (a b)
+	(cond
+		((= (list-length a) (list-length b)) (list a b))
+		((< (list-length a) (list-length b)) (normalize (cons 0 a) b))
+		((> (list-length a) (list-length b)) (normalize a (cons 0 b)))
+	)
+)
+
+(print ( normalize '(1 2 3) '(4 5 6 7 8) ))
+; => '( '(0 0 1 2 3) '( 4 5 6 7 8) )
+
+(defun sum-carry (a b)
+	(cond
+		((null a) (list nil 0 ))
+		(T (progn
+			(setf result (sum-carry (cdr a) (cdr b)))
+			(setf sum (+ (+ (car a) (car b)) (cadr result)))
+			(setf digit ( mod sum 10))
+			(setf carry (floor sum 10))
+			(list (cons digit (car result)) carry)
+		))
+	)
+)
+
+(print (sum-carry '(1 2 3) '(2 3 4)))
+; => '( '(3 5 7) 0)
+
+(defun sum (a b)
+	(progn
+		(setf normalized-lists (normalize a b))
+		(setf result (sum-carry (car normalized-lists) (cadr normalized-lists)))
+		(if (= (cadr result) 1)
+			(cons 1 (car result))
+			(car result)
+		)
+	)
+)
+
+(print (sum '(9 9 9) '(1)))
+; => '( 1 0 0 0 )
+
 ; d)
 (defun _gcd (a b)
 		(if (= b 0) a (_gcd b (mod a b)))
