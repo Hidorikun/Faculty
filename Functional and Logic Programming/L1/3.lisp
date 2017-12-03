@@ -41,27 +41,15 @@
 ; => 6
 
 ; c)
-(defun _merge-unsorted (a b)
+(defun _reverse (l)
 	(cond
-		((null a) b)
-		(T (cons (car a) (_merge-unsorted (cdr a) b)))
+		((null l) nil)
+		((listp (car l)) (append (_reverse (cdr l)) (_reverse (car l))))
+		(T (append (_reverse (cdr l)) (list (car l))))
 	)
 )
 
-(print (_merge-unsorted '(1 2) '(4 5)) )
-; => (1 2 4 5)
-
-; (defun _reverse (l)
-; 	(print l)
-; 	(cond
-; 		((null l) nil)
-; 		((and (= (list-length l) 1) (not (listp (car l)))) (list (car l)))
-; 		((listp (car l)) (_merge-unsorted (_reverse (cdr l)) (_reverse (car l))))
-; 		(T (cons (_reverse (cdr l)) (car l)))
-; 	)
-; )
-;
-; (print (_reverse '(((A B) C) (D E))))
+(print (_reverse '(((A B) C) (D E))))
 ; => (E D C B A)
 
 ; d)
