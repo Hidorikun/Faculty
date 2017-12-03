@@ -20,21 +20,11 @@
 ; => (1 2 3 3 4 4 5 7)
 
 ; b)
-(defun _merge-unsorted (a b)
-	(cond
-		((null a) b)
-		(T (cons (car a) (_merge-unsorted (cdr a) b)))
-	)
-)
-
-(print (_merge-unsorted '(1 2) '(4 5)) )
-; => (1 2 4 5)
-
 (defun _replace (l e r)
 		(cond
 			((null l) nil)
 			((listp	(car l)) (cons (_replace (car l) e r) (_replace (cdr l) e r)))
-			((= (car l) e) (_merge-unsorted r (_replace (cdr l) e r)))
+			((= (car l) e) (append r (_replace (cdr l) e r)))
 			(T (cons (car l) (_replace (cdr l) e r)))
 		)
 )
