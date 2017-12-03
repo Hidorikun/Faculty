@@ -17,7 +17,6 @@
 ; => 1*4 + 2*5 + 3*6 = 32
 
 ; b)
-
 (defun list-depth (a depth)
 	(cond
 		((null a) depth)
