@@ -1,6 +1,6 @@
 ; 1.
 ; a) Write a function to return the n-th element of a list, or NIL if such an element does not exist.
-; b) Write a function to check whether an atom E is a member of a list which is not necessarily linear.
+; b) Write a function to check whether an atom E is a _member of a list which is not necessarily linear.
 ; c) Write a function to determine the list of all sublists of a given list, on any level.
 ;  A sublist is either the list itself, or any element that is a list, at any level. Example:
 ;  (1 2 (3 (4 5) (6 7)) 8 (9 10)) => 5 sublists :
@@ -20,33 +20,25 @@
 ; => 3
 
 ; b)
-(defun member (l e)
+(defun _member (l e)
 	(cond
 		((null l) nil)
-		((listp (car l)) (or (member (car l) e) (member (cdr l) e)))
+		((listp (car l)) (or (_member (car l) e) (_member (cdr l) e)))
 		((= (car l) e) T)
-		(T (member (cdr l) e))
+		(T (_member (cdr l) e))
 	)
 )
 
-(print (member '(1 (2 3) (4 (5 6))) 3))
+(print (_member '(1 (2 3) (4 (5 6))) 3))
 ; => T
 
 ; c)
-(defun _merge-unsorted (a b)
-	(cond
-		((null a) b)
-		(T (cons (car a) (_merge-unsorted (cdr a) b)))
-	)
-)
 
-(print (_merge-unsorted '(1 2) '(4 5)) )
-; => (1 2 4 5)
 (defun sublists (l first-touch)
 	(cond
 		((null l) nil)
 		((= first-touch 1) (cons l (sublists l 0)))
-		((listp (car l)) (_merge-unsorted (sublists (car l) 1) (sublists (cdr l) 0)))
+		((listp (car l)) (append (sublists (car l) 1) (sublists (cdr l) 0)))
 		(T (sublists (cdr l) 0))
 	)
 )
@@ -59,7 +51,7 @@
 		nil
 		(progn
 			(setf result (make-set (cdr l)))
-			(if (member result (car l))
+			(if (_member result (car l))
 				result
 				(cons (car l) result)
 			)
