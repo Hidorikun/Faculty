@@ -21,6 +21,6 @@ public class Assignment implements IStatement {
     public ProgramState exec(ProgramState state) {
         int value = exp.eval(state);
         state.getSymTable().put(var, value);
-        return state;
+        return null;
     }
 }

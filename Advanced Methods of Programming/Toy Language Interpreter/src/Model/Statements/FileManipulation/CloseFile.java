@@ -25,7 +25,7 @@ public class CloseFile implements IStatement {
         }
         state.getFileTable().remove(fileId);
 
-        return state;
+        return null;
     }
 
     @Override

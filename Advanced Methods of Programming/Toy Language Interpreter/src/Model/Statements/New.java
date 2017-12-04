@@ -16,7 +16,7 @@ public class New implements IStatement {
     public ProgramState exec(ProgramState state) {
         int memLocation = state.getHeap().put(expression.eval(state));
         state.getSymTable().put(varName, memLocation);
-        return state;
+        return null;
     }
 
     @Override

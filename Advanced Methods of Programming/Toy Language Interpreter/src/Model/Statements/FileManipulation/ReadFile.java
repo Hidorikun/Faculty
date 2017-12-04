@@ -34,7 +34,7 @@ public class ReadFile implements IStatement {
         }
 
         state.getSymTable().put(varName, value);
-        return state;
+        return null;
     }
 
     @Override

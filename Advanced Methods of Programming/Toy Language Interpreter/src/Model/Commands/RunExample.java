@@ -13,7 +13,7 @@ public class RunExample extends Command {
     @Override
     public void execute() {
         try{
-            System.out.println(controller.getProgram().toString());
+            System.out.println(controller.toString());
             controller.allStep();
             System.out.println(controller.getOutput());
         }

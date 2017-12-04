@@ -25,7 +25,7 @@ public class If implements IStatement {
             return thenS.exec(state);
         }
         if (elseS == null){
-            return state;
+            return null;
         }
         return elseS.exec(state);
     }

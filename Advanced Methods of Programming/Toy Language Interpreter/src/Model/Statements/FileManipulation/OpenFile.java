@@ -25,7 +25,7 @@ public class OpenFile implements IStatement {
         int fileId = state.getFileTable().put(new Pair<>(fileName, bufferedFileReader));
         state.getSymTable().put(varName, fileId);
 
-        return state;
+        return null;
     }
 
     @Override

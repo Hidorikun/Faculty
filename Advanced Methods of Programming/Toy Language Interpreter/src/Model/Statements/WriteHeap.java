@@ -16,7 +16,7 @@ public class WriteHeap implements IStatement {
     public ProgramState exec(ProgramState state) {
         int memLocation = state.getSymTable().get(varName);
         state.getHeap().put(memLocation, expression.eval(state));
-        return state;
+        return null;
     }
 
     @Override

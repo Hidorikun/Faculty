@@ -16,15 +16,22 @@ public class ToyProgramsRepository {
         toyProgramList.add(prg);
     }
 
-    public ToyProgram getPrg(){
-        return toyProgramList.get(0);
-    }
+    public List<ToyProgram> getPrgList(){ return toyProgramList; }
 
-    public void logPrgState(ToyProgram prg) throws IOException {
+    public void setPrgList( List<ToyProgram> prgList){ this.toyProgramList = prgList;}
+
+    public void logPrgState(ToyProgram prg)  {
         try(PrintWriter logFile = new PrintWriter(new BufferedWriter(new FileWriter(logFilePath, true)))){
+            logFile.println(prg.getID().toString() + "\n");
             logFile.println(prg.getState().toString()+"\n");
             logFile.close();
+        } catch (IOException e) {
+            e.printStackTrace();
         }
+    }
+
+    public ToyProgram first(){
+        return this.toyProgramList.get(0);
     }
 
     @Override

@@ -256,6 +256,59 @@ public class Interpreter {
             ToyProgramsRepository repo7 = new ToyProgramsRepository(prg7, "data/prg7.txt");
             ToyProgramController ctrl7 = new ToyProgramController(repo7);
 
+            ToyProgram prg8 = new ToyProgram(
+                    new Composite(
+                            new Assignment(
+                                    "v",
+                                    new Constant(10)
+                            ),
+                            new Composite(
+                                    new New(
+                                            "a",
+                                            new Constant(22)
+                                    ),
+                                    new Composite(
+                                            new Fork(
+                                                    new Composite(
+                                                            new WriteHeap(
+                                                                    "a",
+                                                                    new Constant(30)
+                                                            ),
+                                                            new Composite(
+                                                                    new Assignment(
+                                                                            "v",
+                                                                            new Constant(32)
+                                                                    ),
+                                                                    new Composite(
+                                                                            new Print(
+                                                                                    new Variable("v")
+                                                                            ),
+                                                                            new Print(
+                                                                                    new ReadHeap("a")
+                                                                            )
+                                                                    )
+                                                            )
+
+                                                    )
+
+                                            ),
+                                            new Composite(
+                                                    new Print(
+                                                            new Variable("v")
+                                                    ),
+                                                    new Print(
+                                                            new ReadHeap("a")
+                                                    )
+                                            )
+
+                                    )
+                            )
+                    )
+            );
+
+            ToyProgramsRepository repo8 = new ToyProgramsRepository(prg8, "data/prg8.txt");
+            ToyProgramController ctrl8 = new ToyProgramController(repo8);
+
             TextMenu textMenu = new TextMenu();
             textMenu.addCommand(new ExitCommand("exit", "exit the interpreter" )) ;
             textMenu.addCommand(new RunExample("1", "run program 1", ctrl1));
@@ -265,6 +318,7 @@ public class Interpreter {
             textMenu.addCommand(new RunExample("5", "run program 5", ctrl5));
             textMenu.addCommand(new RunExample("6", "run program 6", ctrl6));
             textMenu.addCommand(new RunExample("7", "run program 7", ctrl7));
+            textMenu.addCommand(new RunExample("8", "run program 8", ctrl8));
 
             textMenu.show();
         }

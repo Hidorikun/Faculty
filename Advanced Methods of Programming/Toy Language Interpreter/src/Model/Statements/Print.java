@@ -17,6 +17,6 @@ public class Print implements IStatement {
 
     public ProgramState exec(ProgramState state){
         state.appendOutput(exp.eval(state) + "\n");
-        return state;
+        return null;
     }
 }

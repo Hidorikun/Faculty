@@ -17,7 +17,7 @@ public class Composite implements IStatement {
         MyIStack<IStatement> stk = state.getExeStack();
         stk.push(second);
         stk.push(first);
-        return state;
+        return null;
     }
 
     @Override
