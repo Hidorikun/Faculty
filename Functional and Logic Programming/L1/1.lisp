@@ -48,8 +48,8 @@
 
 ; d)
 (defun make-set (l)
-	(if
-		(null l) nil
+	(if (null l)
+		nil
 		(progn
 			(setf result (make-set (cdr l)))
 			(if (_member result (car l))
