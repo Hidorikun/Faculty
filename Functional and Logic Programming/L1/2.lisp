@@ -39,7 +39,6 @@
 	)
 )
 
-(print (insert (insert nil 3) 2))
 (print (insert (insert (insert (insert nil 4) 3) 6) 1))
 ; => '(1 3 4 6)
 

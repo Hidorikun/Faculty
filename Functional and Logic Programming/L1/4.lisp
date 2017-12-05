@@ -13,6 +13,9 @@
 	(cons (+ x1 x2) (+ y1 y2))
 )
 
+(print (sum-vectors (1 2 3 4)))
+;=> '(4 6)
+
 ; b)
 (defun deparanthesise (l)
 	(cond
@@ -34,9 +37,6 @@
 	)
 )
 
-(print (reverse-atoms '(a b c) nil))
-(print (reverse-atoms '(a b ()) nil ))
-(print (reverse-atoms '(a b (1) c d (2)) nil))
 (print (reverse-atoms '(a b c (d (e f) g h i)) nil))
 ; => (c b a (d (f e) i h g))
 
@@ -50,3 +50,4 @@
 )
 
 (print (superficial-max '(1 2 4 2 (8 (10 9)))))
+; => 4

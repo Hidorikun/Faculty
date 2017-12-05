@@ -42,13 +42,14 @@
 		(T (sublists (cdr l) 0))
 	)
 )
+
 (print (sublists '(1 2 (3 (4 5) (6 7)) 8 (9 10)) 1))
 ; => ( (1 2 (3 (4 5) (6 7)) 8 (9 10)) (3 (4 5) (6 7)) (4 5) (6 7) (9 10) )
 
 ; d)
 (defun make-set (l)
-	(if (null l)
-		nil
+	(if
+		(null l) nil
 		(progn
 			(setf result (make-set (cdr l)))
 			(if (_member result (car l))
@@ -58,5 +59,6 @@
 		)
 	)
 )
+
 (print (make-set '(1 2 3 1 3 1 4)))
 ; => ''(2 3 1 4) order not kept!
