@@ -13,7 +13,7 @@
 	(cons (+ x1 x2) (+ y1 y2))
 )
 
-(print (sum-vectors (1 2 3 4)))
+(print (sum-vectors 1 2 3 4))
 ;=> '(4 6)
 
 ; b)
