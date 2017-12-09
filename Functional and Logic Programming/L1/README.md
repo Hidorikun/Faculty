@@ -85,7 +85,7 @@ d) Write a function to return the greatest common divisor of all numbers in a li
 a) Write a function to return the product of all the numerical atoms from a list, at superficial level.
 b) Write a function to replace the first occurence of an element E in a given list with an other element
 O.
-c) Write a function to compute the result of an arithmetic expression memorised
+c) Write a function to compute the result of an arithmetic expression memorized
  in preorder on a stack. Examples:
  (+ 1 3) ==> 4 (1 + 3)
  (+ * 2 4 3) ==> 11 [((2 * 4) + 3)
@@ -98,7 +98,7 @@ parameter list. Example:
 a) Determine the least common multiple of the numerical values of a nonlinear list.
 b) Write a function to test if a linear list of numbers has a "mountain" aspect (a list has a "mountain"
 aspect if the items increase to a certain point and then decreases.
- Eg. (10 18 29 17 11 10). The list must have at least 3 atoms to fullfil this criteria.
+ Eg. (10 18 29 17 11 10). The list must have at least 3 atoms to fulfil this criteria.
 c) Remove all occurrences of a maximum numerical element from a nonlinear list.
 d) Write a function which returns the product of numerical even atoms from a list, to any level.
 
@@ -106,7 +106,7 @@ d) Write a function which returns the product of numerical even atoms from a lis
 a) Write a function to return the dot product of two vectors. https://en.wikipedia.org/wiki/Dot_product
 b) Write a function to return the maximum value of all the numerical atoms of a list, at any level.
 c) All permutations to be replaced by: Write a function to compute the result of an arithmetic
-expression memorised
+expression memorized
  in preorder on a stack. Examples:
  (+ 1 3) ==> 4 (1 + 3)
  (+ * 2 4 3) ==> 11 [((2 * 4) + 3)
@@ -118,7 +118,7 @@ the contrary case, without counting the elements of the list.
 a) A linear list is given. Eliminate from the list all elements from N to N steps, N-given.
 b) Write a function to test if a linear list of integer numbers has a "valley" aspect (a list has a valley
 aspect if the items decrease to a certain point and then increase. Eg. 10 8 6 17 19 20). A list must
-have at least 3 elements to fullfill this condition.
+have at least 3 elements to fulfill this condition.
 c) Build a function that returns the minimum numeric atom from a list, at any level.
 d) Write a function that deletes from a linear list of all occurrences of the maximum element.
 
