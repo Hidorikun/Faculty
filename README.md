@@ -1,5 +1,5 @@
 # Babes Bolyai University
-<h3>Computer Science (english)  </h3>
+<h3>:computer: Computer Science (english)  </h3>
 
 Sem 1: 
 * :bookmark: [Computer System Architecture](https://github.com/Hidorikun/Faculty/tree/master/Computer%20System%20Architecture)
