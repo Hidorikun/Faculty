@@ -9,3 +9,4 @@ Sem 3:
 * :bookmark: [Databases](https://github.com/Hidorikun/Faculty/tree/master/Databases)
 * :bookmark: [Functional and Logic Programming](https://github.com/Hidorikun/Faculty/tree/master/Functional%20and%20Logic%20Programming)
 * :bookmark: [Networking]( https://github.com/Hidorikun/Faculty/tree/master/Networking)
+* :bookmark: [Probability and Statistics]( https://github.com/Hidorikun/Faculty/tree/master/Probability%20and%20Statistics)
