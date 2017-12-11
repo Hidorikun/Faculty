@@ -11,14 +11,14 @@ public class ProgramState {
     private MyIDictionary<String, Integer> symTable;
     private MyIFileTable<Pair<String, BufferedReader>> fileTable;
     private MyIHeap<Integer> heap;
-    private String output;
+    private StringBuffer output;
 
     public ProgramState(){
         exeStack  = new MyStack<>();
         symTable  = new MyDictionary<>();
         fileTable = new MyFileTable<>();
         heap      = new MyHeap<>();
-        output    = "";
+        output    = new StringBuffer();
     }
 
     public MyIHeap<Integer> getHeap() {
@@ -59,15 +59,19 @@ public class ProgramState {
     }
 
     public String getOutput() {
+        return output.toString();
+    }
+
+    public StringBuffer getOutputBuffer(){
         return output;
     }
 
-    public void setOutput(String output) {
-        this.output = output;
+    public void setOutputBuffer(StringBuffer stringBuffer){
+        this.output = stringBuffer;
     }
 
     public void appendOutput(String s){
-        this.output = this.output + s;
+        this.output.append(s);
     }
 
     public String toString(){

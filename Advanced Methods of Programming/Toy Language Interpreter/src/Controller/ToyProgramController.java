@@ -28,8 +28,6 @@ public class ToyProgramController {
                 .map((ToyProgram p) -> (Callable<ToyProgram>)(p::oneStep))
                 .collect(Collectors.toList());
 
-        System.out.println("list size: " + callList.size());
-
         List<ToyProgram> newToyPrograms = executor.invokeAll(callList).stream()
                 .map(future -> {
                     try{
@@ -44,16 +42,6 @@ public class ToyProgramController {
 
         newToyPrograms.forEach(prg -> prg.setID(++globalID));
         toyPrograms.addAll(newToyPrograms);
-
-//        toyPrograms = toyPrograms.stream()
-//                .map(prg1 -> {
-//                    try {
-//                        return prg1.oneStep();
-//                    } catch (ProgramCompletedException e) {
-//                        return null;
-//                    }
-//                })
-//                .collect(Collectors.toList());
 
         toyPrograms.forEach(prg -> repo.logPrgState(prg));
 

@@ -309,6 +309,21 @@ public class Interpreter {
             ToyProgramsRepository repo8 = new ToyProgramsRepository(prg8, "data/prg8.txt");
             ToyProgramController ctrl8 = new ToyProgramController(repo8);
 
+            ToyProgram prg9 = new ToyProgram(
+                    new Composite(
+                            new Print(
+                                    new Constant(4)
+                            ),
+                        new Fork(
+                            new Print( new Constant(2))
+                        )
+
+                    )
+            );
+
+            ToyProgramsRepository repo9 = new ToyProgramsRepository(prg9, "data/prg9.txt");
+            ToyProgramController ctrl9 = new ToyProgramController(repo9);
+
             TextMenu textMenu = new TextMenu();
             textMenu.addCommand(new ExitCommand("exit", "exit the interpreter" )) ;
             textMenu.addCommand(new RunExample("1", "run program 1", ctrl1));
@@ -319,6 +334,7 @@ public class Interpreter {
             textMenu.addCommand(new RunExample("6", "run program 6", ctrl6));
             textMenu.addCommand(new RunExample("7", "run program 7", ctrl7));
             textMenu.addCommand(new RunExample("8", "run program 8", ctrl8));
+            textMenu.addCommand(new RunExample("9", "run program 9", ctrl9));
 
             textMenu.show();
         }

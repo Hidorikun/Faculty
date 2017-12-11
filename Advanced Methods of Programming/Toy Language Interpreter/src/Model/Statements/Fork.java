@@ -15,7 +15,7 @@ public class Fork implements IStatement {
         newPrgState.setExeStack(statement);
         newPrgState.setFileTable(state.getFileTable());
         newPrgState.setHeap(state.getHeap());
-        newPrgState.setOutput(state.getOutput());
+        newPrgState.setOutputBuffer(state.getOutputBuffer());
         newPrgState.setSymTable(state.getSymTable().copy());
 
         return newPrgState;
@@ -23,6 +23,6 @@ public class Fork implements IStatement {
 
     @Override
     public String toString(){
-        return "fork( " + statement.toString() + " )";
+        return "fork( " + statement.toString() + " ~)";
     }
 }
