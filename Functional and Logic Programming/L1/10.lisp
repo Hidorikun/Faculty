@@ -48,7 +48,7 @@
 (defun _expression (l)
 	(cond
 		((null l) nil)
-		((and (and (numberp (cadr l)) (numberp (caddr l))) (atom (car l)) (cons (__expression (car l) (cadr l) (caddr l)) (_expression(cdr (cdr (cdr l)))))))
+		((and (and (numberp (cadr l)) (numberp (caddr l))) (atom (car l))) (cons (__expression (car l) (cadr l) (caddr l)) (_expression(cdr (cdr (cdr l))))))
 		(T (cons (car l) (_expression (cdr l))))
 	)
 )
