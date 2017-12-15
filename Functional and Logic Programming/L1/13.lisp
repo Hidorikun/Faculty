@@ -46,13 +46,15 @@
 (defun list-min (l)
 	(cond
 		((= (list-length l) 1) (car l))
+		((listp (car l)) (min (list-min (car l)) (list-min (cdr l))))
 		(T (min (car l) (list-min (cdr l))))
 	)
 )
 
-(print (list-min '(1 2 3 1)))
-; => 1
+(print (list-min '(1 2 (0 1) 3 1)))
+; => 0
 
+; d)
 (defun remove-occurences (l e)
 	(cond
 		((null l) nil)
