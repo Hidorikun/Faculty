@@ -1,7 +1,15 @@
 ; 9. Convert a tree of type (1) to type (2).
 ; for example: (A 2 B 0 C 2 D 0 E 0) => (A (B) (C (D) (E)))
 
+; convert (l, stack) => converted_list
+; convert (l1...ln, s1..sn) = stack, l is null
+;   											  = convert( (l2) U l3..ln, s1..sn), number(l1) and (l1 == 0)
+; 												  = convert( (s1, l2 ) U l3..ln, s2..sn), number(l1) and (l1 == 1)
+;													  = convert( (s2 s1 l3) U s3...sn ), number(l1) and (l1 == 2)
 (defun _convert (l stack)
+	(print l)
+	(print stack)
+	(print "")
 	(cond
 		((null l) (car stack))
 
@@ -13,6 +21,10 @@
 	)
 )
 
+; reverse (l) => reversetd list
+; reverse (l1...ln) = nil, l is null
+; 							    = append(reverse(l2..ln), list(reverse(l1), l1 is list,
+; 								  = append(reverse(l2..ln), list(l1)), otherwise
 (defun _reverse (l)
 	(cond
 		((null l) nil)
@@ -23,6 +35,8 @@
 
 (print (_reverse '(1 2 (1 2 3) 3 4)))
 
+; convert(l) => converted list
+; convert(l1..ln) = reverse(convert(reverse(l), nil)))
 (defun convert (l)
 	(_reverse(_convert (_reverse l) nil))
 )
@@ -30,7 +44,7 @@
 (print (convert '(A 0)))
 ; => '(A)
 (print (convert '(A 1 B 0)))
-; ; => '(A (B))
+; => '(A (B))
 (print (convert '(A 2 B 1 C 2 D 0 E 0 F 1 G 0)))
 ; => (A (B) (C))
 (print (convert '(A 2 B 0 C 2 D 0 E 0)))
