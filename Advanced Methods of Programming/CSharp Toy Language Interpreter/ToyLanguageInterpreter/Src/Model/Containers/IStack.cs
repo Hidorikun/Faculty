@@ -1,9 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
+﻿
 namespace ToyLanguageInterpreter.Src.Model.Containers
 {
     interface IStack<T>
@@ -13,6 +8,6 @@ namespace ToyLanguageInterpreter.Src.Model.Containers
         T Pop();
         void Push(T item);
 
-        String ToString();
+        string ToString();
     }
 }

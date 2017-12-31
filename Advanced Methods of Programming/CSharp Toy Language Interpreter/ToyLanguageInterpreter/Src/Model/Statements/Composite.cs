@@ -1,5 +1,4 @@
-﻿using System;
-using ToyLanguageInterpreter.Src.Model;
+﻿using ToyLanguageInterpreter.Src.Model;
 using ToyLanguageInterpreter.Src.Model.Containers;
 using ToyLanguageInterpreter.Src.Model.Statements;
 

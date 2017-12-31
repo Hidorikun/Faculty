@@ -1,5 +1,4 @@
-﻿using System;
-using ToyLanguageInterpreter.Src.Model;
+﻿using ToyLanguageInterpreter.Src.Model;
 using ToyLanguageInterpreter.Src.Model.Expressions;
 
 namespace ToyLanguageInterpreter.Src.View

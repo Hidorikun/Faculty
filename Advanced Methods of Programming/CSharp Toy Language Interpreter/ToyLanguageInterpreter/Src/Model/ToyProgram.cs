@@ -1,5 +1,4 @@
-﻿using System;
-using ToyLanguageInterpreter.Src.Model.Exceptions;
+﻿using ToyLanguageInterpreter.Src.Model.Exceptions;
 using ToyLanguageInterpreter.Src.Model.Statements;
 
 namespace ToyLanguageInterpreter.Src.Model
