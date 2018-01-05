@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="773.0" prefWidth="1048.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI.Controllers.MainWindow">
+   <top>
+      <MenuBar prefHeight="0.0" prefWidth="609.0" BorderPane.alignment="CENTER">
+        <menus>
+          <Menu mnemonicParsing="false" text="File">
+            <items>
+              <MenuItem fx:id="selectProgram" mnemonicParsing="false" onAction="#selectProgram" text="Select program..." />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Edit">
+            <items>
+              <MenuItem fx:id="changeTheme" mnemonicParsing="false" text="Change Theme" />
+            </items>
+          </Menu>
+          <Menu mnemonicParsing="false" text="Help">
+            <items>
+              <MenuItem mnemonicParsing="false" text="About" />
+            </items>
+          </Menu>
+        </menus>
+      </MenuBar>
+   </top>
+   <left>
+      <VBox prefHeight="556.0" prefWidth="210.0" spacing="3.0" BorderPane.alignment="CENTER">
+         <children>
+            <HBox prefWidth="200.0">
+               <children>
+                  <Label prefHeight="21.0" prefWidth="216.0" text="Nr of PrgStates" />
+                  <TextField fx:id="prgStatesNr" />
+               </children>
+            </HBox>
+            <Label text="Symbol Table" />
+            <TableView fx:id="symTableView" prefHeight="200.0" prefWidth="200.0">
+              <columns>
+                <TableColumn fx:id="symVarColumn" prefWidth="106.0" text="Variable" />
+                <TableColumn fx:id="symValueColumn" minWidth="100.0" prefWidth="103.0" text="Value" />
+              </columns>
+            </TableView>
+            <Label text="Heap" />
+            <TableView fx:id="heapView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="heapAddrColumn" maxWidth="109.0" minWidth="100.0" prefWidth="106.0" text="Address" />
+                <TableColumn fx:id="heapValueColumn" prefWidth="103.0" text="Value" />
+              </columns>
+            </TableView>
+            <Label text="File Table" />
+            <TableView fx:id="fileTableView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
+              <columns>
+                <TableColumn fx:id="fileHandleColumn" prefWidth="106.0" text="Handle" />
+                <TableColumn fx:id="fileNameColumn" prefWidth="103.0" text="File" />
+              </columns>
+            </TableView>
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+      </VBox>
+   </left>
+   <right>
+      <VBox prefHeight="556.0" prefWidth="210.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Stack" />
+            <ListView fx:id="stackView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
+            <Label text="Threads" />
+            <ListView fx:id="threadView" onMouseClicked="#selectThread" prefHeight="197.0" prefWidth="117.0" />
+         </children>
+      </VBox>
+   </right>
+   <center>
+      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label text="Program" />
+            <ListView fx:id="programView" prefHeight="465.0" prefWidth="628.0" />
+            <Label text="Output" />
+            <ListView fx:id="outputView" prefHeight="229.0" prefWidth="628.0" VBox.vgrow="ALWAYS" />
+            <HBox>
+               <children>
+                  <Region HBox.hgrow="ALWAYS" />
+                  <Button mnemonicParsing="false" onAction="#runOneStep" prefHeight="21.0" prefWidth="227.0" text="Run one step" />
+                  <Region HBox.hgrow="ALWAYS" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </center>
+   <bottom>
+      <HBox BorderPane.alignment="CENTER">
+         <children>
+            <Label prefHeight="21.0" prefWidth="143.0" text="\@VeleGeorge 2018" />
+            <Region HBox.hgrow="ALWAYS" />
+         </children>
+      </HBox>
+   </bottom>
+</BorderPane>

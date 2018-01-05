@@ -2,20 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="778cf148-db7b-4e22-ad73-75df607ae81c" name="Default" comment="Added JavaFX GUI.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/SelectProgram.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/View/TextMenu.java" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Util/ProgramGenerator.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/Controllers/MainWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/Controllers/SelectProgramWindow.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/Main.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/Views/MainWindow.fxml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/Views/SelectProgram.fxml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/ToyProgramController.java" afterPath="$PROJECT_DIR$/src/Controller/ToyProgramController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Interpreter.java" afterPath="$PROJECT_DIR$/src/Interpreter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Containers/MyDictionary.java" afterPath="$PROJECT_DIR$/src/Model/Containers/MyDictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Containers/MyFileTable.java" afterPath="$PROJECT_DIR$/src/Model/Containers/MyFileTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Containers/MyHeap.java" afterPath="$PROJECT_DIR$/src/Model/Containers/MyHeap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Containers/MyIDictionary.java" afterPath="$PROJECT_DIR$/src/Model/Containers/MyIDictionary.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Containers/MyIFileTable.java" afterPath="$PROJECT_DIR$/src/Model/Containers/MyIFileTable.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Containers/MyIHeap.java" afterPath="$PROJECT_DIR$/src/Model/Containers/MyIHeap.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Containers/MyIStack.java" afterPath="$PROJECT_DIR$/src/Model/Containers/MyIStack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Model/Containers/MyStack.java" afterPath="$PROJECT_DIR$/src/Model/Containers/MyStack.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Util/Pair.java" afterPath="$PROJECT_DIR$/src/Util/Pair.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -56,11 +49,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Interpreter.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Interpreter.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="326" column="73" lean-forward="true" selection-start-line="326" selection-start-column="73" selection-end-line="326" selection-end-column="73" />
+            <state relative-caret-position="577">
+              <caret line="344" column="47" lean-forward="true" selection-start-line="344" selection-start-column="47" selection-end-line="344" selection-end-column="47" />
               <folding />
             </state>
           </provider>
@@ -105,16 +98,6 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="MyIFileTable.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/Model/Containers/MyIFileTable.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="231">
-              <caret line="15" column="26" lean-forward="false" selection-start-line="15" selection-start-column="26" selection-end-line="15" selection-end-column="26" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="MyFileTable.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Model/Containers/MyFileTable.java">
           <provider selected="true" editor-type-id="text-editor">
@@ -135,15 +118,22 @@
       <file leaf-file-name="SelectProgram.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/GUI/Views/SelectProgram.fxml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="294">
-              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-              <folding>
-                <marker date="1515176260400" expanded="true" signature="580:1156" ph="..." />
-                <marker date="1515176260400" expanded="true" signature="600:988" ph="..." />
-                <marker date="1515176260400" expanded="true" signature="1017:1070" ph="..." />
-                <marker date="1515176260400" expanded="true" signature="1089:1142" ph="..." />
-                <marker date="1515176260400" expanded="true" signature="1182:1259" ph="..." />
-              </folding>
+            <state relative-caret-position="126">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="MainWindow.fxml" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/View/GUI/Views/MainWindow.fxml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="210">
+              <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+              <folding />
             </state>
           </provider>
           <provider editor-type-id="JavaFX-Scene-Builder">
@@ -247,7 +237,6 @@
         <option value="$PROJECT_DIR$/src/View/GUI/GUIInterface.java" />
         <option value="$PROJECT_DIR$/src/View/GUI/Controller.fxml" />
         <option value="$PROJECT_DIR$/src/View/GUI/Controllers/Controller.java" />
-        <option value="$PROJECT_DIR$/src/View/GUI/Views/SelectProgram.fxml" />
         <option value="$PROJECT_DIR$/src/View/GUI/Controllers/SelectProgram.java" />
         <option value="$PROJECT_DIR$/src/Util/ProgramGenerator.java" />
         <option value="$PROJECT_DIR$/src/Util/Pair.java" />
@@ -255,7 +244,6 @@
         <option value="$PROJECT_DIR$/src/Model/Containers/MyStack.java" />
         <option value="$PROJECT_DIR$/src/Model/Containers/MyIHeap.java" />
         <option value="$PROJECT_DIR$/src/Model/Containers/MyHeap.java" />
-        <option value="$PROJECT_DIR$/src/View/GUI/Views/MainWindow.fxml" />
         <option value="$PROJECT_DIR$/src/Model/Containers/MyIDictionary.java" />
         <option value="$PROJECT_DIR$/src/Model/Containers/MyDictionary.java" />
         <option value="$PROJECT_DIR$/src/View/GUI/Main.java" />
@@ -265,6 +253,8 @@
         <option value="$PROJECT_DIR$/src/Controller/ToyProgramController.java" />
         <option value="$PROJECT_DIR$/src/View/GUI/Controllers/MainWindow.java" />
         <option value="$PROJECT_DIR$/src/View/GUI/SelectProgram.java" />
+        <option value="$PROJECT_DIR$/src/View/GUI/Views/SelectProgram.fxml" />
+        <option value="$PROJECT_DIR$/src/View/GUI/Views/MainWindow.fxml" />
       </list>
     </option>
   </component>
@@ -592,7 +582,14 @@
       <option name="project" value="LOCAL" />
       <updated>1510600749389</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added JavaFX GUI.">
+      <created>1515176459204</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1515176459204</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -601,13 +598,13 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289183" sideWeight="0.5375" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289183" sideWeight="0.5375" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23620309" sideWeight="0.5125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.30463576" sideWeight="0.4875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.30463576" sideWeight="0.4875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44701988" sideWeight="0.49375" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -636,7 +633,8 @@
     <MESSAGE value="Added Boolean and Arithmetic Expressions." />
     <MESSAGE value="Added Boolean and Arithmetic Expressions.&#10;Added While statement." />
     <MESSAGE value="Added Boolean and Arithmetic Expressions + while statement" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Boolean and Arithmetic Expressions + while statement" />
+    <MESSAGE value="Added JavaFX GUI." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added JavaFX GUI." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -883,45 +881,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/GUI/Views/MainWindow.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1323">
-          <caret line="9" column="80" lean-forward="true" selection-start-line="9" selection-start-column="80" selection-end-line="9" selection-end-column="80" />
-          <folding>
-            <marker date="1515176335979" expanded="true" signature="916:959" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="916:941" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="1012:1135" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="1032:1117" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="1189:2874" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="1283:2863" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="1303:2767" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="1340:1552" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="1366:1532" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="1676:1940" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="1700:1915" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="2072:2355" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="2096:2330" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="2498:2746" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="2522:2721" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="2796:2849" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="2885:3316" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="2965:3304" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="2985:3290" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="3328:4054" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="3408:4041" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="3428:4027" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="3703:4006" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="3729:3986" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="4066:4303" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="4109:4290" ph="..." />
-            <marker date="1515176335979" expanded="true" signature="4129:4276" ph="..." />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
-    </entry>
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/javafx-src.zip!/javafx/fxml/FXMLLoader.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="200">
@@ -982,23 +941,6 @@
             <element signature="e#801#802#0" expanded="true" />
           </folding>
         </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/GUI/Views/SelectProgram.fxml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="294">
-          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
-          <folding>
-            <marker date="1515176260400" expanded="true" signature="580:1156" ph="..." />
-            <marker date="1515176260400" expanded="true" signature="600:988" ph="..." />
-            <marker date="1515176260400" expanded="true" signature="1017:1070" ph="..." />
-            <marker date="1515176260400" expanded="true" signature="1089:1142" ph="..." />
-            <marker date="1515176260400" expanded="true" signature="1182:1259" ph="..." />
-          </folding>
-        </state>
-      </provider>
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/GUI/Main.java">
@@ -1066,10 +1008,32 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Interpreter.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="326" column="73" lean-forward="true" selection-start-line="326" selection-start-column="73" selection-end-line="326" selection-end-column="73" />
+        <state relative-caret-position="577">
+          <caret line="344" column="47" lean-forward="true" selection-start-line="344" selection-start-column="47" selection-end-line="344" selection-end-column="47" />
           <folding />
         </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI/Views/SelectProgram.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="126">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI/Views/MainWindow.fxml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="210">
+          <caret line="20" column="11" lean-forward="false" selection-start-line="20" selection-start-column="11" selection-end-line="20" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
       </provider>
     </entry>
   </component>
