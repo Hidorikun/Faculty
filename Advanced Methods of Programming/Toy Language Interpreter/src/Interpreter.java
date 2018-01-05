@@ -13,7 +13,9 @@ import Model.Statements.FileManipulation.OpenFile;
 import Model.Statements.FileManipulation.ReadFile;
 import Model.ToyProgram;
 import Repository.ToyProgramsRepository;
-import View.TextMenu;
+import View.CLI.TextMenu;
+
+import static javafx.application.Application.launch;
 
 public class Interpreter {
 
@@ -335,6 +337,7 @@ public class Interpreter {
             textMenu.addCommand(new RunExample("7", "run program 7", ctrl7));
             textMenu.addCommand(new RunExample("8", "run program 8", ctrl8));
             textMenu.addCommand(new RunExample("9", "run program 9", ctrl9));
+
 
             textMenu.show();
         }

@@ -2,6 +2,7 @@ package Model.Containers;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MyHeap<V> implements MyIHeap<V>{
     private Map<Integer, V> heap;
@@ -61,6 +62,11 @@ public class MyHeap<V> implements MyIHeap<V>{
     @Override
     public Map<Integer, V> getContent() {
         return heap;
+    }
+
+    @Override
+    public Set<Integer> keySet() {
+        return heap.keySet();
     }
 
 

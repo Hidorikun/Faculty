@@ -2,6 +2,7 @@ package Model.Containers;
 
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 
 public class MyDictionary<K, V> implements MyIDictionary<K, V> {
 
@@ -39,6 +40,11 @@ public class MyDictionary<K, V> implements MyIDictionary<K, V> {
     @Override
     public void setContent(Map<K, V> content){
         this.content = content;
+    }
+
+    @Override
+    public Set<K> keySet() {
+        return content.keySet();
     }
 
     public String toString(){

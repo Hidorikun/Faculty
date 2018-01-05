@@ -12,10 +12,12 @@ public class Pair<FIRST,SECOND> {
     public FIRST getFirst() {
         return first;
     }
-
     public SECOND getSecond() {
         return second;
     }
+
+    public void setFirst(FIRST e){ first = e;}
+    public void setSecond(SECOND e){ second = e;}
 
     @Override
     public String toString() {

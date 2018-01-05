@@ -5,6 +5,7 @@ import Util.Pair;
 import java.io.Reader;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Set;
 import java.util.stream.Stream;
 
 public class MyFileTable<V> implements MyIFileTable<V> {
@@ -35,6 +36,11 @@ public class MyFileTable<V> implements MyIFileTable<V> {
     @Override
     public Stream stream(){
         return dict.keySet().stream();
+    }
+
+    @Override
+    public Set<Integer> keySet() {
+        return dict.keySet();
     }
 
     public String toString(){

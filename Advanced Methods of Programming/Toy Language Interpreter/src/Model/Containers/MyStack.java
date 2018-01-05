@@ -1,5 +1,9 @@
 package Model.Containers;
 
+import java.awt.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 import java.util.Stack;
 
 public class MyStack<T> implements MyIStack<T> {
@@ -47,5 +51,17 @@ public class MyStack<T> implements MyIStack<T> {
         }
 
         return result.toString();
+    }
+
+    @Override
+    public List<T> values(){
+        List<T> result = new ArrayList<>();
+        Stack<T> aux = (Stack<T>) stack.clone();
+
+        while(!aux.empty()){
+            result.add(aux.pop());
+        }
+
+        return result;
     }
 }
