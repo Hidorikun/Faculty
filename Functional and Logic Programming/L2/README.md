@@ -11,11 +11,11 @@ As an example, the tree
 
 A
 
-/ \\
+/ \
 
 B C
 
-/ \\
+/ \
 
 D E
 
