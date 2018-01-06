@@ -8,10 +8,10 @@
 %	        = subset(l2..ln)
 
 subset([], []).
-subset([E|Tail], [E|NTail]):-
-  subset(Tail, NTail).
-subset([_|Tail], NTail):-
-  subset(Tail, NTail).
+subset([H|T], [H|R]):-
+    subset(T, R).
+subset([_|T], R):-
+    subset(T, R).
 
 %is_sorted(+L:list)
 %is_sorted(l1..ln) = True, n = 0 || n = 1
@@ -32,3 +32,6 @@ process([], []).
 process(L, K):-
 	subset(L, K),
 	is_sorted(K).
+
+allsolutions(T, R):-
+    findall(AUX, process(T, AUX), R).
