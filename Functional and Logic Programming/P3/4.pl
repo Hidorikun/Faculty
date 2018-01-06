@@ -33,5 +33,7 @@ process(L, K):-
 	subset(L, K),
 	is_sorted(K).
 
-allsolutions(T, R):-
-    findall(AUX, process(T, AUX), R).
+%allsolutions(+L:List, -R:list)
+
+allsolutions(L, R):-
+    findall(AUX, process(L, AUX), R).
