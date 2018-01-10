@@ -17,5 +17,5 @@ process(L, N, R):-
 
 %allsolutions(+L:list, +N:number, -R:list)
 
-allsolutions(L, N, R):-
+all_solutions(L, N, R):-
 	findall(AUX, process(L, N, AUX), R).

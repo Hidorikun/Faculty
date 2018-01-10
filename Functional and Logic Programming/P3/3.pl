@@ -38,9 +38,9 @@ range(N, R):-
 	M is N - 1,
 	range_(M, R).
 
-%process(+N:number, -R:list)
+%one_solution(+N:number, -R:list)
 
-process(N, R):-
+one_solution(N, R):-
 	range(N, RANGE),
 	sublists(RANGE, R),
 	consecutive(R),
@@ -49,4 +49,4 @@ process(N, R):-
 %allsolutions(+N:number, -R:list)
 
 all_solutions(N, R):-
-	findall(AUX, process(N, AUX), R).
+	findall(AUX, one_solution(N, AUX), R).
