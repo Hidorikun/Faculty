@@ -41,8 +41,8 @@ so |v(i)-v(j)|=1.
 sum of elements divisible with n.
 
 
-11. “Colouring” a map. n countries are given; write a predicate to determine all possibilities of colouring n
-countries with m colours, such that two adjacent countries not having the same colour.
+11. “Coloring” a map. n countries are given; write a predicate to determine all possibilities of coloring n
+countries with m colors, such that two adjacent countries not having the same color.
 
 
 12. Generate all sub-strings of a length 2*n+1, formed from values of 0, 1 or -1, so a1 = ..., a2n+1 = 0 and
@@ -55,7 +55,7 @@ and then decrease).
 
 
 14. Write a program to generate the list of all subsets of sum S with the elements of a list (S - given).
-Eg: [1,2,3,4,5,6,10] si S=10 => [[1,2,3,4], [1,4,5], [2,3,5], [4,6], [10]] (not necessary in this order)
+Eg: [1,2,3,4,5,6,10] and S=10 => [[1,2,3,4], [1,4,5], [2,3,5], [4,6], [10]] (not necessary in this order)
 
 
 15. For a given n, positive, determine all decomposition of n as a sum of consecutive natural numbers.
