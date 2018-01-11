@@ -7,9 +7,6 @@
 ; 												  = convert( (s1, l2 ) U l3..ln, s2..sn), number(l1) and (l1 == 1)
 ;													  = convert( (s2 s1 l3) U s3...sn ), number(l1) and (l1 == 2)
 (defun _convert (l stack)
-	(print l)
-	(print stack)
-	(print "")
 	(cond
 		((null l) (car stack))
 
@@ -21,24 +18,10 @@
 	)
 )
 
-; reverse (l) => reversetd list
-; reverse (l1...ln) = nil, l is null
-; 							    = append(reverse(l2..ln), list(reverse(l1), l1 is list,
-; 								  = append(reverse(l2..ln), list(l1)), otherwise
-(defun _reverse (l)
-	(cond
-		((null l) nil)
-		((listp (car l)) (append (_reverse (cdr l)) (list (_reverse (car l)))))
-		(T (append (_reverse (cdr l)) (list (car l))))
-	)
-)
-
-(print (_reverse '(1 2 (1 2 3) 3 4)))
-
 ; convert(l) => converted list
 ; convert(l1..ln) = reverse(convert(reverse(l), nil)))
 (defun convert (l)
-	(_reverse(_convert (_reverse l) nil))
+	(reverse(_convert (reverse l) nil))
 )
 
 (print (convert '(A 0)))
