@@ -1,0 +1,365 @@
+1
+
+ExeStack:
+---+---
+openRFile(var_f, "data/test.in")
+-------
+---+---
+readFile("var_f", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+-------
+SymLink:
+FileTable:
+Heap:
+Output:
+
+
+1
+
+ExeStack:
+---+---
+readFile("var_f", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@8cb02cb
+Heap:
+Output:
+
+
+1
+
+ExeStack:
+---+---
+readFile("var_f", "var_c)
+-------
+---+---
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@8cb02cb
+Heap:
+Output:
+
+
+1
+
+ExeStack:
+---+---
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@8cb02cb
+Heap:
+Output:
+
+
+1
+
+ExeStack:
+---+---
+print(var_c)
+-------
+---+---
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@8cb02cb
+Heap:
+Output:
+
+
+1
+
+ExeStack:
+---+---
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@8cb02cb
+Heap:
+Output:
+0
+
+
+1
+
+ExeStack:
+---+---
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0))
+-------
+---+---
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@8cb02cb
+Heap:
+Output:
+0
+
+
+1
+
+ExeStack:
+---+---
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@8cb02cb
+Heap:
+Output:
+0
+0
+
+
+1
+
+ExeStack:
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+Heap:
+Output:
+0
+0
+
+
+1
+
+ExeStack:
+---+---
+openRFile(var_f, "data/test.in")
+-------
+---+---
+readFile("var_f", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+-------
+SymLink:
+FileTable:
+Heap:
+Output:
+
+
+1
+
+ExeStack:
+---+---
+readFile("var_f", "var_c);
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@2d888aad
+Heap:
+Output:
+
+
+1
+
+ExeStack:
+---+---
+readFile("var_f", "var_c)
+-------
+---+---
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@2d888aad
+Heap:
+Output:
+
+
+1
+
+ExeStack:
+---+---
+print(var_c);
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@2d888aad
+Heap:
+Output:
+
+
+1
+
+ExeStack:
+---+---
+print(var_c)
+-------
+---+---
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@2d888aad
+Heap:
+Output:
+
+
+1
+
+ExeStack:
+---+---
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0));
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@2d888aad
+Heap:
+Output:
+0
+
+
+1
+
+ExeStack:
+---+---
+IF(var_c) THEN (readFile("var_f", "var_c);
+print(var_c) ) ELSE (print(0))
+-------
+---+---
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@2d888aad
+Heap:
+Output:
+0
+
+
+1
+
+ExeStack:
+---+---
+closeFile("var_f")
+-------
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+	0-->data/test.in java.io.BufferedReader@2d888aad
+Heap:
+Output:
+0
+0
+
+
+1
+
+ExeStack:
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+Heap:
+Output:
+0
+0
+
+
+1
+
+ExeStack:
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+Heap:
+Output:
+0
+0
+
+
+1
+
+ExeStack:
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+Heap:
+Output:
+0
+0
+
+
+1
+
+ExeStack:
+SymLink:
+	var_f-->0
+	var_c-->0
+FileTable:
+Heap:
+Output:
+0
+0
+
+

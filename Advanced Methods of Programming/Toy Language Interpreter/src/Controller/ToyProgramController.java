@@ -16,20 +16,21 @@ import java.util.concurrent.Executors;
 import java.util.stream.Collectors;
 
 public class ToyProgramController {
-    public ToyProgramsRepository repo;
-    public ExecutorService executor;
+    private ToyProgramsRepository repo;
+//    private ToyProgramsRepository initialRepository;
+    private ExecutorService executor;
     private String output;
     private int globalID;
 
     public ToyProgramController(ToyProgramsRepository repo){
+//        this.initialRepository = repo.copy();
         this.repo = repo;
         this.globalID = 1;
         this.output = "";
-
+        executor = Executors.newFixedThreadPool(2);
     }
 
     public void oneStepFOrAllPrograms(List<ToyProgram> toyPrograms) throws InterruptedException {
-
         List<Callable<ToyProgram>> callList = toyPrograms.stream()
                 .map((ToyProgram p) -> (Callable<ToyProgram>)(p::oneStep))
                 .collect(Collectors.toList());
@@ -54,8 +55,8 @@ public class ToyProgramController {
         repo.setPrgList(toyPrograms);
         this.output = repo.first().getOutput();
     }
+
     public void allStep() throws RuntimeException {
-        executor = Executors.newFixedThreadPool(2);
         List<ToyProgram> programs = removeCompletedPrograms(repo.getPrgList());
 
         while(programs.size() > 0 ){
@@ -71,14 +72,13 @@ public class ToyProgramController {
 
     }
 
-    public List<ToyProgram> removeCompletedPrograms(List<ToyProgram> programs){
+    private List<ToyProgram> removeCompletedPrograms(List<ToyProgram> programs){
         return programs.stream()
                 .filter(p -> !p.completed())
                 .collect(Collectors.toList());
     }
 
-
-     private Map<Integer,Integer> conservativeGarbageCollector(Collection<Integer> symTableValues, Map<Integer, Integer> heap){
+    private Map<Integer,Integer> conservativeGarbageCollector(Collection<Integer> symTableValues, Map<Integer, Integer> heap){
         return heap.entrySet().stream()
                 .filter(e->symTableValues.contains(e.getKey()))
                 .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
@@ -108,6 +108,7 @@ public class ToyProgramController {
     public Integer getAnyThreadId(){
         return repo.getPrgList().stream().map(ToyProgram::getID).findFirst().get();
     }
+
     public ToyProgram getThread(int threadID){
         return repo.getPrgList().stream().filter(e -> e.getID() == threadID).findFirst().get();
     }
@@ -144,5 +145,9 @@ public class ToyProgramController {
             result.add(new Pair<>(key, thread.getState().getFileTable().get(key).toString()));
         }
         return result;
+    }
+
+    public List<ToyProgram> getPrograms(){
+        return repo.getPrgList();
     }
 }

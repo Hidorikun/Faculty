@@ -1,16 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="773.0" prefWidth="1048.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI.Controllers.MainWindow">
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="773.0" prefWidth="1048.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI.Controllers.MainController">
    <top>
       <MenuBar prefHeight="0.0" prefWidth="609.0" BorderPane.alignment="CENTER">
         <menus>
           <Menu mnemonicParsing="false" text="File">
             <items>
-              <MenuItem fx:id="selectProgram" mnemonicParsing="false" onAction="#selectProgram" text="Select program..." />
+              <MenuItem fx:id="selectProgramWindow" mnemonicParsing="false" onAction="#selectProgram" text="Select program..." />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
@@ -32,24 +33,39 @@
             <HBox prefWidth="200.0">
                <children>
                   <Label prefHeight="21.0" prefWidth="216.0" text="Nr of PrgStates" />
-                  <TextField fx:id="prgStatesNr" />
+                  <TextField fx:id="prgStatesNr" editable="false" />
                </children>
+               <VBox.margin>
+                  <Insets left="4.0" right="4.0" top="4.0" />
+               </VBox.margin>
             </HBox>
-            <Label text="Symbol Table" />
+            <Label text="Symbol Table">
+               <VBox.margin>
+                  <Insets left="4.0" />
+               </VBox.margin></Label>
             <TableView fx:id="symTableView" prefHeight="200.0" prefWidth="200.0">
               <columns>
                 <TableColumn fx:id="symVarColumn" prefWidth="106.0" text="Variable" />
                 <TableColumn fx:id="symValueColumn" minWidth="100.0" prefWidth="103.0" text="Value" />
               </columns>
+               <VBox.margin>
+                  <Insets />
+               </VBox.margin>
             </TableView>
-            <Label text="Heap" />
+            <Label text="Heap">
+               <VBox.margin>
+                  <Insets left="4.0" />
+               </VBox.margin></Label>
             <TableView fx:id="heapView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
               <columns>
                 <TableColumn fx:id="heapAddrColumn" maxWidth="109.0" minWidth="100.0" prefWidth="106.0" text="Address" />
                 <TableColumn fx:id="heapValueColumn" prefWidth="103.0" text="Value" />
               </columns>
             </TableView>
-            <Label text="File Table" />
+            <Label text="File Table">
+               <VBox.margin>
+                  <Insets left="4.0" />
+               </VBox.margin></Label>
             <TableView fx:id="fileTableView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
               <columns>
                 <TableColumn fx:id="fileHandleColumn" prefWidth="106.0" text="Handle" />
@@ -65,9 +81,15 @@
    <right>
       <VBox prefHeight="556.0" prefWidth="210.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Stack" />
+            <Label text="Stack">
+               <VBox.margin>
+                  <Insets left="4.0" />
+               </VBox.margin></Label>
             <ListView fx:id="stackView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS" />
-            <Label text="Threads" />
+            <Label text="Threads">
+               <VBox.margin>
+                  <Insets left="4.0" />
+               </VBox.margin></Label>
             <ListView fx:id="threadView" onMouseClicked="#selectThread" prefHeight="197.0" prefWidth="117.0" />
          </children>
       </VBox>
@@ -75,9 +97,15 @@
    <center>
       <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
          <children>
-            <Label text="Program" />
+            <Label text="Program">
+               <VBox.margin>
+                  <Insets left="4.0" />
+               </VBox.margin></Label>
             <ListView fx:id="programView" prefHeight="465.0" prefWidth="628.0" />
-            <Label text="Output" />
+            <Label text="Output">
+               <VBox.margin>
+                  <Insets left="4.0" />
+               </VBox.margin></Label>
             <ListView fx:id="outputView" prefHeight="229.0" prefWidth="628.0" VBox.vgrow="ALWAYS" />
             <HBox>
                <children>

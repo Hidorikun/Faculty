@@ -2,12 +2,11 @@ package View.GUI.Controllers;
 
 import Controller.ToyProgramController;
 import Model.ToyProgram;
+import Util.Nirvana;
 import Util.Pair;
 import Util.ProgramGenerator;
-import View.GUI.SelectProgram;
+import View.GUI.SelectProgramWindow;
 import javafx.collections.FXCollections;
-import javafx.collections.ObservableArray;
-import javafx.collections.ObservableList;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.ListView;
@@ -23,7 +22,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.concurrent.Executors;
 
-public class MainWindow implements Initializable{
+public class MainController implements Initializable{
 
     @FXML
     public TextField prgStatesNr;
@@ -54,18 +53,17 @@ public class MainWindow implements Initializable{
     @FXML
     public TableColumn<Pair<Integer, String>, Integer> fileNameColumn;
 
-
-
     private List<ToyProgramController> toyProgramControllers = new ArrayList<>();
     private ToyProgramController current;
     private List<ToyProgram> programs;
     private int currentThread;
 
-    public MainWindow() {
+    public MainController() {
 
         try{
             toyProgramControllers = ProgramGenerator.generatePrograms();
             current = toyProgramControllers.get(0);
+            programs = current.getPrograms();
             currentThread = current.getAnyThreadId();
         }catch(Exception e){
             System.out.println(e.getMessage());
@@ -95,24 +93,13 @@ public class MainWindow implements Initializable{
     }
 
     public void runOneStep(){
-
-        if (current.executor == null) {
-            current.executor = Executors.newFixedThreadPool(2);
-            programs = current.removeCompletedPrograms(current.repo.getPrgList());
-
-        }
         try {
             current.oneStepFOrAllPrograms(programs);
-            programs = current.removeCompletedPrograms(current.repo.getPrgList());
-        } catch (InterruptedException e) {
-            e.printStackTrace();
-        }
+            programs = current.getPrograms();
+            updateGUI();
 
-        updateGUI();
-
-        if (programs.size() <= 0){
-            current.executor.shutdownNow();
-            current.repo.setPrgList(programs);
+        } catch (Exception e) {
+            Nirvana.output(e);
         }
     }
 
@@ -133,11 +120,12 @@ public class MainWindow implements Initializable{
     }
 
     public void selectProgram() throws IOException {
-        SelectProgram selectProgram = new SelectProgram();
-        ToyProgramController selectedProgram = selectProgram.display(toyProgramControllers);
+        SelectProgramWindow selectProgramWindow = new SelectProgramWindow();
+        ToyProgramController selectedProgram = selectProgramWindow.display(toyProgramControllers);
         if (selectedProgram != null){
             current = selectedProgram;
             currentThread = current.getAnyThreadId();
+            programs = current.getPrograms();
             updateGUI();
         }
     }

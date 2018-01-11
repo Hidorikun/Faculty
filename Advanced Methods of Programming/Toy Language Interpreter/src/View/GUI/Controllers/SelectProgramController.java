@@ -16,7 +16,7 @@ import java.util.List;
 import java.util.ResourceBundle;
 import java.util.stream.Collectors;
 
-public class SelectProgramWindow implements Initializable{
+public class SelectProgramController implements Initializable{
 
     @FXML
     private ListView<String> programsView;
@@ -29,7 +29,7 @@ public class SelectProgramWindow implements Initializable{
 
     private List<ToyProgramController> programs;
 
-    public SelectProgramWindow(){
+    public SelectProgramController(){
         programs = new ArrayList<>();
         selectButton = null;
     }

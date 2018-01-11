@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI.Controllers.SelectProgramController">
+   <center>
+      <ListView fx:id="programsView" BorderPane.alignment="CENTER" />
+   </center>
+   <bottom>
+      <HBox prefHeight="30.0" prefWidth="584.0" spacing="8.0" BorderPane.alignment="CENTER">
+         <children>
+            <Region prefHeight="92.0" prefWidth="426.0" HBox.hgrow="ALWAYS" />
+            <Button fx:id="selectButton" layoutX="10.0" layoutY="10.0" minWidth="70.0" mnemonicParsing="false" onAction="#selectButtonAction" text="Select" />
+            <Button fx:id="cancelButton" minWidth="70.0" mnemonicParsing="false" onAction="#cancelButtonAction" text="Cancel" />
+         </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
+         <padding>
+            <Insets top="8.0" />
+         </padding>
+      </HBox>
+   </bottom>
+   <padding>
+      <Insets bottom="8.0" left="8.0" right="8.0" top="8.0" />
+   </padding>
+</BorderPane>
