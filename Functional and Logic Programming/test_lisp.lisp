@@ -1,10 +1,10 @@
 ; Define a function that computes thee sum of 2 numbers represented as lists, without converting them in base 10.
 
 ; _sum(a1...an, b1...bm, rest, r1...rw) = r1...rw, n = m = 0 and rest = 0
-;																				= 1 r1..rw, n = m = 0 and rest = 1
-;																				=_sum(nil, b2..bm, (b1 + rest)/10, ((b1 + rest) mod 10) U r1...rw), if a = null
-;																				=_sum(a2..an, nil, (a1 + rest)/10, ((a1 + rest) mod 10) U r1...rw), if b = null
-;																				=_sum(a2..an, b2..bm, (a1 + b1 + rest)/10, ((a1 + b1 + rest) mod 10) U r1..rw), otherwise
+;					= 1 r1..rw, n = m = 0 and rest = 1
+;					=_sum(nil, b2..bm, (b1 + rest)/10, ((b1 + rest) mod 10) U r1...rw), if a = null
+;					=_sum(a2..an, nil, (a1 + rest)/10, ((a1 + rest) mod 10) U r1...rw), if b = null
+;					=_sum(a2..an, b2..bm, (a1 + b1 + rest)/10, ((a1 + b1 + rest) mod 10) U r1..rw), otherwise
 (defun _sum (a b rest result)
 	(cond
 		((and (null a) (null b) (= rest 0)) result)
