@@ -1,3 +1,4 @@
+
 % 2. Check if a number X is prime in 2 methods and explain said methods.
 %method 1: check if X has any divisors.
 
@@ -50,8 +51,8 @@ member([_|T], X):-
 
 remove_multiples([], _, []):-!.
 remove_multiples([H|T], X, R):-
-	X >= H,
-	X mod H =:= 0,
+	H >= X,
+	H mod X =:= 0,
 	remove_multiples(T, X, R), !.
 remove_multiples([H|T], X, [H|R]):-
 	remove_multiples(T, X, R).
