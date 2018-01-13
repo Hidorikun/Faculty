@@ -1,0 +1,1 @@
+5. Write a Lisp program to determine the number of sublists at any level of a given list, where the last atom (at any level) is nonnumeric. The list processing will be done using a MAP function. For example, the list (A (B 2) (1 C 4) (D 1 (6 F)) ((G 4) 6) F) has 2 such sublists: (6 F), (D 1 (6 F))
