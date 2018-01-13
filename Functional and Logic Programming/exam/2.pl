@@ -1,5 +1,4 @@
-% check if a number X is prime in 2 methods and explain said methods.
-
+% 2. Check if a number X is prime in 2 methods and explain said methods.
 %method 1: check if X has any divisors.
 
 %prime1(+X:number)

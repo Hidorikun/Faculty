@@ -1,4 +1,4 @@
-% we have the following program:
+% 1. We have the following program:
 
 f([], 0).
 f([H|T], S):-

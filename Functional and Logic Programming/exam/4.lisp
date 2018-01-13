@@ -1,4 +1,4 @@
-; 4.create a lisp program that removes an element from a ist at all levels
+; 4. Create a lisp program that removes an element from a ist at all levels.
 
 (defun _remove (l e)
 	(cond

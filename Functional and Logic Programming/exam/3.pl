@@ -1,4 +1,4 @@
-% generate arrangments of k from n elements
+% 3. Generate arrangments of k from n elements.
 
 %permutations(+L:list, -R:list)
 
