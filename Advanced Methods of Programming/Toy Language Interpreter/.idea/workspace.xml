@@ -1,81 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="778cf148-db7b-4e22-ad73-75df607ae81c" name="Default" comment="Added theme support.">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/Themes/dark.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/Themes/rain.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/Themes/snow.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/Themes/urban.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/Themes/woodkid.css" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/ThemesManager.java" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/logs/prg1.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/logs/prg4.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/logs/prg5.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/data/logs/prg9.txt" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Assets/mainIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Assets/selectIcon.png" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Controller/ToyProgramController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Interpreter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Commands/Command.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Commands/ExitCommand.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Commands/RunExample.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Containers/MyDictionary.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Containers/MyFileTable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Containers/MyHeap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Containers/MyIDictionary.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Containers/MyIFileTable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Containers/MyIHeap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Containers/MyIStack.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Containers/MyStack.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Exceptions/ProgramCompletedException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Exceptions/RuntimeException.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/Arithmetic/Addition.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/Arithmetic/Division.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/Arithmetic/Multiplication.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/Arithmetic/Subtraction.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/Boolean/Equal.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/Boolean/Greater.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/Boolean/GreaterOrEqual.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/Boolean/Less.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/Boolean/LessOrEqual.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/Boolean/NotEqual.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/Constant.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/IExpression.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/ReadHeap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Expressions/Variable.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/ProgramState.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Statements/Assignment.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Statements/Composite.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Statements/FileManipulation/CloseFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Statements/FileManipulation/OpenFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Statements/FileManipulation/ReadFile.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Statements/Fork.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Statements/IStatement.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Statements/If.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Statements/New.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Statements/Print.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Statements/While.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/Statements/WriteHeap.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Model/ToyProgram.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Repository/ToyProgramsRepository.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Util/Nirvana.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Util/Pair.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/Util/ProgramGenerator.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/View/CLI/TextMenu.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/View/GUI/Controllers/MainController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/View/GUI/Controllers/SelectProgramController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/View/GUI/MainWindow.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/View/GUI/SelectProgramWindow.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/View/GUI/Views/MainWindowView.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/production/ToyLanguageInterpreter/View/GUI/Views/SelectProgramView.fxml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/Util/Nirvana.java" afterPath="" />
+    <list default="true" id="778cf148-db7b-4e22-ad73-75df607ae81c" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/View/GUI/Themes/groovy.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Controller/ToyProgramController.java" afterPath="$PROJECT_DIR$/src/Controller/ToyProgramController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Interpreter.java" afterPath="$PROJECT_DIR$/src/Interpreter.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/GUI/Controllers/MainController.java" afterPath="$PROJECT_DIR$/src/View/GUI/Controllers/MainController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/GUI/MainWindow.java" afterPath="$PROJECT_DIR$/src/View/GUI/MainWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/GUI/SelectProgramWindow.java" afterPath="$PROJECT_DIR$/src/View/GUI/SelectProgramWindow.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/View/GUI/Views/MainWindowView.fxml" afterPath="$PROJECT_DIR$/src/View/GUI/Views/MainWindowView.fxml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -95,7 +23,7 @@
       <file leaf-file-name="MainWindow.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/GUI/MainWindow.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="374">
+            <state relative-caret-position="289">
               <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -106,14 +34,14 @@
       </file>
       <file leaf-file-name="SelectProgramView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/GUI/Views/SelectProgramView.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -130,7 +58,7 @@
       <file leaf-file-name="SelectProgramController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/GUI/Controllers/SelectProgramController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="221">
+            <state relative-caret-position="357">
               <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
               <folding />
             </state>
@@ -139,14 +67,14 @@
       </file>
       <file leaf-file-name="MainWindowView.fxml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/GUI/Views/MainWindowView.fxml">
-          <provider editor-type-id="JavaFX-Scene-Builder">
-            <state />
-          </provider>
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="176">
+            <state relative-caret-position="1649">
               <caret line="97" column="9" lean-forward="false" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
               <folding />
             </state>
+          </provider>
+          <provider editor-type-id="JavaFX-Scene-Builder">
+            <state />
           </provider>
         </entry>
       </file>
@@ -170,15 +98,22 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="ToyProgramController.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="ToyProgramController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Controller/ToyProgramController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="441">
-              <caret line="115" column="25" lean-forward="true" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
-              <folding>
-                <element signature="e#2994#2995#0" expanded="true" />
-                <element signature="e#3084#3085#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="135">
+              <caret line="97" column="5" lean-forward="false" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="groovy.css" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/View/GUI/Themes/groovy.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -186,7 +121,7 @@
       <file leaf-file-name="ThemesManager.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/View/GUI/ThemesManager.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
+            <state relative-caret-position="374">
               <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -294,7 +229,6 @@
         <option value="$PROJECT_DIR$/src/View/GUI/Themes/SnowySky.css" />
         <option value="$PROJECT_DIR$/src/View/GUI/ThemeManager.java" />
         <option value="$PROJECT_DIR$/src/View/GUI/SelectProgramWindow.java" />
-        <option value="$PROJECT_DIR$/src/View/GUI/Themes/groovy.css" />
         <option value="$PROJECT_DIR$/src/Interpreter.java" />
         <option value="$PROJECT_DIR$/src/View/GUI/Themes/woodkid.css" />
         <option value="$PROJECT_DIR$/src/View/GUI/Themes/rainy.css" />
@@ -305,6 +239,7 @@
         <option value="$PROJECT_DIR$/src/Controller/ToyProgramController.java" />
         <option value="$PROJECT_DIR$/src/View/GUI/Controllers/MainController.java" />
         <option value="$PROJECT_DIR$/src/View/GUI/Views/MainWindowView.fxml" />
+        <option value="$PROJECT_DIR$/src/View/GUI/Themes/groovy.css" />
       </list>
     </option>
   </component>
@@ -332,10 +267,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -343,10 +274,48 @@
               <item name="Toy Language Interpreter" type="b2602c69:ProjectViewProjectNode" />
               <item name="Toy Language Interpreter" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="Toy Language Interpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toy Language Interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Toy Language Interpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toy Language Interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Toy Language Interpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toy Language Interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Toy Language Interpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toy Language Interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Themes" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Toy Language Interpreter" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Toy Language Interpreter" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="View" type="462c0819:PsiDirectoryNode" />
+              <item name="GUI" type="462c0819:PsiDirectoryNode" />
+              <item name="Views" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="AndroidView" />
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -590,7 +559,21 @@
       <option name="project" value="LOCAL" />
       <updated>1515176660091</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Added theme support.">
+      <created>1516221012967</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1516221012967</updated>
+    </task>
+    <task id="LOCAL-00006" summary="Added groovy theme.">
+      <created>1516222206858</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1516222206858</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TodoView">
@@ -608,19 +591,18 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32964602" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32853982" sideWeight="0.5375" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32853982" sideWeight="0.5375" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.23620309" sideWeight="0.5125" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28650442" sideWeight="0.4875" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.28650442" sideWeight="0.4875" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44701988" sideWeight="0.49375" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.1945629" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44690266" sideWeight="0.4895616" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.19189766" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
@@ -633,6 +615,7 @@
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="5.2083336E-4" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.44690266" sideWeight="0.4895616" order="1" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -677,7 +660,8 @@
     <MESSAGE value="Added Boolean and Arithmetic Expressions + while statement" />
     <MESSAGE value="Added JavaFX GUI." />
     <MESSAGE value="Added theme support." />
-    <option name="LAST_COMMIT_MESSAGE" value="Added theme support." />
+    <MESSAGE value="Added groovy theme." />
+    <option name="LAST_COMMIT_MESSAGE" value="Added groovy theme." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -686,7 +670,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/data/logs/prg9.txt" />
     <entry file="file://$PROJECT_DIR$/data/prg8.txt" />
     <entry file="file://$PROJECT_DIR$/src/Model/Statements/IStatement.java">
       <provider selected="true" editor-type-id="text-editor">
@@ -847,7 +830,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="25" column="23" lean-forward="false" selection-start-line="25" selection-start-column="23" selection-end-line="25" selection-end-column="23" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -855,39 +837,22 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="408">
           <caret line="28" column="32" lean-forward="false" selection-start-line="28" selection-start-column="32" selection-end-line="28" selection-end-column="32" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/GUI/Themes/monokai.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="1" lean-forward="false" selection-start-line="3" selection-start-column="1" selection-end-line="3" selection-end-column="1" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI/Themes/monokai.css" />
     <entry file="file://$USER_HOME$/Desktop/jbootx-master/src/main/java/org/alfalfa/fx/Main.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/View/GUI/Themes/bootstrap2.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="56" column="0" lean-forward="true" selection-start-line="56" selection-start-column="0" selection-end-line="56" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI/Themes/bootstrap2.css" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_77/javafx-src.zip!/com/sun/javafx/application/LauncherImpl.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="954">
           <caret line="916" column="0" lean-forward="false" selection-start-line="916" selection-start-column="0" selection-end-line="916" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -911,7 +876,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -919,7 +883,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -927,7 +890,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
           <caret line="9" column="1" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="9" selection-end-column="1" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -949,7 +911,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/GUI/ThemesManager.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
+        <state relative-caret-position="374">
           <caret line="26" column="0" lean-forward="false" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -963,7 +925,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/GUI/MainWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
+        <state relative-caret-position="289">
           <caret line="24" column="15" lean-forward="false" selection-start-line="24" selection-start-column="15" selection-end-line="24" selection-end-column="15" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -972,32 +934,25 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/GUI/Views/SelectProgramView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/GUI/Controllers/SelectProgramController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="221">
+        <state relative-caret-position="357">
           <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Util/Nirvana.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Util/Nirvana.java" />
     <entry file="file://$PROJECT_DIR$/src/View/GUI/Controllers/MainController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="119">
@@ -1007,24 +962,29 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/View/GUI/Views/MainWindowView.fxml">
-      <provider editor-type-id="JavaFX-Scene-Builder">
-        <state />
-      </provider>
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="176">
+        <state relative-caret-position="1649">
           <caret line="97" column="9" lean-forward="false" selection-start-line="97" selection-start-column="9" selection-end-line="97" selection-end-column="9" />
           <folding />
         </state>
       </provider>
+      <provider editor-type-id="JavaFX-Scene-Builder">
+        <state />
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Controller/ToyProgramController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="441">
-          <caret line="115" column="25" lean-forward="true" selection-start-line="115" selection-start-column="25" selection-end-line="115" selection-end-column="25" />
-          <folding>
-            <element signature="e#2994#2995#0" expanded="true" />
-            <element signature="e#3084#3085#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="135">
+          <caret line="97" column="5" lean-forward="false" selection-start-line="97" selection-start-column="5" selection-end-line="97" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/View/GUI/Themes/groovy.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" column="1" lean-forward="true" selection-start-line="5" selection-start-column="1" selection-end-line="5" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
