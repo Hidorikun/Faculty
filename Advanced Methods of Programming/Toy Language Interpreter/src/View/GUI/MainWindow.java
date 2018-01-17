@@ -20,7 +20,12 @@ public class MainWindow extends Application {
         primaryStage.setTitle("Toy Language Interpreter");
         primaryStage.getIcons().add(new Image("/Assets/mainIcon.png"));
 
-        primaryStage.setScene(new Scene(mainWindow, 1000, 800 ));
+        Scene scene = new Scene(mainWindow, 1000, 800 );
+
+        scene.getStylesheets().clear();
+        scene.getStylesheets().add(ThemesManager.getInstance().getCurrent());
+
+        primaryStage.setScene(scene);
         primaryStage.show();
     }
 }

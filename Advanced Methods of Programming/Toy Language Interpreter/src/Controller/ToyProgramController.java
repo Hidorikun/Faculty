@@ -17,13 +17,11 @@ import java.util.stream.Collectors;
 
 public class ToyProgramController {
     private ToyProgramsRepository repo;
-//    private ToyProgramsRepository initialRepository;
     private ExecutorService executor;
     private String output;
     private int globalID;
 
     public ToyProgramController(ToyProgramsRepository repo){
-//        this.initialRepository = repo.copy();
         this.repo = repo;
         this.globalID = 1;
         this.output = "";
@@ -44,6 +42,7 @@ public class ToyProgramController {
                         return null;
                     }
                 })
+
                 .filter(Objects::nonNull)
                 .collect(Collectors.toList());
 
@@ -78,12 +77,6 @@ public class ToyProgramController {
                 .collect(Collectors.toList());
     }
 
-    private Map<Integer,Integer> conservativeGarbageCollector(Collection<Integer> symTableValues, Map<Integer, Integer> heap){
-        return heap.entrySet().stream()
-                .filter(e->symTableValues.contains(e.getKey()))
-                .collect(Collectors.toMap(Map.Entry::getKey, Map.Entry::getValue));
-    }
-
     public String getOutput(){
         return this.output;
     }
@@ -102,7 +95,6 @@ public class ToyProgramController {
             result.add(p.getID());
         }
         return result;
-       // return repo.getPrgList().stream().map(ToyProgram::getID).collect(Collectors.toList());
     }
 
     public Integer getAnyThreadId(){

@@ -23,7 +23,12 @@ public class SelectProgramWindow {
         stage.initModality(Modality.APPLICATION_MODAL);
         stage.setTitle("Select Program");
         stage.getIcons().add(new Image("/Assets/selectIcon.png"));
-        stage.setScene(new Scene(selectProgramWindow, 500, 400 ));
+
+        Scene scene = new Scene(selectProgramWindow, 500, 400 );
+        scene.getStylesheets().clear();
+        scene.getStylesheets().add(ThemesManager.getInstance().getCurrent());
+
+        stage.setScene(scene);
         stage.showAndWait();
 
         return controller.getSelectedProgram();

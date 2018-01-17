@@ -5,6 +5,7 @@ import Model.Commands.RunExample;
 import Util.ProgramGenerator;
 import View.CLI.TextMenu;
 import View.GUI.MainWindow;
+import View.GUI.ThemesManager;
 
 import java.util.List;
 import java.util.Scanner;
@@ -21,7 +22,7 @@ public class Interpreter {
         Scanner console = new Scanner(System.in);
 //        String ui = console.nextLine();
         String ui = "gui";
-        //start preferred ui
+
         ui = ui.toLowerCase().trim();
 
         if (ui.equals("cli")) {
@@ -32,6 +33,7 @@ public class Interpreter {
         }else{
             System.out.println("Invalid option!");
         }
+
     }
 
     private static void startGUI(){

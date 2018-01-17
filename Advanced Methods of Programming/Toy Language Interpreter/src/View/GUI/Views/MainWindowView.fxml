@@ -1,11 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="773.0" prefWidth="1048.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI.Controllers.MainController">
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="773.0" prefWidth="1048.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="View.GUI.Controllers.MainController">
    <top>
       <MenuBar prefHeight="0.0" prefWidth="609.0" BorderPane.alignment="CENTER">
         <menus>
@@ -16,7 +15,7 @@
           </Menu>
           <Menu mnemonicParsing="false" text="Edit">
             <items>
-              <MenuItem fx:id="changeTheme" mnemonicParsing="false" text="Change Theme" />
+                  <Menu fx:id="changeTheme" mnemonicParsing="false" onAction="#selectTheme" text="Themes" />
             </items>
           </Menu>
           <Menu mnemonicParsing="false" text="Help">

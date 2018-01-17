@@ -1,0 +1,6 @@
+.root{
+    -fx-font-size: 10pt;
+    -fx-font-family: "Courier New";
+    -fx-base: powderblue;
+    -fx-background:  snow;
+}

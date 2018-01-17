@@ -2,25 +2,23 @@ package View.GUI.Controllers;
 
 import Controller.ToyProgramController;
 import Model.ToyProgram;
-import Util.Nirvana;
 import Util.Pair;
 import Util.ProgramGenerator;
 import View.GUI.SelectProgramWindow;
+import View.GUI.ThemesManager;
 import javafx.collections.FXCollections;
 import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
-import javafx.scene.control.ListView;
-import javafx.scene.control.TableColumn;
-import javafx.scene.control.TableView;
-import javafx.scene.control.TextField;
+import javafx.scene.Scene;
+import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.BorderPane;
 
 import java.io.IOException;
 import java.net.URL;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.ResourceBundle;
-import java.util.concurrent.Executors;
 
 public class MainController implements Initializable{
 
@@ -52,6 +50,10 @@ public class MainController implements Initializable{
     public TableColumn<Pair<Integer, String>, Integer> fileHandleColumn;
     @FXML
     public TableColumn<Pair<Integer, String>, Integer> fileNameColumn;
+    @FXML
+    public Menu changeTheme;
+    @FXML
+    public BorderPane borderPane;
 
     private List<ToyProgramController> toyProgramControllers = new ArrayList<>();
     private ToyProgramController current;
@@ -70,13 +72,6 @@ public class MainController implements Initializable{
         }
     }
 
-    public void addToyProgramController(ToyProgramController e){
-        if (toyProgramControllers.isEmpty()){
-            current = e;
-        }
-        toyProgramControllers.add(e);
-    }
-
     @Override
     public void initialize(URL location, ResourceBundle resources) {
         symVarColumn.setCellValueFactory(new PropertyValueFactory<>("first"));
@@ -89,6 +84,7 @@ public class MainController implements Initializable{
         fileNameColumn.setCellValueFactory(new PropertyValueFactory<>("second"));
 
         threadView.getSelectionModel().select(0);
+        selectTheme();
         updateGUI();
     }
 
@@ -99,7 +95,7 @@ public class MainController implements Initializable{
             updateGUI();
 
         } catch (Exception e) {
-            Nirvana.output(e);
+            e.printStackTrace();
         }
     }
 
@@ -114,6 +110,20 @@ public class MainController implements Initializable{
         fileTableView.setItems(FXCollections.observableArrayList(current.getFileTable()));
     }
 
+    private void updateTheme(){
+        Scene scene = borderPane.getScene();
+        scene.getStylesheets().clear();
+
+        if (ThemesManager.getInstance().getCurrent().endsWith("default")){
+            return;
+        }
+
+        try{
+            scene.getStylesheets().add(ThemesManager.getInstance().getCurrent());
+        }catch(Exception e){
+            e.printStackTrace();
+        }
+    }
     public void selectThread(){
         currentThread = threadView.getSelectionModel().getSelectedItems().get(0);
         updateGUI();
@@ -127,6 +137,26 @@ public class MainController implements Initializable{
             currentThread = current.getAnyThreadId();
             programs = current.getPrograms();
             updateGUI();
+        }
+    }
+
+    public void selectTheme(){
+        changeTheme.getItems().clear();
+
+        MenuItem defaultItem = new MenuItem("default");
+        defaultItem.setOnAction(e -> {
+            ThemesManager.getInstance().setTheme(defaultItem.getText());
+            updateTheme();
+        });
+        changeTheme.getItems().add(defaultItem);
+
+        for (String theme : ThemesManager.getInstance().getThemes()){
+            MenuItem themeItem = new MenuItem(theme);
+            themeItem.setOnAction(e -> {
+                ThemesManager.getInstance().setTheme(themeItem.getText());
+                updateTheme();
+            });
+            changeTheme.getItems().add(themeItem);
         }
     }
 }

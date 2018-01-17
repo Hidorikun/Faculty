@@ -1,0 +1,10 @@
+.root {
+    -fx-font-size: 10pt;
+    -fx-font-family: "Courier New";
+    -fx-base: #804515;
+    -fx-background:  #AA6C3;
+}
+
+.root *{
+    -fx-text-fill: white;
+}
