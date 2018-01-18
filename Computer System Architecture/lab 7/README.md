@@ -1,8 +1,8 @@
 The problems from this lab need to be solved using string specific instructions: LODSB, STOSB, MOVSB, SCASB, CMPSB, LODSW, STOSW, MOVSW, SCASW, CMPSW.
 
-1. Being given two alphabetical ordered strings of characters, s1 and s2, build using merge sort the ordered string of bytes that contain all characters from s1 and s2
+1)  Being given two alphabetical ordered strings of characters, s1 and s2, build using merge sort the ordered string of bytes that contain all characters from s1 and s2.
 
-12. Being given a string of words, compute the longest substring of ordered words (in increasing order) from this string.
+12. Being given a staring of words, compute the longest substring of ordered words (in increasing order) from this string.
 
 13. Being given a string of bytes and a substring of this string, eliminate all occurrences of this substring from the initial string.
 
