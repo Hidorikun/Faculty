@@ -114,15 +114,15 @@
                   <Label text="Lock Table" />
                   <TableView fx:id="lockView" prefHeight="200.0" prefWidth="212.0">
                     <columns>
-                      <TableColumn fx:id="lockLocationColumn" prefWidth="106.0" text="Location" />
+                      <TableColumn fx:id="lockLocationColumn" prefWidth="106.0" text="Address" />
                       <TableColumn fx:id="lockValueColumn" prefWidth="103.0" text="Value" />
                     </columns>
                   </TableView>
-                  <Label text="CyclicBarrier" />
-                  <TableView prefHeight="200.0" prefWidth="200.0">
+                  <Label text="Barrier Table" />
+                  <TableView fx:id="barrierView" prefHeight="200.0" prefWidth="200.0">
                     <columns>
-                      <TableColumn prefWidth="106.0" text="Variable" />
-                      <TableColumn prefWidth="103.0" text="Value" />
+                      <TableColumn fx:id="barrierAddrColumn" prefWidth="106.0" text="Address" />
+                      <TableColumn fx:id="barrierValueColumn" prefWidth="103.0" text="Value" />
                     </columns>
                   </TableView>
                   <Label text="CountDownLedge" />

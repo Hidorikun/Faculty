@@ -151,6 +151,15 @@ public class ToyProgramController {
         return result;
     }
 
+    public List<Pair<Integer, Pair<List<Integer>, Integer>>> getBarrierTable(int currentThread){
+        List<Pair<Integer, Pair<List<Integer>, Integer>>> result = new ArrayList<>();
+        ToyProgram thread = getThread(currentThread);
+        for (Integer key : thread.getState().getBarrierTable().keySet()){
+            result.add(new Pair<>(key, thread.getState().getBarrierTable().get(key)));
+        }
+
+        return result;
+    }
     public List<ToyProgram> getPrograms(){
         return repo.getPrgList();
     }

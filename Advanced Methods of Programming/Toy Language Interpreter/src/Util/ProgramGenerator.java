@@ -15,10 +15,7 @@ import Model.Statements.FileManipulation.OpenFile;
 import Model.Statements.FileManipulation.ReadFile;
 import Model.Statements.Loops.Repeat;
 import Model.Statements.Loops.While;
-import Model.Statements.Synchronization.Fork;
-import Model.Statements.Synchronization.Lock;
-import Model.Statements.Synchronization.NewLock;
-import Model.Statements.Synchronization.Unlock;
+import Model.Statements.Synchronization.*;
 import Model.ToyProgram;
 import Repository.ToyProgramsRepository;
 
@@ -583,8 +580,119 @@ public class ProgramGenerator {
                 )
         );
 
-        ToyProgramsRepository repo13 = new ToyProgramsRepository(prg13, "data/prg12.txt");
+        ToyProgramsRepository repo13 = new ToyProgramsRepository(prg13, "data/prg13.txt");
         ToyProgramController ctrl13 = new ToyProgramController(repo13);
+
+        ToyProgram prg14 = new ToyProgram(
+            new Composite(
+                    new New(
+                            "v1",
+                            new Constant(2)
+                    ),
+                    new Composite(
+                            new New(
+                                    "v2",
+                                    new Constant(3)
+                            ),
+                            new Composite(
+                                    new New(
+                                            "v3",
+                                            new Constant(4)
+                                    ),
+                                    new Composite(
+                                            new NewBarrier(
+                                                    "cnt",
+                                                    new ReadHeap("v3")
+                                            ),
+                                            new Composite(
+                                                    new Fork(
+                                                            new Composite(
+                                                                    new WriteHeap(
+                                                                            "v1",
+                                                                            new Multiplication(
+                                                                                    new ReadHeap(
+                                                                                            "v1"
+                                                                                    ),
+                                                                                    new Constant(10)
+                                                                            )
+                                                                    ),
+                                                                    new Composite(
+                                                                        new Print(
+                                                                                new ReadHeap("v1")
+                                                                        ),
+                                                                        new Await("cnt")
+                                                                    )
+                                                            )
+                                                    ),
+                                                    new Composite(
+                                                            new Fork(
+                                                                    new Composite(
+                                                                            new Await("cnt"),
+                                                                            new Composite(
+                                                                                    new WriteHeap(
+                                                                                            "v2",
+                                                                                            new Multiplication(
+                                                                                                    new ReadHeap(
+                                                                                                            "v2"
+                                                                                                    ),
+                                                                                                    new Constant(10)
+                                                                                            )
+                                                                                    ),
+                                                                                    new Print(
+                                                                                            new ReadHeap("v2")
+                                                                                    )
+                                                                            )
+                                                                    )
+                                                            ),
+                                                            new Composite(
+                                                                    new Fork(
+                                                                            new Composite(
+                                                                                    new Await("cnt"),
+                                                                                    new Composite(
+                                                                                            new WriteHeap(
+                                                                                                    "v3",
+                                                                                                    new Multiplication(
+                                                                                                            new ReadHeap(
+                                                                                                                    "v3"
+                                                                                                            ),
+                                                                                                            new Constant(10)
+                                                                                                    )
+                                                                                            ),
+                                                                                            new Composite(
+                                                                                                    new WriteHeap(
+                                                                                                            "v3",
+                                                                                                            new Multiplication(
+                                                                                                                    new ReadHeap(
+                                                                                                                            "v3"
+                                                                                                                    ),
+                                                                                                                    new Constant(10)
+                                                                                                            )
+                                                                                                    ),
+                                                                                                    new Print(
+                                                                                                            new ReadHeap("v3")
+                                                                                                    )
+                                                                                            )
+                                                                                    )
+                                                                            )
+                                                                    ),
+                                                                    new Composite(
+                                                                            new Await("cnt"),
+                                                                            new Print(
+                                                                                    new Constant(2000)
+                                                                            )
+                                                                    )
+                                                            )
+                                                    )
+                                            )
+                                    )
+                            )
+                    )
+            )
+        );
+
+        ToyProgramsRepository repo14 = new ToyProgramsRepository(prg14, "data/prg14.txt");
+        ToyProgramController ctrl14 = new ToyProgramController(repo14);
+
 
         List<ToyProgramController> generated = new ArrayList<ToyProgramController>();
         generated.add(ctrl1);
@@ -600,6 +708,7 @@ public class ProgramGenerator {
         generated.add(ctrl11);
         generated.add(ctrl12);
         generated.add(ctrl13);
+        generated.add(ctrl14);
 
         return generated;
     }

@@ -19,6 +19,7 @@ public class Fork implements IStatement {
         newPrgState.setOutputBuffer(state.getOutputBuffer());
         newPrgState.setSymTable(state.getSymTable().copy());
         newPrgState.setLockTable(state.getLockTable());
+        newPrgState.setBarrierTable(state.getBarrierTable());
 
         return newPrgState;
     }

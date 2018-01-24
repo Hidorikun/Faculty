@@ -60,6 +60,12 @@ public class MainController implements Initializable{
     public TableColumn<Pair<Integer, Integer>, Integer> lockLocationColumn;
     @FXML
     public TableColumn<Pair<Integer, Integer>, Integer> lockValueColumn;
+    @FXML
+    public TableView<Pair<Integer, Pair<List<Integer>, Integer>>> barrierView;
+    @FXML
+    public TableColumn<Pair<Integer, Pair<List<Integer>, Integer>>, Pair<List<Integer>, Integer>> barrierValueColumn;
+    @FXML
+    public TableColumn<Pair<Integer, Pair<List<Integer>, Integer>>, Integer> barrierAddrColumn;
 
     private List<ToyProgramController> toyProgramControllers = new ArrayList<>();
     private ToyProgramController currentProgram;
@@ -92,6 +98,9 @@ public class MainController implements Initializable{
         lockLocationColumn.setCellValueFactory(new PropertyValueFactory<>("first"));
         lockValueColumn.setCellValueFactory(new PropertyValueFactory<>("second"));
 
+        barrierAddrColumn.setCellValueFactory(new PropertyValueFactory<>("first"));
+        barrierValueColumn.setCellValueFactory(new PropertyValueFactory<>("second"));
+
         threadView.getSelectionModel().select(0);
         selectTheme();
         updateGUI();
@@ -118,6 +127,7 @@ public class MainController implements Initializable{
         symTableView.setItems(FXCollections.observableArrayList(currentProgram.getSymTable(currentThread)));
         fileTableView.setItems(FXCollections.observableArrayList(currentProgram.getFileTable(currentThread)));
         lockView.setItems(FXCollections.observableArrayList(currentProgram.getLockTable(currentThread)));
+        barrierView.setItems(FXCollections.observableArrayList(currentProgram.getBarrierTable(currentThread)));
     }
 
     private void updateTheme(){

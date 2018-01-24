@@ -14,6 +14,7 @@ public class ProgramState {
     private MyIHeap<Integer> heap;
     private StringBuffer output;
     private MyILockTable lockTable;
+    private MyIBarrierTable barrierTable;
 
     public ProgramState(){
         exeStack  = new MyStack<>();
@@ -22,6 +23,15 @@ public class ProgramState {
         heap      = new MyHeap<>();
         output    = new StringBuffer();
         lockTable = new MyLockTable();
+        barrierTable = new MyBarrierTable();
+    }
+
+    public MyIBarrierTable getBarrierTable() {
+        return barrierTable;
+    }
+
+    public void setBarrierTable(MyIBarrierTable barrierTable){
+        this.barrierTable = barrierTable;
     }
 
     public MyILockTable getLockTable(){
