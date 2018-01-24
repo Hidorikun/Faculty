@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
@@ -26,57 +27,6 @@
         </menus>
       </MenuBar>
    </top>
-   <left>
-      <VBox prefHeight="556.0" prefWidth="210.0" spacing="3.0" BorderPane.alignment="CENTER">
-         <children>
-            <HBox prefWidth="200.0">
-               <children>
-                  <Label prefHeight="21.0" prefWidth="216.0" text="Nr of PrgStates" />
-                  <TextField fx:id="prgStatesNr" editable="false" />
-               </children>
-               <VBox.margin>
-                  <Insets left="4.0" right="4.0" top="4.0" />
-               </VBox.margin>
-            </HBox>
-            <Label text="Symbol Table">
-               <VBox.margin>
-                  <Insets left="4.0" />
-               </VBox.margin></Label>
-            <TableView fx:id="symTableView" prefHeight="200.0" prefWidth="200.0">
-              <columns>
-                <TableColumn fx:id="symVarColumn" prefWidth="106.0" text="Variable" />
-                <TableColumn fx:id="symValueColumn" minWidth="100.0" prefWidth="103.0" text="Value" />
-              </columns>
-               <VBox.margin>
-                  <Insets />
-               </VBox.margin>
-            </TableView>
-            <Label text="Heap">
-               <VBox.margin>
-                  <Insets left="4.0" />
-               </VBox.margin></Label>
-            <TableView fx:id="heapView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
-              <columns>
-                <TableColumn fx:id="heapAddrColumn" maxWidth="109.0" minWidth="100.0" prefWidth="106.0" text="Address" />
-                <TableColumn fx:id="heapValueColumn" prefWidth="103.0" text="Value" />
-              </columns>
-            </TableView>
-            <Label text="File Table">
-               <VBox.margin>
-                  <Insets left="4.0" />
-               </VBox.margin></Label>
-            <TableView fx:id="fileTableView" prefHeight="200.0" prefWidth="200.0" VBox.vgrow="ALWAYS">
-              <columns>
-                <TableColumn fx:id="fileHandleColumn" prefWidth="106.0" text="Handle" />
-                <TableColumn fx:id="fileNameColumn" prefWidth="103.0" text="File" />
-              </columns>
-            </TableView>
-         </children>
-         <BorderPane.margin>
-            <Insets />
-         </BorderPane.margin>
-      </VBox>
-   </left>
    <right>
       <VBox prefHeight="556.0" prefWidth="210.0" BorderPane.alignment="CENTER">
          <children>
@@ -100,7 +50,7 @@
                <VBox.margin>
                   <Insets left="4.0" />
                </VBox.margin></Label>
-            <ListView fx:id="programView" prefHeight="465.0" prefWidth="628.0" />
+            <ListView fx:id="programView" prefHeight="442.0" prefWidth="615.0" />
             <Label text="Output">
                <VBox.margin>
                   <Insets left="4.0" />
@@ -124,4 +74,67 @@
          </children>
       </HBox>
    </bottom>
+   <left>
+      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+         <children>
+            <VBox prefHeight="720.0" prefWidth="210.0">
+               <children>
+                  <HBox prefWidth="200.0">
+                     <children>
+                        <Label prefHeight="21.0" prefWidth="216.0" text="Nr of PrgStates" />
+                        <TextField fx:id="prgStatesNr" editable="false" />
+                     </children>
+                  </HBox>
+                  <Label text="Symbol Table" />
+                  <TableView fx:id="symTableView" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="symVarColumn" prefWidth="106.0" text="Variable" />
+                      <TableColumn fx:id="symValueColumn" minWidth="100.0" prefWidth="103.0" text="Value" />
+                    </columns>
+                  </TableView>
+                  <Label text="Heap" />
+                  <TableView fx:id="heapView" prefHeight="200.0" prefWidth="194.0">
+                    <columns>
+                      <TableColumn fx:id="heapAddrColumn" maxWidth="109.0" minWidth="100.0" prefWidth="106.0" text="Address" />
+                      <TableColumn fx:id="heapValueColumn" prefWidth="103.0" text="Value" />
+                    </columns>
+                  </TableView>
+                  <Label text="File Table" />
+                  <TableView fx:id="fileTableView" prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn fx:id="fileHandleColumn" prefWidth="106.0" text="Handle" />
+                      <TableColumn fx:id="fileNameColumn" prefWidth="103.0" text="File" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+            <VBox prefHeight="720.0" prefWidth="210.0">
+               <children>
+                  <Region prefHeight="31.0" prefWidth="245.0" />
+                  <Label text="Lock Table" />
+                  <TableView fx:id="lockView" prefHeight="200.0" prefWidth="212.0">
+                    <columns>
+                      <TableColumn fx:id="lockLocationColumn" prefWidth="106.0" text="Location" />
+                      <TableColumn fx:id="lockValueColumn" prefWidth="103.0" text="Value" />
+                    </columns>
+                  </TableView>
+                  <Label text="CyclicBarrier" />
+                  <TableView prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn prefWidth="106.0" text="Variable" />
+                      <TableColumn prefWidth="103.0" text="Value" />
+                    </columns>
+                  </TableView>
+                  <Label text="CountDownLedge" />
+                  <TableView prefHeight="200.0" prefWidth="200.0">
+                    <columns>
+                      <TableColumn prefWidth="106.0" />
+                      <TableColumn prefWidth="103.0" />
+                    </columns>
+                  </TableView>
+               </children>
+            </VBox>
+         </children>
+      </HBox>
+   </left>
 </BorderPane>

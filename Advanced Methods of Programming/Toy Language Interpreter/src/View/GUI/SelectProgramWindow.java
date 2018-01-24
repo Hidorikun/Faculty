@@ -26,7 +26,7 @@ public class SelectProgramWindow {
 
         Scene scene = new Scene(selectProgramWindow, 500, 400 );
         scene.getStylesheets().clear();
-        scene.getStylesheets().add(ThemesManager.getInstance().getCurrent());
+        scene.getStylesheets().add(ThemesManager.getInstance().getCurrentTheme());
 
         stage.setScene(scene);
         stage.showAndWait();

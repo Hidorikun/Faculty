@@ -23,7 +23,7 @@ public class MainWindow extends Application {
         Scene scene = new Scene(mainWindow, 1000, 800 );
 
         scene.getStylesheets().clear();
-        scene.getStylesheets().add(ThemesManager.getInstance().getCurrent());
+        scene.getStylesheets().add(ThemesManager.getInstance().getCurrentTheme());
 
         primaryStage.setScene(scene);
         primaryStage.show();

@@ -7,11 +7,13 @@ import Util.Pair;
 import java.io.BufferedReader;
 
 public class ProgramState {
+    private int id;
     private MyIStack<IStatement> exeStack;
     private MyIDictionary<String, Integer> symTable;
     private MyIFileTable<Pair<String, BufferedReader>> fileTable;
     private MyIHeap<Integer> heap;
     private StringBuffer output;
+    private MyILockTable lockTable;
 
     public ProgramState(){
         exeStack  = new MyStack<>();
@@ -19,6 +21,23 @@ public class ProgramState {
         fileTable = new MyFileTable<>();
         heap      = new MyHeap<>();
         output    = new StringBuffer();
+        lockTable = new MyLockTable();
+    }
+
+    public MyILockTable getLockTable(){
+        return lockTable;
+    }
+
+    public void setLockTable(MyILockTable lockTable){
+        this.lockTable = lockTable;
+    }
+
+    public int getID(){
+        return id;
+    }
+
+    public void setID(int id){
+        this.id = id;
     }
 
     public MyIHeap<Integer> getHeap() {

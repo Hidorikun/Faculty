@@ -8,6 +8,7 @@ import Model.Statements.IStatement;
 import Model.ToyProgram;
 import Repository.ToyProgramsRepository;
 import Util.Pair;
+import org.omg.PortableInterceptor.INACTIVE;
 
 import java.util.*;
 import java.util.concurrent.Callable;
@@ -110,9 +111,9 @@ public class ToyProgramController {
         return stack.values().stream().map(IStatement::toString).collect(Collectors.toList());
     }
 
-    public List<Pair<Integer, Integer>> getHeap() {
+    public List<Pair<Integer, Integer>> getHeap(int currentThread) {
         List<Pair<Integer, Integer>> result = new ArrayList<>();
-        ToyProgram thread = getThread(getAnyThreadId());
+        ToyProgram thread = getThread(currentThread);
         for (Integer key : thread.getState().getHeap().keySet()){
             result.add(new Pair<>(key, thread.getState().getHeap().get(key)));
         }
@@ -130,12 +131,23 @@ public class ToyProgramController {
         return result;
     }
 
-    public List<Pair<Integer, String>> getFileTable() {
+    public List<Pair<Integer, String>> getFileTable(int currentThread) {
         List<Pair<Integer, String>> result = new ArrayList<>();
-        ToyProgram thread = getThread(getAnyThreadId());
+        ToyProgram thread = getThread(currentThread);
         for (Integer key : thread.getState().getFileTable().keySet()){
             result.add(new Pair<>(key, thread.getState().getFileTable().get(key).toString()));
         }
+
+        return result;
+    }
+
+    public List<Pair<Integer, Integer>> getLockTable(int currentThread) {
+        List<Pair<Integer, Integer>> result = new ArrayList<>();
+        ToyProgram thread = getThread(currentThread);
+        for (Integer key : thread.getState().getLockTable().keySet()){
+            result.add(new Pair<>(key, thread.getState().getLockTable().get(key)));
+        }
+
         return result;
     }
 

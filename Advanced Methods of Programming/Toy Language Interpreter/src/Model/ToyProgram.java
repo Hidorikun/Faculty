@@ -13,6 +13,7 @@ public class ToyProgram {
         this.state = new ProgramState();
         state.getExeStack().push(statement);
         id = 1;
+        state.setID(1);
     }
 
     private ToyProgram(ProgramState state){
@@ -43,5 +44,8 @@ public class ToyProgram {
 
     public Integer getID() { return id; }
 
-    public void setID(int id){ this.id = id; }
+    public void setID(int id){
+        this.id = id;
+        this.state.setID(id);
+    }
 }

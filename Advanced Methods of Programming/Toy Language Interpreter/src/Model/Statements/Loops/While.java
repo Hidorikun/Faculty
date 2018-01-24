@@ -1,7 +1,8 @@
-package Model.Statements;
+package Model.Statements.Loops;
 
 import Model.Expressions.IExpression;
 import Model.ProgramState;
+import Model.Statements.IStatement;
 
 public class While implements IStatement {
    private IExpression exp;
@@ -15,7 +16,7 @@ public class While implements IStatement {
     @Override
     public ProgramState exec(ProgramState state) {
         if ( exp.eval(state) == 0){
-            return state;
+            return null;
         }
 
         state.getExeStack().push(this);

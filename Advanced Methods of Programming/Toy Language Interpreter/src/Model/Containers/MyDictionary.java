@@ -34,7 +34,11 @@ public class MyDictionary<K, V> implements MyIDictionary<K, V> {
 
     @Override
     public Map<K, V> getContent() {
-        return content;
+        Map<K, V> contentCopy = new HashMap<>();
+        for (K key : this.content.keySet()){
+            contentCopy.put(key, this.content.get(key));
+        }
+        return contentCopy;
     }
 
     @Override

@@ -54,9 +54,15 @@ public class MainController implements Initializable{
     public Menu changeTheme;
     @FXML
     public BorderPane borderPane;
+    @FXML
+    public TableView<Pair<Integer, Integer>> lockView;
+    @FXML
+    public TableColumn<Pair<Integer, Integer>, Integer> lockLocationColumn;
+    @FXML
+    public TableColumn<Pair<Integer, Integer>, Integer> lockValueColumn;
 
     private List<ToyProgramController> toyProgramControllers = new ArrayList<>();
-    private ToyProgramController current;
+    private ToyProgramController currentProgram;
     private List<ToyProgram> programs;
     private int currentThread;
 
@@ -64,9 +70,9 @@ public class MainController implements Initializable{
 
         try{
             toyProgramControllers = ProgramGenerator.generatePrograms();
-            current = toyProgramControllers.get(0);
-            programs = current.getPrograms();
-            currentThread = current.getAnyThreadId();
+            currentProgram = toyProgramControllers.get(0);
+            programs = currentProgram.getPrograms();
+            currentThread = currentProgram.getAnyThreadId();
         }catch(Exception e){
             System.out.println(e.getMessage());
         }
@@ -83,6 +89,9 @@ public class MainController implements Initializable{
         fileHandleColumn.setCellValueFactory(new PropertyValueFactory<>("first"));
         fileNameColumn.setCellValueFactory(new PropertyValueFactory<>("second"));
 
+        lockLocationColumn.setCellValueFactory(new PropertyValueFactory<>("first"));
+        lockValueColumn.setCellValueFactory(new PropertyValueFactory<>("second"));
+
         threadView.getSelectionModel().select(0);
         selectTheme();
         updateGUI();
@@ -90,8 +99,8 @@ public class MainController implements Initializable{
 
     public void runOneStep(){
         try {
-            current.oneStepFOrAllPrograms(programs);
-            programs = current.getPrograms();
+            currentProgram.oneStepFOrAllPrograms(programs);
+            programs = currentProgram.getPrograms();
             updateGUI();
 
         } catch (Exception e) {
@@ -100,32 +109,34 @@ public class MainController implements Initializable{
     }
 
     private void updateGUI(){
-        prgStatesNr.setText(current.getPrgStatesNr());
-        programView.setItems(FXCollections.observableArrayList(current.getThread(currentThread).toString().split("\n")));
-        outputView.setItems(FXCollections.observableArrayList(current.getOutput().split("\n")));
-        threadView.setItems(FXCollections.observableArrayList(current.getThreadIds()));
-        stackView.setItems(FXCollections.observableArrayList(current.getStack(currentThread)));
-        heapView.setItems(FXCollections.observableArrayList(current.getHeap()));
-        symTableView.setItems(FXCollections.observableArrayList(current.getSymTable(currentThread)));
-        fileTableView.setItems(FXCollections.observableArrayList(current.getFileTable()));
+        prgStatesNr.setText(currentProgram.getPrgStatesNr());
+        outputView.setItems(FXCollections.observableArrayList(currentProgram.getOutput().split("\n")));
+        threadView.setItems(FXCollections.observableArrayList(currentProgram.getThreadIds()));
+        programView.setItems(FXCollections.observableArrayList(currentProgram.getThread(currentThread).toString().split("\n")));
+        stackView.setItems(FXCollections.observableArrayList(currentProgram.getStack(currentThread)));
+        heapView.setItems(FXCollections.observableArrayList(currentProgram.getHeap(currentThread)));
+        symTableView.setItems(FXCollections.observableArrayList(currentProgram.getSymTable(currentThread)));
+        fileTableView.setItems(FXCollections.observableArrayList(currentProgram.getFileTable(currentThread)));
+        lockView.setItems(FXCollections.observableArrayList(currentProgram.getLockTable(currentThread)));
     }
 
     private void updateTheme(){
         Scene scene = borderPane.getScene();
         scene.getStylesheets().clear();
 
-        if (ThemesManager.getInstance().getCurrent().endsWith("default")){
+        if (ThemesManager.getInstance().getCurrentTheme().endsWith("default")){
             return;
         }
 
         try{
-            scene.getStylesheets().add(ThemesManager.getInstance().getCurrent());
+            scene.getStylesheets().add(ThemesManager.getInstance().getCurrentTheme());
         }catch(Exception e){
             e.printStackTrace();
         }
     }
     public void selectThread(){
         currentThread = threadView.getSelectionModel().getSelectedItems().get(0);
+        System.out.println("thread" + currentProgram.toString());
         updateGUI();
     }
 
@@ -133,9 +144,9 @@ public class MainController implements Initializable{
         SelectProgramWindow selectProgramWindow = new SelectProgramWindow();
         ToyProgramController selectedProgram = selectProgramWindow.display(toyProgramControllers);
         if (selectedProgram != null){
-            current = selectedProgram;
-            currentThread = current.getAnyThreadId();
-            programs = current.getPrograms();
+            currentProgram = selectedProgram;
+            currentThread = currentProgram.getAnyThreadId();
+            programs = currentProgram.getPrograms();
             updateGUI();
         }
     }

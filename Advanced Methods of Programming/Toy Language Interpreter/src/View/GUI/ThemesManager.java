@@ -43,7 +43,7 @@ public class ThemesManager
         currentTheme = theme;
     }
 
-    public String getCurrent(){
+    public String getCurrentTheme(){
         return themesPath +  "/" + currentTheme;
     }
 }

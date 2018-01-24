@@ -1,6 +1,7 @@
-package Model.Statements;
+package Model.Statements.Synchronization;
 
 import Model.ProgramState;
+import Model.Statements.IStatement;
 
 public class Fork implements IStatement {
     private IStatement statement;
@@ -17,6 +18,7 @@ public class Fork implements IStatement {
         newPrgState.setHeap(state.getHeap());
         newPrgState.setOutputBuffer(state.getOutputBuffer());
         newPrgState.setSymTable(state.getSymTable().copy());
+        newPrgState.setLockTable(state.getLockTable());
 
         return newPrgState;
     }
