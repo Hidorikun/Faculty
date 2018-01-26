@@ -2,7 +2,6 @@
 
 An interpreter for a toy language similar to c.
 
-![snowy](https://user-images.githubusercontent.com/23582924/35066139-49aada28-fbd8-11e7-89b4-c726b3a955d4.png)
-![groovy](https://user-images.githubusercontent.com/23582924/35070585-643024f8-fbe6-11e7-9179-a392fb5a5aa1.png)
-![rainy](https://user-images.githubusercontent.com/23582924/35066141-49c6542e-fbd8-11e7-9a10-d5c453d26ca0.png)
-![dark](https://user-images.githubusercontent.com/23582924/35066142-49e8c4aa-fbd8-11e7-932d-b151d76957ed.png)
+![screenshot_1](https://user-images.githubusercontent.com/23582924/35447252-e7231e94-02bf-11e8-84a0-f1f67ea783b2.png)
+![screenshot_2](https://user-images.githubusercontent.com/23582924/35447253-e74b293e-02bf-11e8-805b-73619ad3681b.png)
+![screenshot_3](https://user-images.githubusercontent.com/23582924/35447254-e76998ba-02bf-11e8-9dc9-1f097257b25d.png)
