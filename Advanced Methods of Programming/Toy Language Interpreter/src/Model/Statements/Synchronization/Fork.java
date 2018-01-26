@@ -20,7 +20,7 @@ public class Fork implements IStatement {
         newPrgState.setSymTable(state.getSymTable().copy());
         newPrgState.setLockTable(state.getLockTable());
         newPrgState.setBarrierTable(state.getBarrierTable());
-
+        newPrgState.setSemaphoreTable(state.getSemaphoreTable());
         return newPrgState;
     }
 

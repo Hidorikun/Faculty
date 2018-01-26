@@ -44,7 +44,7 @@
       </VBox>
    </right>
    <center>
-      <VBox prefHeight="200.0" prefWidth="100.0" BorderPane.alignment="CENTER">
+      <VBox prefHeight="720.0" prefWidth="732.0" BorderPane.alignment="CENTER">
          <children>
             <Label text="Program">
                <VBox.margin>
@@ -69,72 +69,79 @@
    <bottom>
       <HBox BorderPane.alignment="CENTER">
          <children>
-            <Label prefHeight="21.0" prefWidth="143.0" text="\@VeleGeorge 2018" />
-            <Region HBox.hgrow="ALWAYS" />
+            <Label text="\@VeleGeorge 2018" />
+            <Region prefHeight="10.0" prefWidth="905.0" HBox.hgrow="ALWAYS" />
          </children>
       </HBox>
    </bottom>
    <left>
-      <HBox alignment="CENTER" BorderPane.alignment="CENTER">
+      <VBox BorderPane.alignment="CENTER">
          <children>
-            <VBox prefHeight="720.0" prefWidth="210.0">
+            <HBox prefWidth="200.0">
                <children>
-                  <HBox prefWidth="200.0">
+                  <Label prefHeight="21.0" prefWidth="216.0" text="Nr of PrgStates" />
+                  <TextField fx:id="prgStatesNr" editable="false" prefHeight="31.0" prefWidth="220.0">
+                     <HBox.margin>
+                        <Insets right="2.0" />
+                     </HBox.margin>
+                  </TextField>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER" prefHeight="720.0" prefWidth="425.0">
+               <children>
+                  <VBox prefHeight="720.0" prefWidth="210.0">
                      <children>
-                        <Label prefHeight="21.0" prefWidth="216.0" text="Nr of PrgStates" />
-                        <TextField fx:id="prgStatesNr" editable="false" />
+                        <Label text="Symbol Table" />
+                        <TableView fx:id="symTableView" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="symVarColumn" prefWidth="106.0" text="Variable" />
+                            <TableColumn fx:id="symValueColumn" minWidth="100.0" prefWidth="103.0" text="Value" />
+                          </columns>
+                        </TableView>
+                        <Label text="Heap" />
+                        <TableView fx:id="heapView" prefHeight="200.0" prefWidth="194.0">
+                          <columns>
+                            <TableColumn fx:id="heapAddrColumn" maxWidth="109.0" minWidth="100.0" prefWidth="106.0" text="Address" />
+                            <TableColumn fx:id="heapValueColumn" prefWidth="103.0" text="Value" />
+                          </columns>
+                        </TableView>
+                        <Label text="File Table" />
+                        <TableView fx:id="fileTableView" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="fileHandleColumn" prefWidth="106.0" text="Handle" />
+                            <TableColumn fx:id="fileNameColumn" prefWidth="103.0" text="File" />
+                          </columns>
+                        </TableView>
                      </children>
-                  </HBox>
-                  <Label text="Symbol Table" />
-                  <TableView fx:id="symTableView" prefHeight="200.0" prefWidth="200.0">
-                    <columns>
-                      <TableColumn fx:id="symVarColumn" prefWidth="106.0" text="Variable" />
-                      <TableColumn fx:id="symValueColumn" minWidth="100.0" prefWidth="103.0" text="Value" />
-                    </columns>
-                  </TableView>
-                  <Label text="Heap" />
-                  <TableView fx:id="heapView" prefHeight="200.0" prefWidth="194.0">
-                    <columns>
-                      <TableColumn fx:id="heapAddrColumn" maxWidth="109.0" minWidth="100.0" prefWidth="106.0" text="Address" />
-                      <TableColumn fx:id="heapValueColumn" prefWidth="103.0" text="Value" />
-                    </columns>
-                  </TableView>
-                  <Label text="File Table" />
-                  <TableView fx:id="fileTableView" prefHeight="200.0" prefWidth="200.0">
-                    <columns>
-                      <TableColumn fx:id="fileHandleColumn" prefWidth="106.0" text="Handle" />
-                      <TableColumn fx:id="fileNameColumn" prefWidth="103.0" text="File" />
-                    </columns>
-                  </TableView>
+                  </VBox>
+                  <VBox prefHeight="720.0" prefWidth="210.0">
+                     <children>
+                        <Label text="Lock Table" />
+                        <TableView fx:id="lockView" prefHeight="200.0" prefWidth="212.0">
+                          <columns>
+                            <TableColumn fx:id="lockLocationColumn" prefWidth="106.0" text="Address" />
+                            <TableColumn fx:id="lockValueColumn" prefWidth="103.0" text="Value" />
+                          </columns>
+                        </TableView>
+                        <Label text="Barrier Table" />
+                        <TableView fx:id="barrierView" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="barrierAddrColumn" prefWidth="106.0" text="Address" />
+                            <TableColumn fx:id="barrierValueColumn" prefWidth="103.0" text="Value" />
+                          </columns>
+                        </TableView>
+                        <Label text="Semaphore Table" />
+                        <TableView fx:id="semaphoreTableView" prefHeight="200.0" prefWidth="200.0">
+                          <columns>
+                            <TableColumn fx:id="semaphoreAddrColumn" prefWidth="106.0" text="Address" />
+                            <TableColumn fx:id="semaphoreValueColumn" prefWidth="103.0" text="Value" />
+                          </columns>
+                        </TableView>
+                     </children>
+                  </VBox>
                </children>
-            </VBox>
-            <VBox prefHeight="720.0" prefWidth="210.0">
-               <children>
-                  <Region prefHeight="31.0" prefWidth="245.0" />
-                  <Label text="Lock Table" />
-                  <TableView fx:id="lockView" prefHeight="200.0" prefWidth="212.0">
-                    <columns>
-                      <TableColumn fx:id="lockLocationColumn" prefWidth="106.0" text="Address" />
-                      <TableColumn fx:id="lockValueColumn" prefWidth="103.0" text="Value" />
-                    </columns>
-                  </TableView>
-                  <Label text="Barrier Table" />
-                  <TableView fx:id="barrierView" prefHeight="200.0" prefWidth="200.0">
-                    <columns>
-                      <TableColumn fx:id="barrierAddrColumn" prefWidth="106.0" text="Address" />
-                      <TableColumn fx:id="barrierValueColumn" prefWidth="103.0" text="Value" />
-                    </columns>
-                  </TableView>
-                  <Label text="CountDownLedge" />
-                  <TableView prefHeight="200.0" prefWidth="200.0">
-                    <columns>
-                      <TableColumn prefWidth="106.0" />
-                      <TableColumn prefWidth="103.0" />
-                    </columns>
-                  </TableView>
-               </children>
-            </VBox>
+            </HBox>
          </children>
-      </HBox>
+      </VBox>
    </left>
 </BorderPane>

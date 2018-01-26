@@ -66,6 +66,12 @@ public class MainController implements Initializable{
     public TableColumn<Pair<Integer, Pair<List<Integer>, Integer>>, Pair<List<Integer>, Integer>> barrierValueColumn;
     @FXML
     public TableColumn<Pair<Integer, Pair<List<Integer>, Integer>>, Integer> barrierAddrColumn;
+    @FXML
+    public TableView<Pair<Integer, Pair<List<Integer>, Integer>>> semaphoreTableView;
+    @FXML
+    public TableColumn<Pair<Integer, Pair<List<Integer>, Integer>>, Integer> semaphoreAddrColumn;
+    @FXML
+    public TableColumn<Pair<Integer, Pair<List<Integer>, Integer>>, Pair<List<Integer>, Integer>> semaphoreValueColumn;
 
     private List<ToyProgramController> toyProgramControllers = new ArrayList<>();
     private ToyProgramController currentProgram;
@@ -101,6 +107,9 @@ public class MainController implements Initializable{
         barrierAddrColumn.setCellValueFactory(new PropertyValueFactory<>("first"));
         barrierValueColumn.setCellValueFactory(new PropertyValueFactory<>("second"));
 
+        semaphoreAddrColumn.setCellValueFactory(new PropertyValueFactory<>("first"));
+        semaphoreValueColumn.setCellValueFactory(new PropertyValueFactory<>("second"));
+
         threadView.getSelectionModel().select(0);
         selectTheme();
         updateGUI();
@@ -119,6 +128,7 @@ public class MainController implements Initializable{
 
     private void updateGUI(){
         prgStatesNr.setText(currentProgram.getPrgStatesNr());
+        semaphoreTableView.setItems(FXCollections.observableArrayList(currentProgram.getSemaphoreTable(currentThread)));
         outputView.setItems(FXCollections.observableArrayList(currentProgram.getOutput().split("\n")));
         threadView.setItems(FXCollections.observableArrayList(currentProgram.getThreadIds()));
         programView.setItems(FXCollections.observableArrayList(currentProgram.getThread(currentThread).toString().split("\n")));
@@ -145,9 +155,11 @@ public class MainController implements Initializable{
         }
     }
     public void selectThread(){
-        currentThread = threadView.getSelectionModel().getSelectedItems().get(0);
-        System.out.println("thread" + currentProgram.toString());
-        updateGUI();
+        try {
+            currentThread = threadView.getSelectionModel().getSelectedItems().get(0);
+            updateGUI();
+        }
+        catch(Exception ignored){}
     }
 
     public void selectProgram() throws IOException {

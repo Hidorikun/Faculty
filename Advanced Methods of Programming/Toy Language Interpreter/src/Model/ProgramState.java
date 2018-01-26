@@ -15,6 +15,7 @@ public class ProgramState {
     private StringBuffer output;
     private MyILockTable lockTable;
     private MyIBarrierTable barrierTable;
+    private MyISemaphoreTable semaphoreTable;
 
     public ProgramState(){
         exeStack  = new MyStack<>();
@@ -24,6 +25,15 @@ public class ProgramState {
         output    = new StringBuffer();
         lockTable = new MyLockTable();
         barrierTable = new MyBarrierTable();
+        semaphoreTable = new MySemaphoreTable();
+    }
+
+    public MyISemaphoreTable getSemaphoreTable() {
+        return semaphoreTable;
+    }
+
+    public void setSemaphoreTable(MyISemaphoreTable semaphoreTable) {
+        this.semaphoreTable = semaphoreTable;
     }
 
     public MyIBarrierTable getBarrierTable() {

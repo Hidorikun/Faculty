@@ -8,6 +8,7 @@ import Model.Expressions.Boolean.Equal;
 import Model.Expressions.Boolean.Greater;
 import Model.Expressions.Constant;
 import Model.Expressions.ReadHeap;
+import Model.Expressions.TernaryIf;
 import Model.Expressions.Variable;
 import Model.Statements.*;
 import Model.Statements.FileManipulation.CloseFile;
@@ -19,7 +20,6 @@ import Model.Statements.Synchronization.*;
 import Model.ToyProgram;
 import Repository.ToyProgramsRepository;
 
-import java.awt.image.BandCombineOp;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
@@ -694,6 +694,190 @@ public class ProgramGenerator {
         ToyProgramController ctrl14 = new ToyProgramController(repo14);
 
 
+        ToyProgram prg15 = new ToyProgram(
+            new Composite(
+                    new NewSemaphore(
+                            "v",
+                            new Constant(2)
+                    ),
+                    new Composite(
+                            new Fork(
+                                    new Composite(
+                                            new Acquire("v"),
+                                            new Composite(
+                                                    new Print(
+                                                            new Constant(1)
+                                                    ),
+                                                    new Release("v")
+                                            )
+                                    )
+                            ),
+                            new Composite(
+                                    new Fork(
+                                            new Composite(
+                                                    new Acquire("v"),
+                                                    new Composite(
+                                                            new Print(
+                                                                    new Constant(2)
+                                                            ),
+                                                            new Release("v")
+                                                    )
+                                            )
+                                    ),
+                                    new Fork(
+                                            new Composite(
+                                                    new Acquire("v"),
+                                                    new Composite(
+                                                            new Print(
+                                                                    new Constant(3)
+                                                            ),
+                                                            new Release("v")
+                                                    )
+                                            )
+                                    )
+                            )
+                    )
+            )
+        );
+
+        ToyProgramsRepository repo15 = new ToyProgramsRepository(prg15, "data/prg15.txt");
+        ToyProgramController ctrl15 = new ToyProgramController(repo15);
+
+
+        ToyProgram prg16 = new ToyProgram(
+            new Composite(
+                    new New(
+                            "v1",
+                            new Constant(1)
+                    ),
+                    new Composite(
+                            new NewSemaphore(
+                                    "cnt",
+                                    new ReadHeap("v1")
+                            ),
+                            new Composite(
+                                    new Fork(
+                                            new Composite(
+                                                    new Acquire("cnt"),
+                                                    new Composite(
+                                                            new WriteHeap(
+                                                                    "v1",
+                                                                    new Multiplication(
+                                                                            new ReadHeap("v1"),
+                                                                            new Constant(10)
+                                                                    )
+                                                            ),
+                                                            new Composite(
+                                                                    new Print(
+                                                                            new ReadHeap("v1")
+                                                                    ),
+                                                                    new Release("cnt")
+                                                            )
+                                                    )
+                                            )
+                                    ),
+                                    new Composite(
+                                            new Fork(
+                                                    new Composite(
+                                                            new Acquire("cnt"),
+                                                            new Composite(
+                                                                    new WriteHeap(
+                                                                            "v1",
+                                                                            new Multiplication(
+                                                                                    new ReadHeap("v1"),
+                                                                                    new Constant(10)
+                                                                            )
+                                                                    ),
+                                                                    new Composite(
+                                                                            new WriteHeap(
+                                                                                    "v1",
+                                                                                    new Multiplication(
+                                                                                            new ReadHeap("v1"),
+                                                                                            new Constant(2)
+                                                                                    )
+                                                                            ),
+                                                                            new Composite(
+                                                                                    new Print(
+                                                                                            new ReadHeap("v1")
+                                                                                    ),
+                                                                                    new Release("cnt")
+                                                                            )
+                                                                    )
+                                                            )
+                                                    )
+                                            ),
+                                            new Composite(
+                                                    new Acquire("cnt"),
+                                                    new Composite(
+                                                            new Print(
+                                                                    new Subtraction(
+                                                                            new ReadHeap("v1"),
+                                                                            new Constant(1)
+                                                                    )
+                                                            ),
+                                                            new Release("cnt")
+                                                    )
+                                            )
+                                    )
+                            )
+                    )
+            )
+        );
+
+        ToyProgramsRepository repo16 = new ToyProgramsRepository(prg16, "data/prg16.txt");
+        ToyProgramController ctrl16 = new ToyProgramController(repo16);
+
+
+        ToyProgram prg17 = new ToyProgram(
+            new Composite(
+                    new Assignment(
+                            "a",
+                            new Constant(1)
+                    ),
+                    new Composite(
+                            new Assignment(
+                                    "b",
+                                    new Constant(2)
+                            ),
+                            new Composite(
+                                    new Assignment(
+                                            "c",
+                                            new TernaryIf(
+                                                    new Variable("a"),
+                                                    new Constant(100),
+                                                    new Constant(200)
+                                            )
+                                    ),
+                                    new Composite(
+                                            new Print(
+                                                    new Variable("c")
+                                            ),
+                                            new Composite(
+                                                    new Assignment(
+                                                            "c",
+                                                            new TernaryIf(
+                                                                    new Subtraction(
+                                                                            new Variable("b"),
+                                                                            new Constant(2)
+                                                                    ),
+
+                                                                    new Constant(100),
+                                                                    new Constant(200)
+                                                            )
+                                                    ),
+                                                    new Print(
+                                                            new Variable("c")
+                                                    )
+                                            )
+                                    )
+                            )
+                    )
+            )
+        );
+
+        ToyProgramsRepository repo17 = new ToyProgramsRepository(prg17, "data/prg16.txt");
+        ToyProgramController ctrl17 = new ToyProgramController(repo17);
+
         List<ToyProgramController> generated = new ArrayList<ToyProgramController>();
         generated.add(ctrl1);
         generated.add(ctrl2);
@@ -709,6 +893,9 @@ public class ProgramGenerator {
         generated.add(ctrl12);
         generated.add(ctrl13);
         generated.add(ctrl14);
+        generated.add(ctrl15);
+        generated.add(ctrl16);
+        generated.add(ctrl17);
 
         return generated;
     }
