@@ -1,0 +1,258 @@
+
+  .xs-mb1{
+    margin-bottom:.5rem!important
+  }
+  .xs-text-3{
+    font-size:1.125rem!important;
+    line-height:1.2!important
+  }
+
+  .svg-pink{
+    fill:#f43192!important
+  }
+
+  .trending-icon{
+    width:14px;
+    height:14px;
+    margin-top:3px
+  }
+  .card-headline{
+    font-size: 30px;
+  }
+  .card-info{
+    font-size: 26px;
+  }
+
+  .link-gray{
+    color:#222!important
+  }
+
+  .link-gray path{
+      fill:#222!important
+  }
+
+  .link-gray:hover{
+      color:#0f65ef!important
+  }
+
+  .link-gray:hover path{
+      transition:fill .15s ease 0s;
+      fill:#0f65ef!important;
+      cursor:pointer
+  }
+
+  .xs-p0{
+    padding:0!important
+}
+
+  .xs-text-5{
+    font-size:.875rem!important
+  }
+
+  .xs-mt1{
+      margin-top:.5rem!important
+  }
+
+  .xs-mb2{
+    margin-bottom:1rem!important
+  }
+
+  .xs-pr05{
+    padding-right:.25rem!important
+  }
+
+  .buzzfeed-news{
+    height: 13px;
+  }
+
+  .featured-card .featured-card__headline{
+    font-weight:600;
+    font-size:1.375rem;
+    line-height:1.2;
+    margin-bottom:.5rem;
+    color:#222
+
+  }
+  .fonts-loaded .featured-card .featured-card__headline{
+      font-family:Proxima Nova,Helvetica,Arial,sans-serif
+  }
+
+  .column {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    background-color: white;
+    margin-left: 20px;
+    border-top: 7px solid black;
+
+  }
+
+  .column2 {
+    float: left;
+    width: 30%;
+    padding: 10px;
+    background-color: white;
+    margin-left: 20px;
+    margin-top: 20px;
+    border-top: 7px solid #f43192;
+
+  }
+
+  .card{
+    float: left;
+    width: 60%;
+    padding: 10px;
+    background-color: white;
+  }
+
+  .featured-card .featured-card__dek{
+    margin-bottom:.5rem;
+    font-size:1rem;
+    line-height:1.3
+  }
+
+
+  .featured-card .featured-card__body{
+    margin:1rem;
+    color:#222
+}
+  .article-badge{
+    height: 8px
+  }
+  .right-arrow{
+    height: 8px;
+  }
+  .feed-cards>div{
+    margin-bottom:.25rem
+  }
+
+  .xs-relative{
+    position:relative!important
+  }
+
+  .featured-card .featured-image{
+      width:100%;
+      overflow:hidden;
+      background-size:cover;
+      background-repeat:no-repeat;
+      background-position:50%;
+      background-color:#e2e2e2;
+      height:8rem
+  }
+    .content-wrapper{
+      width: 1000px;
+      margin: 0 auto;
+    }
+    .item__image{
+      height:5.5rem;
+      background-size:cover;
+      background-position:50%;
+      background-repeat:no-repeat
+    }
+    .thumbstrip{
+      display:-webkit-flex;
+      display:-ms-flexbox;
+      display:flex;
+    }
+
+    .item{
+      -webkit-flex:1;
+      -ms-flex:1;
+      flex:1;
+      margin-right:.25rem
+    }
+
+    .xs-flex-row{
+      -webkit-flex-direction:row!important;
+      -ms-flex-direction:row!important;
+      flex-direction:row!important
+    }
+
+    .xs-overflow-hidden{
+      overflow:hidden!important;
+    }
+
+    body{
+      background: #f1f1f1
+    }
+
+    a{
+      text-decoration: none;
+    }
+
+    #buzz-feed {
+      height: 1.425rem;
+      fill: red;
+    }
+
+    #carred-down {
+      height: 8px;
+    }
+
+    .main-header {
+        background-color: white;
+        padding: 10px;
+    }
+
+    .header-content {
+      width: 1000px;
+      margin: 0 auto;
+
+      color: #fff;
+    }
+
+    .main-header-link {
+      padding: 5px;
+      text-decoration: none;
+      color: #0f65ef;
+      font-weight: 600;
+      font-family: Proxima Nova,Helvetica,Arial,sans-serif;
+      fill: #0f65ef;
+    }
+
+    .inline-block {
+      display: inline;
+    }
+
+    .badge{
+     width:2.75rem;
+     height:2.75rem;
+    }
+
+  .list-unstyled{
+    margin-left:0;
+    padding-left:0;
+    list-style:none!important
+  }
+
+    .badge--animation:hover{
+      -webkit-animation-duration:.6s;
+      animation-duration:.6s;
+      -webkit-animation-name:bounce;
+      animation-name:bounce;
+      -webkit-transform-origin:center bottom;
+      -ms-transform-origin:center bottom;
+      transform-origin:center bottom
+    }
+
+    .badge-container{
+      margin: 100px;
+    }
+
+    @-webkit-keyframes bounce{
+      0%,20%,50%,80%,to{
+          -webkit-transform:translateY(0);
+          -ms-transform:translateY(0);
+          transform:translateY(0)
+      }
+      40%{
+          -webkit-transform:translateY(-30px);
+          -ms-transform:translateY(-30px);
+          transform:translateY(-30px)
+      }
+      60%{
+          -webkit-transform:translateY(-15px);
+          -ms-transform:translateY(-15px);
+          transform:translateY(-15px)
+      }
+    }

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?xml-stylesheet type="text/xsl" href="movies.xsl"?>
+
+<movie-list>
+  <movie>
+    <title>The good, the bad and the ugly</title>
+    <actors>Clint Eastwood</actors>
+    <genre>western</genre>
+    <duration>2h 41min</duration>
+    <description>A bounty hunting scam joins two men in an uneasy alliance against a third in a race to find a fortune in gold buried in a remote cemetery.</description>
+  </movie>
+  <movie>
+    <title>Forrest Gump</title>
+    <actors>Tom Hanks</actors>
+    <genre>drama</genre>
+    <duration>2h 22min</duration>
+    <description>The presidencies of Kennedy and Johnson, Vietnam, Watergate, and other history unfold through the perspective of an Alabama man with an IQ of 75.</description>
+  </movie>
+  <movie>
+    <title>The Lord of the Rings: The Fellowship of the Ring</title>
+    <actors>Sean Astin</actors>
+    <genre>adventure</genre>
+    <duration>2h 58min</duration>
+    <description>A meek Hobbit from the Shire and eight companions set out on a journey to destroy the powerful One Ring and save Middle-earth from the Dark Lord Sauron.</description>
+  </movie>
+  <movie>
+    <title>It's a Wonderful Life</title>
+    <actors>James Stewart</actors>
+    <genre>drama</genre>
+    <duration>2h 10min</duration>
+    <description>An angel is sent from Heaven to help a desperately frustrated businessman by showing him what life would have been like if he had never existed.</description>
+  </movie>
+  <movie>
+    <title>Cidade de Deus(City of God)</title>
+    <actors>Alexandre Rodrigues</actors>
+    <genre>drama</genre>
+    <duration>2h 10min</duration>
+    <description>Two boys growing up in a violent neighborhood of Rio de Janeiro take different paths: one becomes a photographer, the other a drug dealer.</description>
+  </movie>
+  <movie>
+    <title>Psycho</title>
+    <actors>Anthony Perkins</actors>
+    <genre>horror</genre>
+    <duration>1h 49min</duration>
+    <description>A Phoenix secretary embezzles $40,000 from her employer's client, goes on the run, and checks into a remote motel run by a young man under the domination of his mother.</description>
+  </movie>
+  <movie>
+    <title>Back to the Future</title>
+    <actors>Michael J. Fox</actors>
+    <genre>adventure</genre>
+    <duration>1h 56min</duration>
+    <description>Marty McFly, a 17-year-old high school student, is accidentally sent thirty years into the past in a time-traveling DeLorean invented by his close friend, the maverick scientist Doc Brown.</description>
+  </movie>
+</movie-list>
