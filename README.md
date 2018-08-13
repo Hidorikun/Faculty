@@ -14,6 +14,6 @@ Sem 3:
 Sem 4:
 * :bookmark: [Web Programming](https://github.com/Hidorikun/Faculty/tree/master/Web)
 * :bookmark: [Databases Management Systems](https://github.com/Hidorikun/Faculty/tree/master/Databases%20Management%20Systems)
-* :bookmark: [Systems for Design and Implementation (https://github.com/Hidorikun/Faculty/tree/master/Systems%20for%20Design%20and%20Implementation)
+* :bookmark: [Systems for Design and Implementation](https://github.com/Hidorikun/Faculty/tree/master/Systems%20for%20Design%20and%20Implementation)
 * :bookmark: [Artificial Inteligence](https://github.com/Hidorikun/Faculty/tree/master/Artificial%20Intelligence)
 
