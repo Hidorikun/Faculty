@@ -12,6 +12,6 @@ Sem 3:
 * :bookmark: [Probability and Statistics]( https://github.com/Hidorikun/Faculty/tree/master/Probability%20and%20Statistics)
 
 Sem 4:
-* :bookmark: [web](https://github.com/Hidorikun/Faculty/tree/master/Web)
+* :bookmark: [Web Programming](https://github.com/Hidorikun/Faculty/tree/master/Web)
 * :bookmark: [Databases Management Systems](https://github.com/Hidorikun/Faculty/tree/master/Databases%20Management%20Systems)
 
