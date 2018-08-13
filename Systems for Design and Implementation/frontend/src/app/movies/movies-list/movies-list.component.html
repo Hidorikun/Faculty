@@ -1,0 +1,20 @@
+
+<div *ngIf="selectedMovie">
+  <h2>
+    {{selectedMovie.title | uppercase}} was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+
+<h2>Movies</h2>
+<ul  class="movies">
+  <li *ngFor="let movie of movies"
+      [class.selected]="movie === selectedMovie"
+      (click)="onSelect(movie)">
+
+    <span class="badge">{{movie.id}}</span>{{movie.title}}
+    <button class="delete"
+            (click)="delete(movie); $event.stopPropagation()">x
+    </button>
+  </li>
+</ul>

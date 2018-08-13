@@ -1,0 +1,21 @@
+
+<div *ngIf="selectedClient">
+  <h2>
+    {{selectedClient.firstName | uppercase}} was selected
+  </h2>
+  <button (click)="gotoDetail()">View Details</button>
+</div>
+
+<h2>Clients</h2>
+<ul class="clients">
+  <li *ngFor="let client of clients"
+      [class.selected]="client === selectedClient"
+      (click)="onSelect(client)">
+
+    <span class="badge">{{client.id}}</span>{{client.firstName}}
+    <button class="delete"
+            (click)="delete(client); $event.stopPropagation()">x
+    </button>
+
+  </li>
+</ul>

@@ -1,0 +1,23 @@
+<h2>Add Pizza</h2>
+
+<div>
+  <label>name: </label>
+  <input #name/>
+</div>
+<div>
+  <label>description: </label>
+  <input #description>
+</div>
+<div>
+  <label>price: </label>
+  <input #price>
+</div>
+
+<div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save(name.value, description.value, price.value)">Save</button>
+  <button (click)="showPizzas()">Show Pizzas</button>
+</div>
+
+
+<app-pizza-list *ngIf="show_list" [pizzas]="pizzas" ></app-pizza-list>

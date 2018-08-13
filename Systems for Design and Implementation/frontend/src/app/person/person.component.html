@@ -1,0 +1,28 @@
+<h1>Add Person</h1>
+
+
+<button type="button" name="button" (click)="newPerson()"  >New</button>
+
+<div *ngIf="newPersonRequested">
+  <div>
+    <label>SSN: </label>
+    <input (change)="validateSSN(ssn.value)" #ssn/>
+    <p *ngIf="!validSSN" class="text-danger">This SSN is already taken!</p>
+  </div>
+
+  <div>
+    <label>Name: </label>
+    <input #name/>
+  </div>
+
+  <button type="button" name="button" (click)="savePerson(name.value, ssn.value)" >Save</button>
+</div>
+
+
+<div>
+  <button type="button" name="button" (click)="loadPersons()">Load</button>
+</div>
+
+<app-person-list *ngIf=personsLoaded [persons]="persons"></app-person-list>
+
+<h1 *ngIf="personsLoaded && persons.length === 0"> No persons found!</h1>

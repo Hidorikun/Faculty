@@ -1,0 +1,11 @@
+<h2>Pizzas</h2>
+
+<ul class="clients">
+  <li *ngFor="let pizza of pizzas">
+    <span class="badge">{{pizza.id}}</span>{{pizza.name}} {{pizza.description}}
+    <button class="delete"
+            (click)="delete(client); $event.stopPropagation()">x
+    </button>
+
+  </li>
+</ul>

@@ -1,0 +1,41 @@
+<<<<<<< current
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+
+	position: absolute;
+	left: 0px;
+	top: 0px;
+	
+	-webkit-transition: left 2s;
+	transition:	left 2s, top 2s, background-color 2s;
+}
+
+.box:hover {
+	left: 95%;
+	top: 95%;
+
+	background-color: red;
+}
+=======
+.box {
+	width: 100px;
+	height: 100px;
+	background-color: blue;
+
+	position: absolute;
+	left: 0px;
+	top: 0px;
+
+	-webkit-transition: left 2s;
+	transition:	left 2s, top 2s, background-color 2s;
+}
+
+.box:hover {
+	left: 95%;
+	top: 95%;
+
+	background-color: red;
+}
+>>>>>>> before discard

@@ -1,0 +1,21 @@
+<div *ngIf="client">
+
+  <h2>{{ client.firstName | uppercase }} Details</h2>
+  <div>
+    <label>ID:</label> {{client.id}}
+  </div>
+  <div>
+    <label>First Name:
+      <input [(ngModel)]="client.firstName" placeholder="firstName"/>
+    </label>
+  </div>
+  <div>
+    <label>Last Name:
+      <input [(ngModel)]="client.lastName" placeholder="lastName"/>
+    </label>
+  </div>
+  <button (click)="goBack()">Back</button>
+  <button (click)="save()">Save</button>
+
+
+</div>

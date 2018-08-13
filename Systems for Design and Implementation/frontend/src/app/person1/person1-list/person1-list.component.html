@@ -1,0 +1,16 @@
+<div *ngIf="person1s.length !== 0" class="person1s">
+  Persons list: <br>
+  <ul class="person1s">
+    <li *ngFor="let person1 of person1s">
+      <a routerLink="/detail/{{person1.id}}">
+        <span *ngIf="person1.publisher">{{person1.name}} --- {{person1.publisher}}</span>
+        <span *ngIf="!person1.publisher">{{person1.name}}</span>
+      </a>
+      <app-book [pid]="person1.id"></app-book>
+    </li>
+  </ul>
+</div>
+
+<div *ngIf="person1s.length === 0" class="person1s">
+  No Authors!
+</div>
