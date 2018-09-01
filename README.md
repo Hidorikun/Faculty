@@ -12,7 +12,7 @@
 * :black_joker: [Probability and Statistics]( https://github.com/Hidorikun/Faculty/tree/master/Probability%20and%20Statistics)
 
 :open_file_folder: Sem 4:
-* :cactus: [Web Programming](https://github.com/Hidorikun/Faculty/tree/master/Web)
+* :cactus: [Web Programming](https://github.com/Hidorikun/Faculty/tree/master/Web%20Programming)
 * :saxophone: [Databases Management Systems](https://github.com/Hidorikun/Faculty/tree/master/Databases%20Management%20Systems)
 * :game_die: [Systems for Design and Implementation](https://github.com/Hidorikun/Faculty/tree/master/Systems%20for%20Design%20and%20Implementation)
 * :beers: [Artificial Inteligence](https://github.com/Hidorikun/Faculty/tree/master/Artificial%20Intelligence)
