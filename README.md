@@ -7,7 +7,7 @@
 :open_file_folder: Sem 3:
 * :ram: [Advanced Methods of Programming](https://github.com/Hidorikun/Faculty/tree/master/Advanced%20Methods%20of%20Programming)
 * :elephant: [Databases](https://github.com/Hidorikun/Faculty/tree/master/Databases)
-* :art:: [Functional and Logic Programming](https://github.com/Hidorikun/Faculty/tree/master/Functional%20and%20Logic%20Programming)
+* :art: [Functional and Logic Programming](https://github.com/Hidorikun/Faculty/tree/master/Functional%20and%20Logic%20Programming)
 * :space_invader: [Networking]( https://github.com/Hidorikun/Faculty/tree/master/Networking)
 * :black_joker: [Probability and Statistics]( https://github.com/Hidorikun/Faculty/tree/master/Probability%20and%20Statistics)
 
