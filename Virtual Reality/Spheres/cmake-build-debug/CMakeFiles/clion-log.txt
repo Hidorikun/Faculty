@@ -1,0 +1,4 @@
+C:\Users\George\.CLion2018.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/George/Desktop/rt-incomplete-2
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug
