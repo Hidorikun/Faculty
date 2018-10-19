@@ -17,3 +17,8 @@
 * :game_die: [Systems for Design and Implementation](https://github.com/Hidorikun/Faculty/tree/master/Systems%20for%20Design%20and%20Implementation)
 * :beers: [Artificial Inteligence](https://github.com/Hidorikun/Faculty/tree/master/Artificial%20Intelligence)
 
+:open_file_folder: Sem 5:
+* :key: [Cryptography](https://github.com/Hidorikun/Cryptography)
+* :movie_camera: [Virtual Reality](https://github.com/Hidorikun/Faculty/tree/master/Virtual%20Reality/)
+* :crystal_ball: [Formal Languages and Compilation Techniques](https://github.com/Hidorikun/Faculty/tree/master/Formal%20Languages%20and%20Compilation%20Techniques)
+
