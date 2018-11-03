@@ -1,32 +1,29 @@
+#include "Sphere.hpp"
+#include <iostream>
 #include <cmath>
 
-//#include <w32api/evntprov.h>
-#include "Sphere.hpp"
-
+using namespace std;
 using namespace rt;
 
 Intersection Sphere::getIntersection(const Line& line, float minDist, float maxDist) {
-	Intersection in;
+    Vector m = line.x0() -_center;
+    float b = m* line.dx();
+    float c = m* m - _radius * _radius;
 
-	float a = line.direction() * line.direction();
-    float b = 2 * (line.direction() * (line.x1() + this->center()));
-    float c = (line.x1() - this->center()) * (line.x1() - this->center()) - this->radius() * this->radius();
+    if (c > 0 && b > 0)
+        return Intersection(false, this, &line, 0);
 
-    float delta = b*b - 4*a*c;
-    float t1, t2, t;
+    float delta = b * b - c;
 
-    if (delta < 0) {
-        return in;
-    }else {
-        t1 = static_cast<float>((-b + std::sqrt(delta) ) / (2 * a));
-        t2 = static_cast<float>((-b - std::sqrt(delta) ) / (2 * a));
+    if (delta < 0)
+        return Intersection(false, this, &line, 0);
 
-        t = std::min(t1, t2);
-    }
+    float t = -b - sqrt(delta);
 
-    in = Intersection(true, this, &line, t);
+    if (t < 0.0f)
+        t = 0.0f;
 
-    return in;
+    return Intersection(true, this, &line, t);
 }
 
 

@@ -1,1 +1,0 @@
-/usr/bin/c++.exe -g  -Wl,--enable-auto-import CMakeFiles/rt_incomplete_2.dir/lodepng.cpp.o CMakeFiles/rt_incomplete_2.dir/main.cpp.o CMakeFiles/rt_incomplete_2.dir/Sphere.cpp.o  -o rt_incomplete_2.exe -Wl,--out-implib,librt_incomplete_2.dll.a -Wl,--major-image-version,0,--minor-image-version,0 

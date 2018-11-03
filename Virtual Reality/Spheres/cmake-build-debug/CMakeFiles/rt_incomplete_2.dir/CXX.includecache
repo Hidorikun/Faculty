@@ -6,59 +6,59 @@
 
 #IncludeRegexTransform: 
 
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Color.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Color.hpp
 
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Geometry.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Geometry.hpp
 Material.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Material.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Material.hpp
 Vector.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Vector.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Vector.hpp
 Line.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Line.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Line.hpp
 Intersection.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Intersection.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Intersection.hpp
 
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Intersection.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Intersection.hpp
 iostream
 -
 Vector.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Vector.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Vector.hpp
 
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Line.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Line.hpp
 Vector.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Vector.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Vector.hpp
 
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Material.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Material.hpp
 Vector.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Vector.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Vector.hpp
 Line.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Line.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Line.hpp
 Color.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Color.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Color.hpp
 Intersection.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Intersection.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Intersection.hpp
 
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Sphere.cpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Sphere.cpp
+Sphere.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Sphere.hpp
+iostream
+-
 cmath
 -
-Sphere.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Sphere.hpp
 
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Sphere.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Sphere.hpp
 Vector.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Vector.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Vector.hpp
 Line.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Line.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Line.hpp
 Intersection.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Intersection.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Intersection.hpp
 Geometry.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Geometry.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Geometry.hpp
 Material.hpp
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Material.hpp
-algorithm
--
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Material.hpp
 
-/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Vector.hpp
+C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Vector.hpp
 cmath
 -
 

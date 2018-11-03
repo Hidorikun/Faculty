@@ -4,127 +4,131 @@
 	<Project>
 		<Option title="rt_incomplete_2"/>
 		<Option makefile_is_custom="1"/>
-		<Option compiler="gcc"/>
+		<Option compiler="msvc8"/>
 		<Option virtualFolders="CMake Files\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug"/>
+				<Option working_dir="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 all"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug"/>
+				<Option working_dir="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rt_incomplete_2">
-				<Option output="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/rt_incomplete_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug"/>
+				<Option output="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/cmake-build-debug/rt_incomplete_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/."/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/../include/w32api"/>
+					<Add directory="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/."/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rt_incomplete_2"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 rt_incomplete_2"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="rt_incomplete_2/fast">
-				<Option output="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/rt_incomplete_2.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug"/>
+				<Option output="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/cmake-build-debug/rt_incomplete_2.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/cmake-build-debug"/>
 				<Option object_output="./"/>
 				<Option type="1"/>
-				<Option compiler="gcc"/>
+				<Option compiler="msvc8"/>
 				<Compiler>
-					<Add directory="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/."/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/x86_64-pc-cygwin"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include/c++/backward"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/include"/>
-					<Add directory="/usr/include"/>
-					<Add directory="/usr/lib/gcc/x86_64-pc-cygwin/7.3.0/../../../../lib/../include/w32api"/>
+					<Add directory="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/."/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\ATLMFC\include"/>
+					<Add directory="C:\Program Files (x86)\Microsoft Visual Studio\2017\Community\VC\Tools\MSVC\14.14.26428\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\ucrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\shared"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\um"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\winrt"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\10\include\10.0.17134.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 rt_incomplete_2/fast"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 rt_incomplete_2/fast"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug"/>
+				<Option working_dir="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/cmake-build-debug"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
-					<CompileFile command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
-					<Clean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
-					<DistClean command="/usr/bin/make.exe -j4 -f &quot;/cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<Build command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 edit_cache"/>
+					<CompileFile command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
+					<DistClean command="nmake /NOLOGO /f &quot;C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres\cmake-build-debug\Makefile&quot; VERBOSE=1 clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Color.hpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Color.hpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Geometry.hpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Geometry.hpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Image.hpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Image.hpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Intersection.hpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Intersection.hpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Light.hpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Light.hpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Line.hpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Line.hpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Material.hpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Material.hpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Scene.hpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Scene.hpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Sphere.cpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Sphere.cpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Sphere.hpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Sphere.hpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/Vector.hpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/Vector.hpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/lodepng.cpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/lodepng.cpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/lodepng.hpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/lodepng.hpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/main.cpp">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/main.cpp">
 			<Option target="rt_incomplete_2"/>
 		</Unit>
-		<Unit filename="/cygdrive/c/Users/George/Desktop/rt-incomplete-2/CMakeLists.txt">
+		<Unit filename="C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
 	</Project>

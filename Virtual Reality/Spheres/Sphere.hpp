@@ -3,7 +3,6 @@
 #include "Intersection.hpp"
 #include "Geometry.hpp"
 #include "Material.hpp"
-#include <algorithm>
 
 #ifndef RT_SPHERE_INCLUDED
 #define RT_SPHERE_INCLUDED
@@ -17,23 +16,23 @@ namespace rt {
 
     public:
         Sphere(const Vector& center, float radius, const Material& material)
-            : Geometry(material) {
+                : Geometry(material) {
             _center = Vector(center);
             _radius = radius;
         }
 
         Sphere(float x, float y, float z, float radius, float r, float g, float b)
-            : Geometry(Color(r, g, b)) {
+                : Geometry(Color(r, g, b)) {
             _center = Vector(x, y, z);
             _radius = radius;
         }
 
         Sphere(float x, float y, float z, float radius,
-            float ar, float ag, float ab,
-            float dr, float dg, float db,
-            float sr, float sg, float sb,
-            int sh)
-            : Geometry(Material(ar, ag, ab, dr, dg, db, sr, sg, sb, sh)) {
+               float ar, float ag, float ab,
+               float dr, float dg, float db,
+               float sr, float sg, float sb,
+               int sh)
+                : Geometry(Material(ar, ag, ab, dr, dg, db, sr, sg, sb, sh)) {
             _center = Vector(x, y, z);
             _radius = radius;
         }
@@ -42,8 +41,8 @@ namespace rt {
         }
 
         virtual Intersection getIntersection(const Line& line,
-            float minDist,
-            float maxDist);
+                                             float minDist,
+                                             float maxDist);
 
         inline float& radius() {
             return _radius;

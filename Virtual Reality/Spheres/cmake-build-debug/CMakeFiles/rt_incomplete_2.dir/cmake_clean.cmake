@@ -1,10 +1,11 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/rt_incomplete_2.dir/lodepng.cpp.o"
-  "CMakeFiles/rt_incomplete_2.dir/main.cpp.o"
-  "CMakeFiles/rt_incomplete_2.dir/Sphere.cpp.o"
+  "CMakeFiles/rt_incomplete_2.dir/lodepng.cpp.obj"
+  "CMakeFiles/rt_incomplete_2.dir/main.cpp.obj"
+  "CMakeFiles/rt_incomplete_2.dir/Sphere.cpp.obj"
   "rt_incomplete_2.pdb"
   "rt_incomplete_2.exe"
-  "librt_incomplete_2.dll.a"
+  "rt_incomplete_2.exe.manifest"
+  "rt_incomplete_2.lib"
 )
 
 # Per-language clean rules from dependency scanning.

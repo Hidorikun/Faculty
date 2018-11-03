@@ -16,14 +16,10 @@
 using namespace std;
 using namespace rt;
 
-float imageToViewPlane(int n, int imgSize, float viewPlaneSize) {
-    float u = (float)n*viewPlaneSize / (float)imgSize;
-    u -= viewPlaneSize / 2;
-    return u;
-}
+#define BLACK Color(0,0,0)
 
 const Intersection findFirstIntersection(const Line& ray,
-    float minDist, float maxDist) {
+                                         float minDist, float maxDist) {
     Intersection intersection;
 
     for (int i = 0; i < geometryCount; i++) {
@@ -39,10 +35,6 @@ const Intersection findFirstIntersection(const Line& ray,
     }
 
     return intersection;
-}
-
-float distance(Vector a, Vector b){
-    return (float) sqrt(pow(a.x()-b.x(),2.0)+pow(a.y()-b.y(),2.0)+pow(a.z()-b.z(),2.0));
 }
 
 int main() {
@@ -65,36 +57,51 @@ int main() {
     viewDirection.normalize();
     viewUp.normalize();
     viewParallel.normalize();
-
     Image image(imageWidth, imageHeight);
 
-    Color BLACK(0, 0, 0);
-    Color closestSphereColor;
+    Vector L;
+    Vector C = viewPoint;
+    Vector V;
+    Vector E;
+    Vector N;
+    Vector T;
+    Vector R;
 
-    float dist = infinityf();
+    for (int i = 0; i < imageWidth; i++) {
+        for (int j = 0; j < imageHeight; j++) {
+            Intersection inter = findFirstIntersection(
+                    Line(viewPoint, Vector( (imageWidth / 2) - i, (imageHeight / 2) - j, viewPlaneDist), false),
+                    frontPlaneDist,
+                    backPlaneDist);
 
-	for (int x = 0; x < imageWidth; x++) {
-	    for (int y = 0; y < imageHeight; y++){
-	        dist = infinityf();
-            closestSphereColor = BLACK;
+            if (inter.valid())
+            {
+                Color color = BLACK;
+                for (Light * li : lights) {
+                    Color c = BLACK;
+                    L = li->position();
+                    V = inter.vec();
+                    E = C - V;
+                    E.normalize();
+                    N = inter.geometry()->normal(V);
+                    T = L - V;
+                    T.normalize();
+                    R = N * (N*T) * 2 - T;
+                    R.normalize();
 
-            Line line = Line(viewPoint, Vector(imageWidth/2 - x, imageHeight/2 - y, viewPlaneDist), false);
-
-            for (int index = 0; index < geometryCount; index++){
-                Intersection in = scene[index]->getIntersection(line, 0, viewPlaneDist);
-                if (in.valid()) {
-                    float d = distance(viewPoint, in.vec());
-                    if (d < dist) {
-                        dist = d;
-                        closestSphereColor = scene[index]->color();
-                    }
+                    c += inter.geometry()->material().ambient() * li->ambient();
+                    if (N*T > 0)
+                        c += inter.geometry()->material().diffuse() * li->diffuse() *(N*T);
+                    if (E*R > 0)
+                        c += inter.geometry()->material().specular() * li->specular() * pow(E*R,inter.geometry()->material().shininess());
+                    color += c;
                 }
+                image.setPixel(i, j, color);
             }
-
-            image.setPixel(x, y, closestSphereColor);
-	    }
-	}
-
+            else
+                image.setPixel(i, j, BLACK);
+        }
+    }
 
     image.store("scene.png");
 
@@ -104,3 +111,5 @@ int main() {
 
     return 0;
 }
+
+

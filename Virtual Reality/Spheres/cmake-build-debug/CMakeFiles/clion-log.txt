@@ -1,4 +1,4 @@
-C:\Users\George\.CLion2018.2\system\cygwin_cmake\bin\cmake.exe -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - Unix Makefiles" /cygdrive/c/Users/George/Desktop/rt-incomplete-2
+"C:\Program Files\JetBrains\CLion 2018.2.4\bin\cmake\win\bin\cmake.exe" -DCMAKE_BUILD_TYPE=Debug -G "CodeBlocks - NMake Makefiles" "C:\Users\George\Desktop\_Drive\git_projects\Faculty\Virtual Reality\Spheres"
 -- Configuring done
 -- Generating done
--- Build files have been written to: /cygdrive/c/Users/George/Desktop/rt-incomplete-2/cmake-build-debug
+-- Build files have been written to: C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/cmake-build-debug

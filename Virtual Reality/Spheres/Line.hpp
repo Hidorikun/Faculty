@@ -7,51 +7,42 @@ namespace rt {
 
     class Line {
     private:
-        Vector p1;
-        Vector p2;
-        Vector _direction;
+        Vector _x0;
+        Vector _dx;
 
     public:
         Line() {
-            p1 = Vector(0.0, 0.0, 0.0);
-            p2 = Vector(0.0, 0.0, 0.0);
+            _x0 = Vector(0.0, 0.0, 0.0);
+            _dx = Vector(1.0, 0.0, 0.0);
         }
 
-        // if you give parametric = true then the second vector is a point, else is a _direction
         Line(const Vector& x0, const Vector& x1, bool parametric) {
-            p1 = Vector(x0);
+            _x0 = Vector(x0);
 
             if (parametric) {
-                p2 = Vector(x1);
-                _direction = Vector(p2 - p1);
+                _dx = Vector(x1);
             }
             else {
-                p2 = Vector(x1 - x0);
-                _direction = Vector(x1);;
+                _dx = Vector(x1 - x0);
             }
-            p2.normalize();
-            _direction.normalize();
+            _dx.normalize();
         }
 
         Line(const Line& line) {
-            p1 = Vector(line.p1);
-            p2 = Vector(line.p2);
+            _x0 = Vector(line._x0);
+            _dx = Vector(line._dx);
         }
 
-        inline Vector direction() const {
-            return _direction;
+        inline Vector x0() const {
+            return _x0;
         }
 
-        inline Vector x1() const {
-            return p1;
-        }
-
-        inline Vector x2() const {
-            return p2;
+        inline Vector dx() const {
+            return _dx;
         }
 
         inline Vector vec(float t) const {
-            return Vector(_direction*t + p1);
+            return Vector(_dx*t + _x0);
         }
     };
 }
