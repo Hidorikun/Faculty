@@ -2,6 +2,7 @@ package model;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Random;
 
 public class Matrix {
     private List<List<Integer>> content;
@@ -11,11 +12,16 @@ public class Matrix {
        this.rows = rows;
        this.cols = cols;
 
+       int max = 900;
+       int min = 100;
+
+       Random rand = new Random();
+
        this.content = new ArrayList<>(rows);
        for (int i = 0; i < this.rows; i++){
            this.content.add(new ArrayList<>(cols));
            for (int j = 0; j < this.cols; j++){
-               this.content.get(i).add(0); 
+               this.content.get(i).add(rand.nextInt((max - min) + 1) + min);
            }
        }
     }

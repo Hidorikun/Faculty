@@ -54,34 +54,13 @@ public class Main {
 
     public static void main(String[] args) throws Exception {
 
-        Matrix a = new Matrix(3, 3);
-        a.setRow(0, Arrays.asList(15, 24, 53));
-        a.setRow(1, Arrays.asList(48, 54, 63));
-        a.setRow(2, Arrays.asList(78, 78, 97));
+        Matrix a = new Matrix(500, 500);
+        Matrix b = new Matrix(500, 500);
 
-        Matrix b = new Matrix(3, 3);
-        b.setRow(0, Arrays.asList(93, 8, 75));
-        b.setRow(1, Arrays.asList(62, 53, 45));
-        b.setRow(2, Arrays.asList(34, 25, 15));
+        float start =  System.nanoTime() / 1000000;
+        operation(MatrixOperation.ADD, a, b, 4);
+        float end = System.nanoTime() / 1000000;
 
-        System.out.println("a =\n" + a);
-        System.out.println("b =\n" + b);
-
-        System.out.println("a + b =\n" + operation(MatrixOperation.ADD, a, b, 5).toString());
-
-
-        Matrix c = new Matrix(3, 2);
-        c.setRow(0, Arrays.asList(1, 2));
-        c.setRow(1, Arrays.asList(3, 4));
-        c.setRow(2, Arrays.asList(5, 6));
-
-        Matrix d = new Matrix(2, 3);
-        d.setRow(0, Arrays.asList(1, 2, 3));
-        d.setRow(1, Arrays.asList(4, 5, 6));
-
-        System.out.println("c =\n" + c);
-        System.out.println("d =\n" + d);
-
-        System.out.println("c * d =\n" + operation(MatrixOperation.MULTIPLY, c, d, 6).toString());
+        System.out.println(end - start);
     }
 }
