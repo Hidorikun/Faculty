@@ -10,13 +10,13 @@ public class MatrixOperationThread extends Thread {
 
     Matrix a;
     Matrix b;
-    Matrix sum;
+    Matrix result;
     List<Pair<Integer, Integer>> workload;
 
-    MatrixOperationThread(Matrix a, Matrix b, Matrix sum) {
+    MatrixOperationThread(Matrix a, Matrix b, Matrix result) {
         this.a = a;
         this.b = b;
-        this.sum = sum;
+        this.result = result;
         workload = new ArrayList<>();
     }
 

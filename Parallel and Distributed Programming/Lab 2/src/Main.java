@@ -16,28 +16,28 @@ public class Main {
         int rowCount = min(a.getRowsNumber(), b.getRowsNumber());
         int colCount = min(a.getColsNumber(), b.getColsNumber());
 
-        Matrix sum = new Matrix(rowCount, colCount);
+        Matrix result = new Matrix(rowCount, colCount);
 
         List<MatrixOperationThread> threads = new ArrayList<>();
 
         switch (op){
             case ADD:
                 for (int i = 0; i < threadCount; i++){
-                    threads.add(new MatrixAdditionThread(a, b, sum));
+                    threads.add(new MatrixAdditionThread(a, b, result));
                 }
                 break;
             case MULTIPLY:
                 for (int i = 0; i < threadCount; i++){
-                    threads.add(new MatrixMultiplicationThread(a, b, sum));
+                    threads.add(new MatrixMultiplicationThread(a, b, result));
                 }
                 break;
             default:
-                throw new Exception("MatrixOperation not recognizqd");
+                throw new Exception("MatrixOperation not recognizd");
         }
 
-        for (int row = 0; row < sum.getRowsNumber(); row++){
-            for(int col = 0; col < sum.getRowsNumber(); col++){
-                threads.get(sum.index(row, col) % threadCount).addPointToWorkload(row, col);
+        for (int row = 0; row < result.getRowsNumber(); row++){
+            for(int col = 0; col < result.getRowsNumber(); col++){
+                threads.get(result.index(row, col) % threadCount).addPointToWorkload(row, col);
             }
         }
 
@@ -48,7 +48,7 @@ public class Main {
         for (int i = 0; i < threadCount; i++){
             threads.get(i).join();
         }
-        return sum;
+        return result;
     }
 
 
