@@ -1,0 +1,640 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="2d9621c9-384c-4a04-8fea-50a018659d96" name="Default" comment="" />
+    <ignored path="$PROJECT_DIR$/out/" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="TRACKING_ENABLED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="365">
+              <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Point.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Point.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="612">
+              <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TeamMember.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/runnables/TeamMember.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-85">
+              <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Task.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/runnables/Task.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="26" selection-start-line="26" selection-end-line="26" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Matrix.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/model/Matrix.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="935">
+              <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#667#668#0" expanded="true" />
+                <element signature="e#713#714#0" expanded="true" />
+                <element signature="e#1738#1739#0" expanded="true" />
+                <element signature="e#1791#1792#0" expanded="true" />
+                <element signature="e#1855#1856#0" expanded="true" />
+                <element signature="e#1908#1909#0" expanded="true" />
+                <element signature="e#1942#1943#0" expanded="true" />
+                <element signature="e#1969#1970#0" expanded="true" />
+                <element signature="e#2003#2004#0" expanded="true" />
+                <element signature="e#2030#2031#0" expanded="true" />
+                <element signature="e#2071#2072#0" expanded="true" />
+                <element signature="e#2115#2116#0" expanded="true" />
+                <element signature="e#2169#2170#0" expanded="true" />
+                <element signature="e#2231#2232#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Enum" />
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>&lt;T&gt;</find>
+      <find>&lt;Integer&gt;</find>
+      <find>&lt;&gt;</find>
+      <find>public</find>
+      <find>this.col</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>&lt;Integer&gt;</replace>
+      <replace>public</replace>
+      <replace>private</replace>
+      <replace>this.point.getCol()</replace>
+    </replaceStrings>
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/src/model/MatrixOperationThread.java" />
+        <option value="$PROJECT_DIR$/src/model/MatrixAdditionThread.java" />
+        <option value="$PROJECT_DIR$/src/model/MatrixOperation.java" />
+        <option value="$PROJECT_DIR$/src/threads/MatrixOperationThread.java" />
+        <option value="$PROJECT_DIR$/src/threads/MatrixAdditionThread.java" />
+        <option value="$PROJECT_DIR$/src/threads/MatrixMultiplicationThread.java" />
+        <option value="$PROJECT_DIR$/src/runnables/MatrixAdditionRunnable.java" />
+        <option value="$PROJECT_DIR$/src/runnables/MatrixMultiplicationRunnable.java" />
+        <option value="$PROJECT_DIR$/src/runnables/MatrixOperationRunnable.java" />
+        <option value="$PROJECT_DIR$/src/runnables/MatrixAddition.java" />
+        <option value="$PROJECT_DIR$/src/model/MatrixGenerationEnum.java" />
+        <option value="$PROJECT_DIR$/src/runnables/MatrixMultiplication.java" />
+        <option value="$PROJECT_DIR$/src/runnables/MatrixOperation.java" />
+        <option value="$PROJECT_DIR$/src/model/Task.java" />
+        <option value="$PROJECT_DIR$/src/model/Matrix.java" />
+        <option value="$PROJECT_DIR$/src/model/MatrixOperationEnum.java" />
+        <option value="$PROJECT_DIR$/src/model/Point.java" />
+        <option value="$PROJECT_DIR$/src/runnables/Task.java" />
+        <option value="$PROJECT_DIR$/src/runnables/TeamMember.java" />
+        <option value="$PROJECT_DIR$/src/Main.java" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="2485" />
+    <option name="y" value="-24" />
+    <option name="width" value="980" />
+    <option name="height" value="1039" />
+  </component>
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <autoscrollFromSource ProjectPane="true" />
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="AndroidView" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Lab 4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab 4" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab 4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab 4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab 4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab 4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="model" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="Lab 4" type="b2602c69:ProjectViewProjectNode" />
+              <item name="Lab 4" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="runnables" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="runnables" />
+      <recent name="model" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\George\Desktop\_Drive\git_projects\Faculty\Parallel and Distributed Programming\Lab 2" />
+    </key>
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Main" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="Main" />
+      <module name="ThreadPoolJava" />
+      <option name="WORKING_DIRECTORY" value="file://$PROJECT_DIR$" />
+      <RunnerSettings RunnerId="Run" />
+      <ConfigurationWrapper RunnerId="Run" />
+    </configuration>
+    <configuration default="true" type="Application" factoryName="Application">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Application.Main" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="2d9621c9-384c-4a04-8fea-50a018659d96" name="Default" comment="" />
+      <created>1540092896431</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1540092896431</updated>
+      <workItem from="1540092905800" duration="13484000" />
+      <workItem from="1540176511974" duration="3084000" />
+      <workItem from="1540188433433" duration="58000" />
+      <workItem from="1541327052243" duration="1501000" />
+      <workItem from="1541328933132" duration="46000" />
+      <workItem from="1541329154751" duration="1285000" />
+      <workItem from="1541331790097" duration="549000" />
+      <workItem from="1541332439045" duration="879000" />
+      <workItem from="1541336015113" duration="17187000" />
+      <workItem from="1541406489468" duration="2604000" />
+      <workItem from="1541432809282" duration="120000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="41616000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="1913" y="-7" width="1550" height="838" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="3" />
+      <window_info id="Image Layers" order="2" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
+      <window_info anchor="right" id="Maven Projects" order="3" />
+      <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.35612535" />
+      <window_info anchor="bottom" id="Terminal" order="7" />
+      <window_info id="Capture Tool" order="2" />
+      <window_info id="Designer" order="2" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.19597316" />
+      <window_info anchor="right" id="Database" order="3" />
+      <window_info id="Learn" order="2" weight="0.3295302" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info id="UI Designer" order="2" />
+      <window_info anchor="right" id="Theme Preview" order="3" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.6680912" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32763532" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <option name="time" value="3" />
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/model/MatrixOperationEnum.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixAddition.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixMultiplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="561">
+          <caret line="35" column="44" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1969#1970#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+            <element signature="e#2231#2232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixOperation.java" />
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="731">
+          <caret line="54" lean-forward="true" selection-start-line="54" selection-end-line="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/MatrixOperationEnum.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixOperation.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixAddition.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixMultiplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="35" column="44" lean-forward="true" selection-start-line="35" selection-start-column="44" selection-end-line="35" selection-end-column="44" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1969#1970#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+            <element signature="e#2231#2232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/MatrixOperationEnum.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixOperation.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixAddition.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixMultiplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="11" column="24" lean-forward="true" selection-start-line="11" selection-start-column="24" selection-end-line="11" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1969#1970#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+            <element signature="e#2231#2232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="408">
+          <caret line="24" column="54" selection-start-line="24" selection-start-column="54" selection-end-line="24" selection-end-column="54" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/MatrixOperationEnum.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixOperation.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixAddition.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixMultiplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1969#1970#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+            <element signature="e#2231#2232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="33" lean-forward="true" selection-start-line="3" selection-start-column="31" selection-end-line="4" selection-end-column="33" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/MatrixOperationEnum.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixOperation.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixAddition.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixMultiplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="4" column="24" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1969#1970#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+            <element signature="e#2231#2232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="884">
+          <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/MatrixOperationEnum.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixOperation.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixAddition.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixMultiplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="4" column="24" lean-forward="true" selection-start-line="4" selection-start-column="24" selection-end-line="4" selection-end-column="24" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1969#1970#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+            <element signature="e#2231#2232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="22" lean-forward="true" selection-start-line="27" selection-start-column="22" selection-end-line="27" selection-end-column="22" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/MatrixOperationEnum.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixOperation.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixAddition.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixMultiplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="27" column="46" lean-forward="true" selection-start-line="27" selection-start-column="46" selection-end-line="27" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1969#1970#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+            <element signature="e#2231#2232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/model/MatrixGenerationEnum.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixAddition.java" />
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixMultiplication.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/Matrix.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="935">
+          <caret line="64" column="20" selection-start-line="64" selection-start-column="20" selection-end-line="64" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#667#668#0" expanded="true" />
+            <element signature="e#713#714#0" expanded="true" />
+            <element signature="e#1738#1739#0" expanded="true" />
+            <element signature="e#1791#1792#0" expanded="true" />
+            <element signature="e#1855#1856#0" expanded="true" />
+            <element signature="e#1908#1909#0" expanded="true" />
+            <element signature="e#1942#1943#0" expanded="true" />
+            <element signature="e#1969#1970#0" expanded="true" />
+            <element signature="e#2003#2004#0" expanded="true" />
+            <element signature="e#2030#2031#0" expanded="true" />
+            <element signature="e#2071#2072#0" expanded="true" />
+            <element signature="e#2115#2116#0" expanded="true" />
+            <element signature="e#2169#2170#0" expanded="true" />
+            <element signature="e#2231#2232#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runnables/MatrixOperation.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/MatrixOperationEnum.java" />
+    <entry file="file://$PROJECT_DIR$/src/model/Point.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="612">
+          <caret line="42" column="37" selection-start-line="42" selection-start-column="37" selection-end-line="42" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runnables/Task.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" selection-start-line="26" selection-end-line="26" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/runnables/TeamMember.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-85">
+          <caret line="10" column="25" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="365">
+          <caret line="77" column="21" selection-start-line="77" selection-start-column="21" selection-end-line="77" selection-end-column="21" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
