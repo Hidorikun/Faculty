@@ -1,3 +1,0 @@
-C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/cmake-build-debug/CMakeFiles/rebuild_cache.dir
-C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/cmake-build-debug/CMakeFiles/rt_incomplete_2.dir
-C:/Users/George/Desktop/_Drive/git_projects/Faculty/Virtual Reality/Spheres/cmake-build-debug/CMakeFiles/edit_cache.dir
