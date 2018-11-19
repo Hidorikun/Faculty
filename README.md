@@ -22,3 +22,6 @@
 * :movie_camera: [Virtual Reality](https://github.com/Hidorikun/Virtual-Reality)
 * :crystal_ball: [Formal Languages and Compilation Techniques](https://github.com/Hidorikun/Faculty/tree/master/Formal%20Languages%20and%20Compilation%20Techniques)
 * :octopus: [Parallel and Distributed Programming](https://github.com/Hidorikun/Faculty/tree/master/Parallel%20and%20Distributed%20Programming)
+* :battery: [Mobile Programming](https://github.com/Hidorikun/Mobile-Programming)
+
+
