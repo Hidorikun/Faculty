@@ -1,0 +1,693 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="b8f3deaf-1f5d-4d78-8df9-6aa099e6720e" name="Default Changelist" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1675009855">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="5" />
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.open.time.5" value="1" />
+          <entry key="project.open.time.6" value="1" />
+          <entry key="project.open.time.7" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="cs" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="C#" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="cs" value="300" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="C#" value="300" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab5/Program.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+              <folding>
+                <marker date="1542727408583" expanded="false" signature="6:60" ph="..." />
+                <marker date="1542727408583" expanded="true" signature="77:776" ph="{...}" />
+                <marker date="1542727408583" expanded="true" signature="111:774" ph="{...}" />
+                <marker date="1542727408583" expanded="true" signature="257:582" ph="{...}" />
+                <marker date="1542727408583" expanded="true" signature="632:768" ph="{...}" />
+                <marker date="1542727408583" expanded="true" signature="674:758" ph="/* TaskMechanism.run(HOSTS); ... */" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab5/util/HttpUtils.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="423">
+              <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+              <folding>
+                <marker date="1542710818472" expanded="true" signature="35:2831" ph="{...}" />
+                <marker date="1542710818472" expanded="true" signature="64:2829" ph="{...}" />
+                <marker date="1542710818472" expanded="true" signature="126:498" ph="/* Return the response body from the response content. ... */" />
+                <marker date="1542710818472" expanded="true" signature="568:763" ph="{...}" />
+                <marker date="1542710818472" expanded="true" signature="773:886" ph="/* The header is fully obtained when the server sends two new lines (aka one empty line). ... */" />
+                <marker date="1542710818472" expanded="true" signature="966:1034" ph="{...}" />
+                <marker date="1542710818472" expanded="true" signature="1044:1157" ph="/* Parses the HTTP Response content and returns the value of the &quot;Content-Length&quot; header. ... */" />
+                <marker date="1542710818472" expanded="true" signature="1225:1783" ph="{...}" />
+                <marker date="1542710818472" expanded="true" signature="1386:1738" ph="{...}" />
+                <marker date="1542710818472" expanded="true" signature="1404:1506" ph="/* the header is composed using the following pattern: ... */" />
+                <marker date="1542710818472" expanded="true" signature="1640:1724" ph="{...}" />
+                <marker date="1542710818472" expanded="true" signature="1793:1875" ph="/* Creates the request headers for the specified hostname. ... */" />
+                <marker date="1542710818472" expanded="true" signature="1956:2823" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab5/model/StateObject.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="391">
+              <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+              <folding>
+                <marker date="1542710460736" expanded="false" signature="6:86" ph="..." />
+                <marker date="1542710460736" expanded="true" signature="109:1060" ph="{...}" />
+                <marker date="1542710460736" expanded="true" signature="140:1058" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Lab5/implementation/DirectCallbacks.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+              <folding>
+                <marker date="1542727978846" expanded="false" signature="6:199" ph="..." />
+                <marker date="1542727978846" expanded="true" signature="231:5615" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="273:5613" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="374:547" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="458:537" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="602:691" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="701:748" ph="/* Connect to a server. ... */" />
+                <marker date="1542727978846" expanded="true" signature="810:1726" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="1318:1575" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="1783:2575" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="2627:3182" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="2975:3070" ph="/* receive the response from the server ... */" />
+                <marker date="1542727978846" expanded="true" signature="3239:5607" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="3469:5512" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="4003:4132" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="4160:4229" ph="/* header has been fully obtained ... */" />
+                <marker date="1542727978846" expanded="true" signature="4351:4501" ph="/* the custom header parser is being used to check if the data received so far has the length ... */" />
+                <marker date="1542727978846" expanded="true" signature="4687:4897" ph="{...}" />
+                <marker date="1542727978846" expanded="true" signature="4929:5044" ph="/* otherwise, all the data has been received ... */" />
+                <marker date="1542727978846" expanded="true" signature="5533:5597" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab5/implementation/TasksMechanism.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="68">
+              <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+              <folding>
+                <marker date="1542710868106" expanded="false" signature="6:175" ph="..." />
+                <marker date="1542710868106" expanded="true" signature="207:6443" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="247:6441" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="348:606" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="475:552" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="661:750" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="760:807" ph="/* Connect to a server. ... */" />
+                <marker date="1542710868106" expanded="true" signature="869:2396" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="1379:1636" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="2460:2622" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="2685:3247" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="3321:3674" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="3734:4165" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="4229:4470" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="4533:6435" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="4726:6340" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="5260:5395" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="5423:5492" ph="/* header has been fully obtained ... */" />
+                <marker date="1542710868106" expanded="true" signature="5614:5764" ph="/* the custom header parser is being used to check if the data received so far has the length ... */" />
+                <marker date="1542710868106" expanded="true" signature="5873:6089" ph="{...}" />
+                <marker date="1542710868106" expanded="true" signature="6121:6237" ph="/* otherwise, all the data has been received ... */" />
+                <marker date="1542710868106" expanded="true" signature="6361:6425" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Lab5/implementation/AsyncTasksMechanism.cs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="476">
+              <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+              <folding>
+                <marker date="1542710868092" expanded="false" signature="6:175" ph="..." />
+                <marker date="1542710868092" expanded="true" signature="207:6490" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="252:6488" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="353:611" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="480:557" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="666:755" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="765:812" ph="/* Connect to a server. ... */" />
+                <marker date="1542710868092" expanded="true" signature="880:2404" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="1390:1647" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="2474:2643" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="2706:3268" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="3348:3708" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="3768:4199" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="4269:4517" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="4580:6482" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="4773:6387" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="5307:5442" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="5470:5539" ph="/* header has been fully obtained ... */" />
+                <marker date="1542710868092" expanded="true" signature="5661:5811" ph="/* the custom header parser is being used to check if the data received so far has the length ... */" />
+                <marker date="1542710868092" expanded="true" signature="5920:6136" ph="{...}" />
+                <marker date="1542710868092" expanded="true" signature="6168:6284" ph="/* otherwise, all the data has been received ... */" />
+                <marker date="1542710868092" expanded="true" signature="6408:6472" ph="{...}" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>HOST_NAMES</find>
+    </findStrings>
+    <replaceStrings>
+      <replace>HOSTS</replace>
+    </replaceStrings>
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="file://$PROJECT_DIR$/Lab5/Program.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C6745222-ADCF-4E3F-90BB-F18E4A1AF3AC/a8/4f358879/List`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab5/util/HttpUtils.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70729386-1B9C-49CF-8F99-C3B74FE2930C/bc/8475dd93/Dns.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab5/model/StateObject.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab5/Properties/AssemblyInfo.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab5/implementation/TasksMechanism.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab5/implementation/DirectCallbacks.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Lab5/implementation/AsyncTasksMechanism.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C6745222-ADCF-4E3F-90BB-F18E4A1AF3AC/d3/9009a549/Void.cs" root0="SKIP_HIGHLIGHTING" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/Lab5/model/StateObject.cs" />
+        <option value="$PROJECT_DIR$/Lab5/util/HttpUtils.cs" />
+        <option value="$PROJECT_DIR$/Lab5/implementation/TasksMechanism.cs" />
+        <option value="$PROJECT_DIR$/Lab5/implementation/AsyncTasksMechanism.cs" />
+        <option value="$PROJECT_DIR$/Lab5/Program.cs" />
+        <option value="$PROJECT_DIR$/Lab5/implementation/DirectCallbacks.cs" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="48" />
+    <option name="width" value="1318" />
+    <option name="height" value="768" />
+  </component>
+  <component name="ProjectView">
+    <navigator currentView="SolutionExplorer" proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="FileSystemExplorer" />
+      <pane id="SolutionExplorer">
+        <subPane>
+          <expand>
+            <path>
+              <item name="Project" type="784c90a0:SolutionExplorerRootNode" />
+              <item name="Lab5" type="24d0babc:SolutionExplorerModelNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+        <option name="show-all-files" value="false" />
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="Rider.DefaultBreakpoints.AreToggled" value="true" />
+    <property name="Rider.ProjectViewActivator.IsNotFirstRun" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager">
+    <configuration name="Default" type="DotNetProject" factoryName=".NET Project">
+      <option name="EXE_PATH" value="$PROJECT_DIR$/Lab5/bin/Debug/Lab5.exe" />
+      <option name="PROGRAM_PARAMETERS" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/Lab5/bin/Debug" />
+      <option name="PASS_PARENT_ENVS" value="1" />
+      <option name="USE_EXTERNAL_CONSOLE" value="0" />
+      <option name="USE_MONO" value="0" />
+      <option name="RUNTIME_ARGUMENTS" value="" />
+      <option name="PROJECT_PATH" value="$PROJECT_DIR$/Lab5/Lab5.csproj" />
+      <option name="PROJECT_EXE_PATH_TRACKING" value="1" />
+      <option name="PROJECT_ARGUMENTS_TRACKING" value="1" />
+      <option name="PROJECT_WORKING_DIRECTORY_TRACKING" value="1" />
+      <option name="PROJECT_KIND" value="Console" />
+      <option name="PROJECT_TFM" value=".NETFramework,Version=v4.7.1" />
+      <method v="2">
+        <option name="Build" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="b8f3deaf-1f5d-4d78-8df9-6aa099e6720e" name="Default Changelist" comment="" />
+      <created>1542708821844</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1542708821844</updated>
+      <workItem from="1542708826034" duration="827000" />
+      <workItem from="1542709699285" duration="172000" />
+      <workItem from="1542709919294" duration="51000" />
+      <workItem from="1542709990181" duration="1027000" />
+      <workItem from="1542727124544" duration="1137000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="3214000" />
+  </component>
+  <component name="TodoView">
+    <todo-panel id="selected-file">
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+    <todo-panel id="all">
+      <are-packages-shown value="true" />
+      <is-autoscroll-to-source value="true" />
+    </todo-panel>
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="48" y="0" width="1318" height="768" extended-state="6" />
+    <layout>
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.125" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Favorites" order="2" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5170807" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.39906833" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="NuGet" order="7" />
+      <window_info anchor="bottom" id="Docker" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="9" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Unit Tests" order="11" weight="0.32919255" />
+      <window_info anchor="bottom" id="Terminal" order="12" />
+      <window_info anchor="bottom" id="Event Log" order="13" side_tool="true" />
+      <window_info anchor="bottom" id="Build" order="14" weight="0.32919255" />
+      <window_info anchor="right" id="Commander" order="0" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Errors In Solution" order="3" />
+      <window_info anchor="right" id="Database" order="4" />
+    </layout>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="UnityProjectConfiguration" hasMinimizedUI="false" />
+  <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="XDebuggerManager">
+    <breakpoint-manager>
+      <breakpoints>
+        <breakpoint enabled="true" suspend="NONE" type="DotNet Exception Breakpoints">
+          <properties exception="System.Threading.ThreadAbortException" displayValue="System.Threading.ThreadAbortException" />
+          <option name="timeStamp" value="1" />
+        </breakpoint>
+        <line-breakpoint enabled="true" type="DotNet Breakpoints">
+          <url>file://$PROJECT_DIR$/Lab5/implementation/DirectCallbacks.cs</url>
+          <line>58</line>
+          <properties documentPath="$PROJECT_DIR$/Lab5/implementation/DirectCallbacks.cs" initialLine="57">
+            <startOffsets>
+              <option value="1971" />
+            </startOffsets>
+            <endOffsets>
+              <option value="1995" />
+            </endOffsets>
+          </properties>
+          <option name="timeStamp" value="4" />
+        </line-breakpoint>
+      </breakpoints>
+    </breakpoint-manager>
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/Lab5/Properties/AssemblyInfo.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="29" column="2" lean-forward="true" selection-start-line="29" selection-start-column="2" selection-end-line="29" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab5/model/StateObject.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="26" column="29" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
+          <folding>
+            <marker date="1542710460736" expanded="false" signature="6:86" ph="..." />
+            <marker date="1542710460736" expanded="true" signature="109:1060" ph="{...}" />
+            <marker date="1542710460736" expanded="true" signature="140:1058" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab5/util/HttpUtils.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="423">
+          <caret line="52" column="29" selection-start-line="52" selection-start-column="29" selection-end-line="52" selection-end-column="29" />
+          <folding>
+            <marker date="1542710818472" expanded="true" signature="35:2831" ph="{...}" />
+            <marker date="1542710818472" expanded="true" signature="64:2829" ph="{...}" />
+            <marker date="1542710818472" expanded="true" signature="126:498" ph="/* Return the response body from the response content. ... */" />
+            <marker date="1542710818472" expanded="true" signature="568:763" ph="{...}" />
+            <marker date="1542710818472" expanded="true" signature="773:886" ph="/* The header is fully obtained when the server sends two new lines (aka one empty line). ... */" />
+            <marker date="1542710818472" expanded="true" signature="966:1034" ph="{...}" />
+            <marker date="1542710818472" expanded="true" signature="1044:1157" ph="/* Parses the HTTP Response content and returns the value of the &quot;Content-Length&quot; header. ... */" />
+            <marker date="1542710818472" expanded="true" signature="1225:1783" ph="{...}" />
+            <marker date="1542710818472" expanded="true" signature="1386:1738" ph="{...}" />
+            <marker date="1542710818472" expanded="true" signature="1404:1506" ph="/* the header is composed using the following pattern: ... */" />
+            <marker date="1542710818472" expanded="true" signature="1640:1724" ph="{...}" />
+            <marker date="1542710818472" expanded="true" signature="1793:1875" ph="/* Creates the request headers for the specified hostname. ... */" />
+            <marker date="1542710818472" expanded="true" signature="1956:2823" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab5/implementation/TasksMechanism.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="68">
+          <caret line="71" column="27" selection-start-line="71" selection-start-column="27" selection-end-line="71" selection-end-column="27" />
+          <folding>
+            <marker date="1542710868106" expanded="false" signature="6:175" ph="..." />
+            <marker date="1542710868106" expanded="true" signature="207:6443" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="247:6441" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="348:606" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="475:552" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="661:750" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="760:807" ph="/* Connect to a server. ... */" />
+            <marker date="1542710868106" expanded="true" signature="869:2396" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="1379:1636" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="2460:2622" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="2685:3247" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="3321:3674" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="3734:4165" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="4229:4470" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="4533:6435" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="4726:6340" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="5260:5395" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="5423:5492" ph="/* header has been fully obtained ... */" />
+            <marker date="1542710868106" expanded="true" signature="5614:5764" ph="/* the custom header parser is being used to check if the data received so far has the length ... */" />
+            <marker date="1542710868106" expanded="true" signature="5873:6089" ph="{...}" />
+            <marker date="1542710868106" expanded="true" signature="6121:6237" ph="/* otherwise, all the data has been received ... */" />
+            <marker date="1542710868106" expanded="true" signature="6361:6425" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab5/implementation/AsyncTasksMechanism.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="71" column="30" selection-start-line="71" selection-start-column="30" selection-end-line="71" selection-end-column="30" />
+          <folding>
+            <marker date="1542710868092" expanded="false" signature="6:175" ph="..." />
+            <marker date="1542710868092" expanded="true" signature="207:6490" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="252:6488" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="353:611" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="480:557" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="666:755" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="765:812" ph="/* Connect to a server. ... */" />
+            <marker date="1542710868092" expanded="true" signature="880:2404" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="1390:1647" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="2474:2643" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="2706:3268" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="3348:3708" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="3768:4199" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="4269:4517" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="4580:6482" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="4773:6387" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="5307:5442" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="5470:5539" ph="/* header has been fully obtained ... */" />
+            <marker date="1542710868092" expanded="true" signature="5661:5811" ph="/* the custom header parser is being used to check if the data received so far has the length ... */" />
+            <marker date="1542710868092" expanded="true" signature="5920:6136" ph="{...}" />
+            <marker date="1542710868092" expanded="true" signature="6168:6284" ph="/* otherwise, all the data has been received ... */" />
+            <marker date="1542710868092" expanded="true" signature="6408:6472" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C6745222-ADCF-4E3F-90BB-F18E4A1AF3AC/a8/4f358879/List`1.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="148" column="8" selection-start-line="148" selection-start-column="8" selection-end-line="148" selection-end-column="8" />
+          <folding>
+            <marker date="1542727584296" expanded="true" signature="0:270" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1542727584296" expanded="false" signature="278:398" ph="..." />
+            <marker date="1542727584296" expanded="true" signature="436:23887" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="690:23885" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="936:990" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="1021:1310" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="1354:1971" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="1552:1830" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="1616:1682" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="1695:1822" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="1841:1965" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="1996:2605" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="2012:2063" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="2073:2599" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="2328:2532" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="2627:2692" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="2643:2686" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="2720:2780" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="2736:2774" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="2816:2876" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="2832:2870" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="2903:2963" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="2919:2957" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="3000:3060" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="3016:3054" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="3093:3294" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="3109:3288" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="3324:3706" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="3340:3502" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="3512:3700" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="3764:3909" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="3943:4340" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="3959:4012" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="4022:4334" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="4132:4187" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="4227:4326" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="4424:4684" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="4558:4633" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="4771:4910" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="4942:5253" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="5044:5088" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="5126:5218" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="5306:5366" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="5413:5482" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="5564:6027" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="6064:6150" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="6210:6285" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="6365:6661" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="6457:6620" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="6695:6795" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="6833:6949" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="7028:7393" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="7428:7469" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="7527:7908" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="7679:7770" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="7814:7902" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="7981:8197" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="8248:8341" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="8383:8647" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="8691:8745" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="8784:9067" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="8943:9035" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="9115:9439" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="9313:9411" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="9485:9548" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="9610:9695" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="9768:10331" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="10229:10308" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="10374:10662" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="10538:10630" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="10712:10792" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="10858:10938" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="11015:11736" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="11146:11276" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="11634:11713" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="11779:12184" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="12231:12286" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="12337:12409" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="12454:12523" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="12574:13133" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="13165:13242" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="13278:13390" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="13433:13614" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="13668:13964" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="14007:14486" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="14533:14825" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="14635:14689" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="14727:14819" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="14892:16024" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="15196:15818" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="15259:15810" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="15490:15709" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="15853:15944" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="16060:16183" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="16230:16390" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="16448:17196" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="17228:17368" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="17404:17506" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="17552:18313" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="17876:18068" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="18350:18752" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="18803:19577" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="19604:19651" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="19698:20179" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="20203:20268" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="20313:20367" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="20434:20922" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="20970:21212" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="21238:21452" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="21482:21611" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="21659:21923" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="21818:21898" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="21982:22203" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="22047:22197" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="22295:23881" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="22451:22595" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="22624:22640" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="22670:22940" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="22975:23235" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="23259:23339" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="23279:23331" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="23373:23624" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="23393:23616" ph="{...}" />
+            <marker date="1542727584296" expanded="true" signature="23656:23875" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/70729386-1B9C-49CF-8F99-C3B74FE2930C/bc/8475dd93/Dns.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="187" column="6" selection-start-line="187" selection-start-column="6" selection-end-line="187" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab5/Program.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="17" column="9" selection-start-line="17" selection-start-column="9" selection-end-line="17" selection-end-column="9" />
+          <folding>
+            <marker date="1542727408583" expanded="false" signature="6:60" ph="..." />
+            <marker date="1542727408583" expanded="true" signature="77:776" ph="{...}" />
+            <marker date="1542727408583" expanded="true" signature="111:774" ph="{...}" />
+            <marker date="1542727408583" expanded="true" signature="257:582" ph="{...}" />
+            <marker date="1542727408583" expanded="true" signature="632:768" ph="{...}" />
+            <marker date="1542727408583" expanded="true" signature="674:758" ph="/* TaskMechanism.run(HOSTS); ... */" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/C6745222-ADCF-4E3F-90BB-F18E4A1AF3AC/d3/9009a549/Void.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="221">
+          <caret line="13" column="16" selection-start-line="13" selection-start-column="16" selection-end-line="13" selection-end-column="16" />
+          <folding>
+            <marker date="1542727955246" expanded="true" signature="0:248" ph="/* Decompiled with JetBrains decompiler ... */" />
+            <marker date="1542727955246" expanded="true" signature="305:426" ph="{...}" />
+            <marker date="1542727955246" expanded="true" signature="416:424" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Lab5/implementation/DirectCallbacks.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="23" column="28" selection-start-line="23" selection-start-column="28" selection-end-line="23" selection-end-column="28" />
+          <folding>
+            <marker date="1542727978846" expanded="false" signature="6:199" ph="..." />
+            <marker date="1542727978846" expanded="true" signature="231:5615" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="273:5613" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="374:547" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="458:537" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="602:691" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="701:748" ph="/* Connect to a server. ... */" />
+            <marker date="1542727978846" expanded="true" signature="810:1726" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="1318:1575" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="1783:2575" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="2627:3182" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="2975:3070" ph="/* receive the response from the server ... */" />
+            <marker date="1542727978846" expanded="true" signature="3239:5607" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="3469:5512" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="4003:4132" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="4160:4229" ph="/* header has been fully obtained ... */" />
+            <marker date="1542727978846" expanded="true" signature="4351:4501" ph="/* the custom header parser is being used to check if the data received so far has the length ... */" />
+            <marker date="1542727978846" expanded="true" signature="4687:4897" ph="{...}" />
+            <marker date="1542727978846" expanded="true" signature="4929:5044" ph="/* otherwise, all the data has been received ... */" />
+            <marker date="1542727978846" expanded="true" signature="5533:5597" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
