@@ -10,6 +10,7 @@ public class Main {
 
     public static void main(String[] args) {
 
+        int TEST_NR = 20;
         Algorithm KARATSUBA_ALGORITHM = new KaratsubaAlgorithm();
         Algorithm NORMAL_ALGORITHM = new NormalAlgorithm();
 
@@ -27,7 +28,7 @@ public class Main {
         b.setCoef(2, -2);
         b.setCoef(3, 7);
 
-        for (int i = 1; i <= 20; i++) {
+        for (int i = 1; i <= TEST_NR; i++) {
             polynomials1.add(new Polynomial(i * 100, randomNumber("1", i*10), randomNumber("9", i*10)));
             polynomials2.add(new Polynomial(i * 100, randomNumber("1", i*10), randomNumber("9", i*10)));
         }
@@ -87,13 +88,12 @@ public class Main {
         multiply(a, b, threadCount, algorthm);
         long endTime = System.nanoTime();
         long duration = (endTime - startTime) / 1000000;
-        System.out.println("Level " + level + ": " + duration + "ms");
+        System.out.println("Level " + level + ": " + duration + " ms");
     }
 
     static void batchTesting(List<Polynomial> polynomials1, List<Polynomial> polynomials2, int threadCount, Algorithm algorithm){
-
         for (int i = 0; i < polynomials1.size(); i++){
-            test(i, polynomials1.get(i), polynomials2.get(i), threadCount, algorithm);
+            test(i + 1, polynomials1.get(i), polynomials2.get(i), threadCount, algorithm);
         }
     }
 
