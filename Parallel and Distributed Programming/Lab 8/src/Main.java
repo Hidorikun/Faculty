@@ -68,6 +68,15 @@ public class Main {
 
         graph.addEdge(nodes.get(nodes.size() -1), nodes.get(0));
 
+        Random random = new Random();
+
+        for (int i = 0; i < size / 2; i++){
+            int nodeA = random.nextInt(size - 1);
+            int nodeB = random.nextInt(size - 1);
+
+            graph.addEdge(nodeA, nodeB);
+        }
+
         return graph;
     }
 
