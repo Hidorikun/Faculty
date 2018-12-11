@@ -12,35 +12,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="155">
-              <caret line="86" column="59" lean-forward="true" selection-start-line="86" selection-start-column="59" selection-end-line="86" selection-end-column="59" />
+            <state relative-caret-position="272">
+              <caret line="88" column="48" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="48" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#addNumbersSequential#0;class#Main#0" />
-                <element signature="method#addNumbersParallel#0;class#Main#0" />
-                <element signature="method#testParallel#0;class#Main#0" />
-                <element signature="method#testSequential#0;class#Main#0" />
+                <element signature="method#main#0;class#Main#0" />
+                <element signature="method#batchTesting#0;class#Main#0" />
                 <element signature="method#generateNumbers#0;class#Main#0" />
                 <element signature="method#randomNumber#0;class#Main#0" />
+                <element signature="method#testSequential#0;class#Main#0" />
+                <element signature="method#addNumbersSequential#0;class#Main#0" />
+                <element signature="method#testParallel#0;class#Main#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AddThread.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="AddThread.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/AddThread.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="54">
-              <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+            <state relative-caret-position="331">
+              <caret line="77" column="16" lean-forward="true" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="method#run#0;class#AddThread#0" />
-                <element signature="method#addition#0;class#AddThread#0" />
-                <element signature="method#setRemainderAndSum#0;class#AddThread#0" />
-                <element signature="method#splitNumberInQueueIN#0;class#AddThread#0" />
               </folding>
             </state>
           </provider>
@@ -75,8 +72,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/src/Algorithm.java" />
-        <option value="$PROJECT_DIR$/src/AddThread.java" />
         <option value="$PROJECT_DIR$/src/Main.java" />
+        <option value="$PROJECT_DIR$/src/AddThread.java" />
       </list>
     </option>
   </component>
@@ -86,19 +83,17 @@
     <detection-done>true</detection-done>
     <sorting>DEFINITION_ORDER</sorting>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-10" />
-    <option name="y" value="-10" />
-    <option name="width" value="1940" />
-    <option name="height" value="1050" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="950" />
+    <option name="width" value="979" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="AndroidView" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -115,13 +110,14 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
+      <pane id="AndroidView" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Lab 6" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Lab 7.1" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -176,34 +172,36 @@
       <updated>1543401956722</updated>
       <workItem from="1543401965519" duration="3598000" />
       <workItem from="1543578063006" duration="11775000" />
-      <workItem from="1543663026192" duration="8707000" />
+      <workItem from="1543663026192" duration="9487000" />
+      <workItem from="1543822333499" duration="1738000" />
+      <workItem from="1543824596320" duration="336000" />
+      <workItem from="1543839529442" duration="567000" />
+      <workItem from="1544455723774" duration="2030000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="24080000" />
+    <option name="totallyTimeSpent" value="29531000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1550" height="838" extended-state="7" />
     <layout>
       <window_info anchor="right" id="Palette" order="3" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Messages" order="7" weight="0.0" />
       <window_info anchor="right" id="Palette&#9;" order="3" />
       <window_info id="Image Layers" order="2" />
       <window_info anchor="right" id="Capture Analysis" order="3" />
       <window_info anchor="bottom" id="Event Log" order="7" side_tool="true" />
       <window_info anchor="right" id="Maven Projects" order="3" />
       <window_info anchor="bottom" id="Database Changes" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.39173788" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.37606838" />
       <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="right" id="Mongo Explorer" />
       <window_info anchor="bottom" id="Terminal" order="7" weight="0.48433048" />
       <window_info id="Capture Tool" order="2" />
       <window_info id="Designer" order="2" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25637585" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2671141" />
       <window_info anchor="right" id="Database" order="3" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
       <window_info id="Learn" order="2" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -216,6 +214,8 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.32905984" />
+      <window_info anchor="bottom" id="Messages" order="7" weight="0.32905984" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -226,23 +226,122 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="6" />
+      <option name="time" value="8" />
     </breakpoint-manager>
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
+        <state relative-caret-position="714">
+          <caret line="47" column="60" lean-forward="true" selection-start-line="47" selection-start-column="60" selection-end-line="47" selection-end-column="60" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#addNumbersSequential#0;class#Main#0" />
-            <element signature="method#addNumbersParallel#0;class#Main#0" />
-            <element signature="method#testParallel#0;class#Main#0" />
-            <element signature="method#testSequential#0;class#Main#0" />
+            <element signature="method#main#0;class#Main#0" />
+            <element signature="method#batchTesting#0;class#Main#0" />
             <element signature="method#generateNumbers#0;class#Main#0" />
             <element signature="method#randomNumber#0;class#Main#0" />
+            <element signature="method#testSequential#0;class#Main#0" />
+            <element signature="method#addNumbersSequential#0;class#Main#0" />
+            <element signature="method#testParallel#0;class#Main#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1360">
+          <caret line="82" lean-forward="true" selection-start-line="82" selection-end-line="82" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="578">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" />
+            <element signature="method#batchTesting#0;class#Main#0" />
+            <element signature="method#generateNumbers#0;class#Main#0" />
+            <element signature="method#randomNumber#0;class#Main#0" />
+            <element signature="method#testSequential#0;class#Main#0" />
+            <element signature="method#addNumbersSequential#0;class#Main#0" />
+            <element signature="method#testParallel#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="663">
+          <caret line="39" column="9" selection-start-line="39" selection-start-column="9" selection-end-line="39" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" />
+            <element signature="method#batchTesting#0;class#Main#0" />
+            <element signature="method#generateNumbers#0;class#Main#0" />
+            <element signature="method#randomNumber#0;class#Main#0" />
+            <element signature="method#testSequential#0;class#Main#0" />
+            <element signature="method#addNumbersSequential#0;class#Main#0" />
+            <element signature="method#testParallel#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="17">
+          <caret line="1" column="27" lean-forward="true" selection-start-line="1" selection-start-column="27" selection-end-line="1" selection-end-column="27" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#main#0;class#Main#0" />
+            <element signature="method#batchTesting#0;class#Main#0" />
+            <element signature="method#generateNumbers#0;class#Main#0" />
+            <element signature="method#randomNumber#0;class#Main#0" />
+            <element signature="method#testSequential#0;class#Main#0" />
+            <element signature="method#addNumbersSequential#0;class#Main#0" />
+            <element signature="method#testParallel#0;class#Main#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/AddThread.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="21" column="31" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" lean-forward="true" selection-start-line="13" selection-end-line="13" />
         </state>
       </provider>
     </entry>
@@ -252,10 +351,6 @@
           <caret line="21" column="53" selection-start-line="21" selection-start-column="53" selection-end-line="21" selection-end-column="53" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#AddThread#0" />
-            <element signature="method#addition#0;class#AddThread#0" />
-            <element signature="method#setRemainderAndSum#0;class#AddThread#0" />
-            <element signature="method#splitNumberInQueueIN#0;class#AddThread#0" />
           </folding>
         </state>
       </provider>
@@ -264,15 +359,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="13" column="46" lean-forward="true" selection-start-line="13" selection-start-column="46" selection-end-line="13" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#addNumbersSequential#0;class#Main#0" />
-            <element signature="method#addNumbersParallel#0;class#Main#0" />
-            <element signature="method#testParallel#0;class#Main#0" />
-            <element signature="method#testSequential#0;class#Main#0" />
-            <element signature="method#generateNumbers#0;class#Main#0" />
-            <element signature="method#randomNumber#0;class#Main#0" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -282,21 +368,11 @@
           <caret line="21" column="41" lean-forward="true" selection-start-line="21" selection-start-column="41" selection-end-line="21" selection-end-column="41" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#AddThread#0" />
-            <element signature="method#addition#0;class#AddThread#0" />
-            <element signature="method#setRemainderAndSum#0;class#AddThread#0" />
-            <element signature="method#splitNumberInQueueIN#0;class#AddThread#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Algorithm.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/src/Algorithm.java" />
     <entry file="jar://C:/Program Files/Java/jdk1.8.0_161/src.zip!/java/lang/Thread.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="10999">
@@ -304,32 +380,29 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/AddThread.java">
+    <entry file="file://$PROJECT_DIR$/src/Main.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="54">
-          <caret line="21" column="31" lean-forward="true" selection-start-line="21" selection-start-column="31" selection-end-line="21" selection-end-column="31" />
+        <state relative-caret-position="272">
+          <caret line="88" column="48" selection-start-line="88" selection-start-column="39" selection-end-line="88" selection-end-column="48" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#run#0;class#AddThread#0" />
-            <element signature="method#addition#0;class#AddThread#0" />
-            <element signature="method#setRemainderAndSum#0;class#AddThread#0" />
-            <element signature="method#splitNumberInQueueIN#0;class#AddThread#0" />
+            <element signature="method#main#0;class#Main#0" />
+            <element signature="method#batchTesting#0;class#Main#0" />
+            <element signature="method#generateNumbers#0;class#Main#0" />
+            <element signature="method#randomNumber#0;class#Main#0" />
+            <element signature="method#testSequential#0;class#Main#0" />
+            <element signature="method#addNumbersSequential#0;class#Main#0" />
+            <element signature="method#testParallel#0;class#Main#0" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Main.java">
+    <entry file="file://$PROJECT_DIR$/src/AddThread.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="155">
-          <caret line="86" column="59" lean-forward="true" selection-start-line="86" selection-start-column="59" selection-end-line="86" selection-end-column="59" />
+        <state relative-caret-position="331">
+          <caret line="77" column="16" lean-forward="true" selection-start-line="77" selection-start-column="16" selection-end-line="77" selection-end-column="16" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="method#addNumbersSequential#0;class#Main#0" />
-            <element signature="method#addNumbersParallel#0;class#Main#0" />
-            <element signature="method#testParallel#0;class#Main#0" />
-            <element signature="method#testSequential#0;class#Main#0" />
-            <element signature="method#generateNumbers#0;class#Main#0" />
-            <element signature="method#randomNumber#0;class#Main#0" />
           </folding>
         </state>
       </provider>

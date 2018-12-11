@@ -12,7 +12,11 @@ public class Polynomial {
         coefs = new ArrayList<>(rank + 1);
 
         for (int i = 0; i <= rank; i++) {
-            this.coefs.add(this.getRandomBigInt(min, max));
+            if (min.compareTo(BigInteger.ZERO) == 0 && max.compareTo(BigInteger.ZERO) == 0){
+                this.coefs.add(BigInteger.ZERO);
+            } else {
+                this.coefs.add(this.getRandomBigInt(min, max));
+            }
         }
     }
 

@@ -15,11 +15,61 @@ public class Main {
 
     }
 
+    static void batchTesting(int testCount, int queueCap) {
+        List<BigInteger> numbers;
+
+        for (int i = 1; i <= testCount; i++){
+            numbers = generateNumbers(i * 10, i * 1);
+            testParallel(i, numbers, queueCap);
+            testSequential(i, numbers);
+        }
+    }
+
+    static List<BigInteger> generateNumbers(int count, int digitSize) {
+        List<BigInteger> numbers = new ArrayList<>(count);
+
+        for (int i = 0; i < count; i++){
+            numbers.add(new BigInteger(randomNumber(digitSize)));
+        }
+
+        return numbers;
+    }
+
+    static String randomNumber(int length) {
+        StringBuilder result = new StringBuilder();
+
+        Random random = new Random();
+
+        for (int i = 0; i < length; i++) {
+            result.append(random.nextInt(9) + 1);
+        }
+
+        return result.toString();
+    }
+
+    static void testSequential(int level, List<BigInteger> numbers) {
+        long startTime = System.nanoTime();
+        addNumbersSequential(numbers);
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime) / 1000000;
+        System.out.println("Level " + level + ": " + duration + " ms");
+
+    }
+
     static void addNumbersSequential(List<BigInteger> numbers) {
         BigInteger sum = BigInteger.ZERO;
         for (BigInteger number : numbers) {
             sum = sum.add(number);
         }
+    }
+
+    static void testParallel(int level, List<BigInteger> numbers, int queueCap) {
+        long startTime = System.nanoTime();
+        addNumbersParallel(numbers, queueCap);
+        long endTime = System.nanoTime();
+        long duration = (endTime - startTime) / 1000000;
+        System.out.println("Level " + level + ": " + duration + " ms");
+
     }
 
     static void addNumbersParallel(List<BigInteger> numbers, int queueCap){
@@ -28,7 +78,7 @@ public class Main {
         List<ArrayBlockingQueue<BigInteger>> queues = new ArrayList<>(N - 1);
 
         for (int i = 0; i < N - 1; i++){
-            queues.add(new ArrayBlockingQueue<BigInteger>(queueCap));
+            queues.add(new ArrayBlockingQueue<>(queueCap));
         }
 
         List<Thread> threads = new ArrayList<>(N - 1);
@@ -66,54 +116,5 @@ public class Main {
         }
     }
 
-    static void testParallel(int level, List<BigInteger> numbers, int queueCap) {
-        long startTime = System.nanoTime();
-        addNumbersParallel(numbers, queueCap);
-        long endTime = System.nanoTime();
-        long duration = (endTime - startTime) / 1000000;
-        System.out.println("Level " + level + ": " + duration + " ms");
-
-    }
-
-    static void testSequential(int level, List<BigInteger> numbers) {
-        long startTime = System.nanoTime();
-        addNumbersSequential(numbers);
-        long endTime = System.nanoTime();
-        long duration = (endTime - startTime) / 1000000;
-        System.out.println("Level " + level + ": " + duration + " ms");
-
-    }
-
-    static void batchTesting(int testCount, int queueCap) {
-        List<BigInteger> numbers;
-
-        for (int i = 1; i <= testCount; i++){
-            numbers = generateNumbers(i * 10, i * 1);
-            testParallel(i, numbers, queueCap);
-            testSequential(i, numbers);
-        }
-    }
-
-    static List<BigInteger> generateNumbers(int count, int digitSize) {
-        List<BigInteger> numbers = new ArrayList<>(count);
-
-        for (int i = 0; i < count; i++){
-            numbers.add(new BigInteger(randomNumber(digitSize)));
-        }
-
-        return numbers;
-    }
-
-    static String randomNumber(int length) {
-        StringBuilder result = new StringBuilder();
-
-        Random random = new Random();
-
-        for (int i = 0; i < length; i++) {
-            result.append(random.nextInt(9) + 1);
-        }
-
-        return result.toString();
-    }
 }
 

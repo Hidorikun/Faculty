@@ -5,7 +5,7 @@ public class DirectedGraph {
     private List<List<Integer>> container;
     private List<Integer> nodes;
 
-    public DirectedGraph(int nodeCount) {
+    DirectedGraph(int nodeCount) {
         this.container = new ArrayList<>(nodeCount);
         this.nodes = new ArrayList<>();
 

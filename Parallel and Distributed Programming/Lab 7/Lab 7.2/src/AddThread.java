@@ -11,19 +11,18 @@ public class AddThread implements Runnable {
     private BigInteger sum = BigInteger.ZERO;
 
 
-    public AddThread(BigInteger number, BigInteger secondNumber, ArrayBlockingQueue<BigInteger> queueOUT) {
-        this.queueIN = new ArrayBlockingQueue<BigInteger>(secondNumber.toString().length() + 1);
+    AddThread(BigInteger number, BigInteger secondNumber, ArrayBlockingQueue<BigInteger> queueOUT) {
+        this.queueIN = new ArrayBlockingQueue<>(secondNumber.toString().length() + 1);
         this.queueOUT = queueOUT;
         this.number = number;
         this.splitNumberInQueueIN(secondNumber);
     }
 
-    public AddThread(BigInteger number ,ArrayBlockingQueue<BigInteger> queueIN, ArrayBlockingQueue<BigInteger> queueOUT) {
+    AddThread(BigInteger number, ArrayBlockingQueue<BigInteger> queueIN, ArrayBlockingQueue<BigInteger> queueOUT) {
         this.queueIN = queueIN;
         this.queueOUT = queueOUT;
         this.number = number;
     }
-
 
     @Override
     public void run() {

@@ -10,7 +10,7 @@ public class Task implements Runnable {
     private Lock lock;
     private List<Integer> result;
 
-    public Task(DirectedGraph graph, int node, List<Integer> result, Lock lock) {
+    Task(DirectedGraph graph, int node, List<Integer> result, Lock lock) {
         this.graph = graph;
         this.startingNode = node;
         path = new ArrayList<>();
@@ -23,12 +23,6 @@ public class Task implements Runnable {
         visit(startingNode);
     }
 
-    private void setResult() {
-        this.lock.lock();
-        this.result.clear();
-        this.result.addAll(this.path);
-        this.lock.unlock();
-    }
     private void visit(int node) {
         path.add(node);
 
@@ -36,6 +30,7 @@ public class Task implements Runnable {
             if (graph.neighboursOf(node).contains(startingNode)){
                 setResult();
             }
+
             return;
         }
 
@@ -44,5 +39,12 @@ public class Task implements Runnable {
                 visit(neighbour);
             }
         }
+    }
+
+    private void setResult() {
+        this.lock.lock();
+        this.result.clear();
+        this.result.addAll(this.path);
+        this.lock.unlock();
     }
 }

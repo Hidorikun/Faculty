@@ -1,4 +1,6 @@
 import sun.awt.Mutex;
+
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
@@ -68,7 +70,9 @@ public class Main {
 
         for (int coefA = 0; coefA <= a.getRank(); coefA++){
             for (int coefB = 0; coefB <= b.getRank(); coefB++){
-                pool.execute(new Multiplication(a, b, result, coefA, coefB, mutexes, algorthm));
+                if (a.getCoef(coefA).compareTo(BigInteger.ZERO) != 0 && b.getCoef(coefB).compareTo(BigInteger.ZERO) != 0){
+                    pool.execute(new Multiplication(a, b, result, coefA, coefB, mutexes, algorthm));
+                }
             }
         }
 
