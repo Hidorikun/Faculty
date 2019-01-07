@@ -1,0 +1,9 @@
+N = { PROGRAM, STMT, DECL, CONSTANT} 
+E = { 16, 26, 0, 1} 
+S = PROGRAM
+P = {
+	PROGRAM -> STMT,
+    STMT -> DECL,
+    DECL -> 26 0 16 CONSTANT,
+    CONSTANT -> 1
+}

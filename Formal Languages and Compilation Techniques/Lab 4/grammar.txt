@@ -1,8 +1,7 @@
-N = { S, A , S1} 
+N = { S, A } 
 E = { a, b, c } 
-S = S1
+S = S
 P = {
-    S1 -> S, 
-	S -> aA, 
-	A -> bA | c
+	S -> a A, 
+	A -> b A | c
 }
