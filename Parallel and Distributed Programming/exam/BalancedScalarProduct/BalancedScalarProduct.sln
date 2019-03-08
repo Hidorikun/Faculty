@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27703.2035
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "produsScalarBalansat", "produsScalarBalansat\produsScalarBalansat.vcxproj", "{0726049B-1232-40AD-AE90-0EF7EC6CBBCC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{0726049B-1232-40AD-AE90-0EF7EC6CBBCC}.Debug|x64.ActiveCfg = Debug|x64
+		{0726049B-1232-40AD-AE90-0EF7EC6CBBCC}.Debug|x64.Build.0 = Debug|x64
+		{0726049B-1232-40AD-AE90-0EF7EC6CBBCC}.Debug|x86.ActiveCfg = Debug|Win32
+		{0726049B-1232-40AD-AE90-0EF7EC6CBBCC}.Debug|x86.Build.0 = Debug|Win32
+		{0726049B-1232-40AD-AE90-0EF7EC6CBBCC}.Release|x64.ActiveCfg = Release|x64
+		{0726049B-1232-40AD-AE90-0EF7EC6CBBCC}.Release|x64.Build.0 = Release|x64
+		{0726049B-1232-40AD-AE90-0EF7EC6CBBCC}.Release|x86.ActiveCfg = Release|Win32
+		{0726049B-1232-40AD-AE90-0EF7EC6CBBCC}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {167E00D0-BFCA-4035-8A73-2FE7BCE30524}
+	EndGlobalSection
+EndGlobal
